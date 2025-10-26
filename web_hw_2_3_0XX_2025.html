@@ -7,35 +7,40 @@
 <style>
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
-  body{font-family:"Microsoft JhengHei",system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif;color:#333;background:#ffffff;line-height:2}
-  .wrap{max-width:1180px;margin:0 auto;padding:28px 20px}
-  .topbar{display:flex;align-items:flex-end;gap:16px;border-bottom:4px solid #9cc66a;padding-bottom:10px}
-  .title{margin:0;color:#5a9c2e;font-weight:800;letter-spacing:.5px}
-  .title{font-size:32px}
-  .tags{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
-  .tags a{color:#1a73a8;text-decoration:none;border-bottom:1px dashed currentColor}
-  .meta{margin:16px 0 16px;color:#666}
-  .share{margin-left:auto;display:flex;gap:10px}
-  .btn-icon{width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#6aa300;color:#fff;text-decoration:none;font-weight:700}
-  .grid{display:grid;grid-template-columns:520px 1fr;gap:26px;margin-top:8px}
-  @media (max-width:1024px){.grid{grid-template-columns:1fr}}
-  .photo{background:#f7f7f7;border:1px solid #e2e2e2;padding:10px;text-align:center}
-  .photo img{max-width:100%;height:auto;border:1px solid #ddd}
-  .article h3{font-size:22px;color:#2b2b2b;margin:12px 0 6px}
-  .article p{margin:10px 0;text-indent:2em}
-  .star{margin:8px 0 6px;text-indent:0}
-  .star::before{content:"★ ";color:#5a9c2e;font-weight:900}
-  .note{font-size:15px;color:#777;margin-top:26px}
-  footer{max-width:1180px;margin:32px auto 42px;padding:0 20px;color:#777;font-size:14px;border-top:1px solid #eee;padding-top:14px}
+  body{font-family:"Microsoft JhengHei",system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif;line-height:2;color:#333;background:#fff}
+  .wrap{max-width:1180px;margin:0 auto;padding:20px}
+  .title{margin:0 0 10px;font-size:32px;font-weight:800;color:#6aa036;letter-spacing:.5px}
+  .bar{position:relative;margin:0 0 14px}
+  .bar::after{content:"";display:block;height:2px;background:#93ac50}
+  .icons{position:absolute;right:0;bottom:-20px;display:flex;gap:12px}
+  .icon{width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:700}
+  .icon.fb{background:#3b5998}
+  .icon.mail{background:#18a957}
+  .tags{margin:28px 0 10px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:14px}
+  .tags a{color:#2a79b9;text-decoration:none}
+  .meta{margin:6px 0 18px;color:#666}
+  .figure{float:left;width:520px;margin:0 28px 14px 0;border:1px solid #e2e2e2;background:#f6f6f6;padding:10px}
+  .figure img{max-width:100%;height:auto;display:block;border:1px solid #ddd}
+  .lead{margin:8px 0;text-indent:2em}
+  .h-big{font-size:26px;font-weight:800;margin:10px 0 6px;color:#2b2b2b}
+  .h-mid{font-size:22px;font-weight:700;margin:10px 0 6px;color:#2b2b2b}
+  p{margin:8px 0;text-indent:2em}
+  .star{margin:8px 0;text-indent:0}
+  .star::before{content:"★ ";color:#6aa036;font-weight:900}
+  @media (max-width:1024px){
+    .figure{float:none;width:100%;margin:0 0 16px 0}
+    .icons{position:static;justify-content:flex-end;margin-top:6px}
+  }
+  footer{max-width:1180px;margin:26px auto 40px;color:#777;font-size:14px;padding:0 20px}
 </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <h1 class="title">學齡前兒童視力篩檢 近視防治向下扎根</h1>
-      <div class="share">
-        <a class="btn-icon" href="#" aria-label="Facebook">f</a>
-        <a class="btn-icon" href="mailto:" aria-label="Email">@</a>
+    <h1 class="title">學齡前兒童視力篩檢 近視防治向下扎根</h1>
+    <div class="bar">
+      <div class="icons">
+        <a class="icon fb" href="#" aria-label="Facebook">f</a>
+        <a class="icon mail" href="mailto:" aria-label="Email">@</a>
       </div>
     </div>
 
@@ -49,34 +54,27 @@
 
     <div class="meta">發佈日期： 2025-09-19</div>
 
-    <div class="grid">
-      <div class="photo">
-        <img src="https://picsum.photos/seed/hpa-vision/900/700" alt="學齡前兒童視力篩檢示意圖">
-      </div>
+    <figure class="figure">
+      <img src="https://picsum.photos/seed/hpa-19937/1000/750" alt="學齡前兒童視力篩檢示意圖">
+    </figure>
 
-      <div class="article">
-        <h3>學齡前兒童視力篩檢 近視防治向下扎根</h3>
-        <p>國民健康署於114學年度啟動「學齡前兒童視力篩檢」試辦計畫，由專業眼科醫師進入參與試辦縣市的幼兒園，為大班兒童進行散瞳屈光度數檢查。透過早期篩檢，在黃金關鍵期進行介入，期能有效預防及延緩近視發生，降低未來高度近視及相關眼疾的風險。</p>
+    <p class="lead">國民健康署於114學年度啟動「學齡前兒童視力篩檢」試辦計畫，由專業眼科醫師進入參與試辦縣市的幼兒園，為大班兒童進行散瞳屈光度數檢查。透過早期篩檢，在黃金關鍵期進行介入，期能有效預防及延緩近視發生，降低未來高度近視及相關眼疾的風險。</p>
 
-        <h3>學齡前兒童視力篩檢是近視預防的關鍵</h3>
-        <p>國際近視研究學會2023年資料顯示，全球近視人口約占30%。臺灣近視率高於全球平均值，以往調查發現幼兒園大班近視盛行率9%，國小ㄧ年級增加至19.8%，至國小六年級已上升至70.6%。</p>
-        <p>近視從幼兒園階段就開始隨年齡快速攀升，國民健康署署長沈靜芬表示，臺灣兒童及青少年近視盛行率偏高，學齡前為近視防治最關鍵時期，學齡前兒童一旦發生近視，如果不做任何介入，每年會有將近100度的度數增加，大幅增加高度近視，以及未來發生白內障、青光眼、黃斑部病變，甚至視網膜剝離以及失明風險，建議學齡前兒童及早接受眼科醫師提供散瞳屈光度數檢查，透過點散瞳劑，讓醫師可更準確的測量出兒童眼睛的度數，若發現問題，可以及早介入。</p>
-        <p>因此，國民健康署在歷經一年多以來的相關規劃和討論，於114學年度啟動「學齡前兒童視力篩檢」試辦計畫，目前全國共有12個縣市表達參與試辦意願，已進入試辦計畫書審查程序，將由專業眼科醫師進入幼兒園，全面針對幼兒園大班兒童提供斜弱視篩檢及散瞳屈光度數檢查，如有發現異常，則提供後續追蹤管理，希望藉此精準掌握孩子視力狀況，並提早預防近視或控制度數增加。</p>
+    <div class="h-big">學齡前兒童視力篩檢是近視預防的關鍵</div>
+    <p>國際近視研究學會2023年資料顯示，全球近視人口約占30%。臺灣近視率高於全球平均值，以往調查發現幼兒園大班近視盛行率9%，國小ㄧ年級增加至19.8%，至國小六年級已上升至70.6%。</p>
+    <p>近視從幼兒園階段就開始隨年齡快速攀升，國民健康署署長沈靜芬表示，臺灣兒童及青少年近視盛行率偏高，學齡前為近視防治最關鍵時期，學齡前兒童一旦發生近視，如果不做任何介入，每年會有將近100度的度數增加，大幅增加高度近視，以及未來發生白內障、青光眼、黃斑部病變，甚至視網膜剝離以及失明風險，建議學齡前兒童及早接受眼科醫師提供散瞳屈光度數檢查，透過點散瞳劑，讓醫師可更準確的測量出兒童眼睛的度數，若發現問題，可以及早介入。</p>
+    <p>因此，國民健康署在歷經一年多以來的相關規劃和討論，於114學年度啟動「學齡前兒童視力篩檢」試辦計畫，目前全國共有12個縣市表達參與試辦意願，已進入試辦計畫書審查程序，將由專業眼科醫師進入幼兒園，全面針對幼兒園大班兒童提供斜弱視篩檢及散瞳屈光度數檢查，如有發現異常，則提供後續追蹤管理，希望藉此精準掌握孩子視力狀況，並提早預防近視或控制度數增加。</p>
 
-        <h3>視力表「1.0」並不代表沒有近視風險</h3>
-        <p>國立臺灣大學醫學院附設醫院眼科部侯鈞賀醫師分享所遇的實際案例。小皓5歲時在幼兒園做視力表檢測，雙眼視力良好，皆為1.0，但因為雙親皆為中高度近視300度至500度（-3.00D至-5.00D），家長為了避免孩子步上同樣近視之路，還是帶他到眼科做進一步檢查。</p>
-        <p>經散瞳檢查後，小皓屈光度為125度(+1.25D)遠視，顯示眼睛仍保有一定的遠視儲備，屬於兒童在發育中，常見的生理性遠視。然而，侯鈞賀醫師也提醒家長：「對於有家族近視史的孩子，這個數值仍需要密切追蹤。」自此，家長每年帶小皓定期回診2次，並配合醫囑培養良好用眼習慣，然而在升上小學二年級的暑假，眼科追蹤發現他的遠視儲備已下降至遠視75度(+0.75D)，顯示眼軸增長加快、潛在近視風險升高。在與家長討論後，決定讓小皓開始使用低濃度的眼科藥物阿托品(Atropine )，每兩天點藥一次，以延緩近視的發生。經過多年穩定治療與追蹤，如今小皓已升上國三，眼科最新散瞳屈光檢查顯示他的屈光度為遠視25度(+0.25D)，視力穩定，未發展成近視，亦無需配戴眼鏡。</p>
-        <p>侯鈞賀醫師指出，早期介入與家長配合，對於近視高風險兒童極為重要。若能即早瞭解遠視儲備，並開始追蹤與注意護眼相關生活習慣，必要時依醫師指示搭配適當的藥物預防策略，確實有可能延緩甚至避免近視的發生。</p>
+    <div class="h-mid">視力表「1.0」並不代表沒有近視風險</div>
+    <p>國立臺灣大學醫學院附設醫院眼科部侯鈞賀醫師分享所遇的實際案例。小皓5歲時在幼兒園做視力表檢測，雙眼視力良好，皆為1.0，但因為雙親皆為中高度近視300度至500度（-3.00D至-5.00D），家長為了避免孩子步上同樣近視之路，還是帶他到眼科做進一步檢查。</p>
+    <p>經散瞳檢查後，小皓屈光度為125度(+1.25D)遠視，顯示眼睛仍保有一定的遠視儲備，屬於兒童在發育中，常見的生理性遠視。然而，侯鈞賀醫師也提醒家長：「對於有家族近視史的孩子，這個數值仍需要密切追蹤。」自此，家長每年帶小皓定期回診2次，並配合醫囑培養良好用眼習慣，然而在升上小學二年級的暑假，眼科追蹤發現他的遠視儲備已下降至遠視75度(+0.75D)，顯示眼軸增長加快、潛在近視風險升高。在與家長討論後，決定讓小皓開始使用低濃度的眼科藥物阿托品(Atropine )，每兩天點藥一次，以延緩近視的發生。經過多年穩定治療與追蹤，如今小皓已升上國三，眼科最新散瞳屈光檢查顯示他的屈光度為遠視25度(+0.25D)，視力穩定，未發展成近視，亦無需配戴眼鏡。</p>
+    <p>侯鈞賀醫師指出，早期介入與家長配合，對於近視高風險兒童極為重要。若能即早瞭解遠視儲備，並開始追蹤與注意護眼相關生活習慣，必要時依醫師指示搭配適當的藥物預防策略，確實有可能延緩甚至避免近視的發生。</p>
 
-        <h3>散瞳篩檢ㄅㄆㄇ  掌握孩子視力發展黃金關鍵期</h3>
-        <p>為瞭解近視或遠視儲備情形，須由醫師進行散瞳屈光度數檢測。為減輕家長對於孩子在幼兒園進行視力篩檢的擔憂，國民健康署透過「散瞳篩檢ㄅㄆㄇ」提供家長散瞳篩檢須知，內容包括：</p>
-        <p class="star">ㄅ「別」擔心：由專業眼科醫師入園，所使用之散瞳篩檢方法亦安全可靠。</p>
-        <p class="star">ㄆ「配」合篩：建議家長同意及配合讓孩子接受篩檢，依篩檢結果持續培養孩子良好用眼習慣，若有發現異常，亦配合帶孩子接受進一步視力狀況檢查及追蹤治療。</p>
-        <p class="star">ㄇ「帽」要戴：提醒家長注意，因散瞳檢查會造孩子短暫畏光不適，建議檢查當天幫孩子準備及攜帶遮陽的帽子、太陽眼鏡，避免陽光造成孩子畏光不適。</p>
-
-        <p class="note">資料來源：國民健康署「健康久久+」學齡前兒童視力篩檢 近視防治向下扎根（2025-09-19）。</p>
-      </div>
-    </div>
+    <div class="h-mid">散瞳篩檢ㄅㄆㄇ  掌握孩子視力發展黃金關鍵期</div>
+    <p>為瞭解近視或遠視儲備情形，須由醫師進行散瞳屈光度數檢測。為減輕家長對於孩子在幼兒園進行視力篩檢的擔憂，國民健康署透過「散瞳篩檢ㄅㄆㄇ」提供家長散瞳篩檢須知，內容包括：</p>
+    <p class="star">ㄅ「別」擔心：由專業眼科醫師入園，所使用之散瞳篩檢方法亦安全可靠。</p>
+    <p class="star">ㄆ「配」合篩：建議家長同意及配合讓孩子接受篩檢，依篩檢結果持續培養孩子良好用眼習慣，若有發現異常，亦配合帶孩子接受進一步視力狀況檢查及追蹤治療。</p>
+    <p class="star">ㄇ「帽」要戴：提醒家長注意，因散瞳檢查會造孩子短暫畏光不適，建議檢查當天幫孩子準備及攜帶遮陽的帽子、太陽眼鏡，避免陽光造成孩子畏光不適。</p>
   </div>
 
   <footer>
