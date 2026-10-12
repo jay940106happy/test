@@ -1,67 +1,212 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#235c48"><meta name="description" content="多益單字點讀練習：原頁核實16字，每字兩句中文對照例句，支援慢速朗讀與本機學習進度。">
-<title>多益單字練習 · Wordstep</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2218%22%20fill%3D%22%23235c48%22/%3E%3Cpath%20d%3D%22m13%2023%206%2023%2012-22%205%2022%2013-23%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Ccircle%20cx%3D%2252%22%20cy%3D%2245%22%20r%3D%223%22%20fill%3D%22%23fff%22/%3E%3C/svg%3E%0A" type="image/svg+xml">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="一次學一個英文單字。點擊單字與兩句例句聽發音，搭配中文翻譯。">
+<title>英文單字練習</title>
+<link rel="icon" href="data:,">
 <style>
-:root{--bg:#f5f6f3;--paper:#fff;--ink:#263a32;--muted:#64756c;--accent:#235c48;--soft:#eaf1ec;--border:#dce4dc;--radius:18px;--sans:system-ui,-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-family:var(--sans);color:var(--ink);background:var(--bg);font-synthesis:none;color-scheme:light}*{box-sizing:border-box}body{margin:0;font-size:15px;line-height:1.65}button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button,select{cursor:pointer}button{transition:background .15s,color .15s,box-shadow .15s}button:disabled{cursor:not-allowed;opacity:.38}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #6da78a;outline-offset:3px}button{border:0}button,a{touch-action:manipulation}a{color:var(--accent)}svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.site-header{height:80px;max-width:1220px;margin:auto;display:flex;align-items:center;gap:22px;padding:0 40px;border-bottom:1px solid var(--border)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:21px;font-weight:750;letter-spacing:-.8px}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--accent);color:white;font:italic 27px/1 Georgia,serif;padding-bottom:3px}.header-note{font-size:13px;color:var(--muted);border-left:1px solid var(--border);padding-left:22px}.site-header>.text-button{margin-left:auto}.text-button{padding:8px 3px;color:var(--muted);background:transparent;min-height:44px;font-size:13px}.text-button:hover{color:var(--accent);text-decoration:underline}.layout{max-width:1160px;margin:42px auto 0;display:grid;grid-template-columns:258px minmax(0,1fr);gap:50px;padding:0 30px;align-items:start}.sidebar{min-width:0}.sidebar-intro h1{font-size:27px;line-height:1.6;letter-spacing:-.8px;font-weight:650;margin:0 0 9px}.sidebar-intro p{font-size:13px;color:var(--muted);margin:0 0 29px}.search-label{display:block;font-size:12px;font-weight:650;margin-bottom:6px}.search-box{display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:0 12px;height:46px}.search-box svg{width:18px;color:#738276}.search-box input{min-width:0;width:100%;border:0;background:transparent;outline:none;height:100%;font-size:14px;color:var(--ink)}.search-box:focus-within{border-color:var(--accent);box-shadow:0 0 0 2px var(--soft)}select{border:1px solid var(--border);border-radius:8px;color:var(--ink);background:var(--paper);padding:8px 10px;min-height:42px}#category{width:100%;margin-top:12px;font-size:13px}.filters{display:flex;gap:3px;background:#e8ece6;padding:4px;border-radius:10px;margin-top:14px}.filters button{flex:1;min-height:36px;background:transparent;color:var(--muted);border-radius:7px;font-size:12px}.filters button[aria-pressed=true]{background:var(--paper);color:var(--accent);font-weight:650;box-shadow:0 1px 3px #0000000c}.list-heading{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin:25px 3px 10px;letter-spacing:.3px}#word-list{max-height:390px;overflow-y:auto;scrollbar-width:thin;padding-right:4px}.word-link{width:100%;display:flex;align-items:center;text-align:left;padding:10px 11px;margin-bottom:3px;gap:12px;border-radius:9px;color:var(--ink);background:transparent}.word-link .num{font-size:11px;color:#87948b;min-width:18px;font-variant-numeric:tabular-nums}.word-link .list-word{font-size:14px;font-weight:550}.word-link small{display:block;font-size:11px;color:var(--muted);font-weight:400}.word-link .check{margin-left:auto;font-size:13px}.word-link[aria-current=true]{background:var(--soft);color:var(--accent)}.word-link:hover{background:#eaf0e9}.learning-progress{margin-top:24px;padding:18px 3px 0;border-top:1px solid var(--border)}.learning-progress>div{display:flex;justify-content:space-between;font-size:12px}.learning-progress strong{font-weight:600;font-variant-numeric:tabular-nums}progress{display:block;appearance:none;width:100%;height:5px;border:0;border-radius:8px;margin-top:9px;background:#dfe7dc;overflow:hidden}progress::-webkit-progress-bar{background:#dfe7dc}progress::-webkit-progress-value{background:var(--accent);border-radius:8px}progress::-moz-progress-bar{background:var(--accent)}.learning-progress p{font-size:10px;color:var(--muted);margin-bottom:0}.reader{min-width:0}.reader-top{display:flex;justify-content:space-between;align-items:center;margin:3px 2px 16px;font-size:12px;color:var(--muted)}#category-label{color:var(--accent);font-weight:600}#position{font-variant-numeric:tabular-nums;letter-spacing:1px}.word-card{background:var(--paper);border:1px solid var(--border);border-radius:var(--radius);padding:32px 36px 28px;box-shadow:0 8px 30px #243a2d04}.word-header{display:flex;justify-content:space-between;align-items:start;gap:16px}.word-pronounce{display:flex;align-items:center;gap:16px;background:transparent;color:var(--ink);padding:0;text-align:left;min-width:0}.word-pronounce .word{font:500 clamp(36px,4.5vw,52px)/1.25 Georgia,"Times New Roman",serif;letter-spacing:-1px;overflow-wrap:anywhere}.word-pronounce .sound{width:40px;height:40px;border:1px solid var(--border);border-radius:50%;display:grid;place-items:center;color:var(--accent);flex-shrink:0}.word-pronounce:hover .sound,.word-pronounce.playing .sound{background:var(--accent);border-color:var(--accent);color:white}.word-pronounce.playing .word{color:var(--accent)}.pos{font-size:12px;color:var(--muted);margin-top:12px}.meaning{font-size:23px;margin:3px 0 0;line-height:1.55;font-weight:550}.phrase{font-size:13px;color:var(--muted);margin:10px 0 0}.card-actions{display:flex;gap:12px;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);padding-bottom:20px;margin:19px 0 22px}.play-all{min-height:38px;background:var(--soft);color:var(--accent);font-size:12px;border-radius:8px;padding:8px 12px;display:flex;align-items:center;gap:7px}.play-all:hover{background:#dceadd}.play-all svg{width:16px;height:16px}.hide-button{color:var(--muted);font-size:12px;background:transparent;min-height:40px;padding:5px}.hide-button[aria-pressed=true]{color:var(--accent)}.example+.example{margin-top:24px}.example-label{font-size:10px;letter-spacing:.7px;font-weight:650;color:var(--muted);margin-bottom:7px}.sentence{width:100%;padding:3px 0;display:flex;gap:16px;justify-content:space-between;align-items:center;background:transparent;color:var(--ink);text-align:left;min-height:44px}.sentence .en{font-size:19px;line-height:1.6;font-family:Arial,var(--sans)}.sentence .sound{width:34px;height:34px;flex-shrink:0;color:var(--muted);display:grid;place-items:center;border-radius:50%;background:#f4f6f2}.sentence .sound svg{width:17px}.sentence:hover .en,.sentence.playing .en{color:var(--accent)}.sentence:hover .sound,.sentence.playing .sound{background:var(--accent);color:white}.sentence mark{background:transparent;color:inherit;font-weight:700;border-bottom:2px solid #b7d6c0}.example .translation{font-size:13px;color:var(--muted);margin:5px 45px 0 0}.tip{margin-top:28px;border-left:3px solid #bdcfba;padding:2px 0 2px 14px}.tip-label{display:block;color:var(--accent);font-size:11px;font-weight:650;margin-bottom:5px}.tip p{font-size:12px;line-height:1.8;margin:0;color:var(--muted)}.translation.is-hidden{visibility:hidden}.reader-controls{display:grid;grid-template-columns:1fr 1.65fr 1fr;gap:10px;margin:17px 0 23px}.primary,.secondary{border-radius:9px;padding:10px 15px;min-height:46px;font-size:13px;font-weight:550}.primary{background:var(--accent);color:white;border:1px solid var(--accent)}.primary:hover{background:#164735}.primary[aria-pressed=true]{background:var(--soft);color:var(--accent)}.secondary{background:transparent;border:1px solid var(--border);color:var(--ink)}.secondary:hover:not(:disabled){background:var(--paper)}.audio-settings{display:flex;gap:22px;align-items:center}.audio-settings label{display:flex;align-items:center;gap:9px;font-size:12px;white-space:nowrap}.audio-settings select{font-size:12px;max-width:100%;min-height:38px}.voice-label{flex:1;min-width:0}.voice-label select{width:100%;max-width:285px;text-overflow:ellipsis}.playback-bar{display:flex;align-items:center;gap:9px;margin-top:12px;min-height:44px}.playback-bar p{font-size:12px;color:var(--muted);margin:0;flex:1;line-height:1.6}.status-dot{height:6px;width:6px;border-radius:50%;background:#94a194;flex-shrink:0}.playback-bar.active .status-dot{background:var(--accent);animation:pulse 1s infinite}.playback-bar.error p{color:#a4402f}.playback-bar.error .status-dot{background:#a4402f}.audio-help{font-size:11px;line-height:1.8;color:var(--muted);margin:0}.source-strip{margin-top:24px;padding-top:15px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px}.source-strip strong{font-weight:600}.source-strip button{font-size:11px;min-height:30px}.empty{padding:45px 0;text-align:center}.empty h2{font-size:20px;font-weight:600}.empty p{font-size:13px;color:var(--muted)}.empty .secondary{margin-top:8px}.loading{padding:100px 0;text-align:center;color:var(--muted)}footer{max-width:1160px;margin:40px auto 0;border-top:1px solid var(--border);padding:20px 30px 30px;font-size:11px;color:#77847b}footer span{margin:0 10px}dialog{max-width:610px;width:calc(100% - 32px);border:1px solid var(--border);border-radius:18px;padding:28px;color:var(--ink);box-shadow:0 24px 100px #163d292b;max-height:85dvh}dialog::backdrop{background:#14291a66;backdrop-filter:blur(3px)}dialog p{font-size:14px;line-height:1.9}dialog h2{font-size:22px;margin:0;font-weight:650}.dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:15px}.dialog-heading button{min-height:38px;padding:7px 12px;font-size:12px}.muted{color:var(--muted);font-size:12px}dialog .muted{font-size:12px}hr{border:0;border-top:1px solid var(--border);margin:20px 0}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:absolute;top:-100px;left:16px;background:white;padding:10px;z-index:10}.skip-link:focus{top:10px}.mobile-jump{display:none}.fatal{padding:30px;text-align:center}.save-warning{color:#a4402f!important}@keyframes pulse{50%{opacity:.3}}@media(min-width:1100px){.sidebar{position:sticky;top:25px}}@media(max-width:850px){.site-header{height:68px;padding:0 23px;gap:16px}.header-note{padding-left:16px}.layout{grid-template-columns:215px minmax(0,1fr);gap:25px;padding:0 23px;margin-top:30px}.word-card{padding:26px}.word-pronounce .word{font-size:41px}.sentence .en{font-size:18px}.audio-settings{gap:13px}.audio-settings label{gap:6px}.reader-controls{gap:7px}.primary,.secondary{padding:10px 8px;font-size:12px}.sidebar-intro h1{font-size:24px}}@media(max-width:650px){body{font-size:14px}.site-header{padding:0 18px;height:64px;gap:12px}.brand{font-size:19px}.brand-mark{width:30px;height:30px;font-size:24px}.header-note{border:0;padding:0;font-size:11px}.site-header>.text-button{font-size:11px}.layout{display:block;padding:0 18px;margin-top:22px}.sidebar-intro h1{font-size:22px;line-height:1.5;margin-bottom:4px;letter-spacing:-.5px}.sidebar-intro br{display:none}.sidebar-intro p{margin:0 0 17px;font-size:12px}.search-label,.list-heading,#word-list,.learning-progress{display:none}.sidebar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sidebar-intro,.search-box{grid-column:1/-1}.search-box{height:44px}.search-box input{font-size:16px}#category{margin:0;font-size:12px;min-width:0}.filters{margin:0;height:42px;align-self:center}.filters button{min-height:32px;font-size:11px}.mobile-jump{display:block;grid-column:1/-1;min-width:0;width:100%;font-size:13px}.reader{margin-top:22px}.reader-top{font-size:11px;margin-bottom:10px}.word-card{border-radius:15px;padding:24px 22px 22px}.word-pronounce .word{font-size:43px}.word-pronounce .sound{height:37px;width:37px}.word-pronounce{gap:12px}.meaning{font-size:21px}.pos{font-size:11px;margin-top:9px}.phrase{font-size:12px}.card-actions{margin-top:16px;padding-bottom:17px;margin-bottom:19px}.example-label{font-size:10px}.sentence .en{font-size:18px;line-height:1.65}.sentence{gap:12px}.example+.example{margin-top:21px}.example .translation{font-size:12px}.tip{margin-top:22px}.tip p{font-size:12px}.reader-controls{gap:8px;margin:14px 0 19px;grid-template-columns:1fr 1.6fr 1fr}.reader-controls button{font-size:12px;min-height:46px;padding:9px 6px}.audio-settings{gap:12px}.audio-settings label{font-size:11px;gap:6px}.audio-settings select{font-size:11px;padding:7px;min-height:40px}.audio-settings .voice-label{min-width:0}.playback-bar{margin-top:9px}.playback-bar p{font-size:11px}.audio-help{font-size:10px}.source-strip{font-size:10px;margin-top:20px}.source-strip button{font-size:10px}footer{margin-top:27px;padding:18px;font-size:10px}dialog{padding:22px}dialog h2{font-size:20px}dialog p{font-size:13px}.word-header .hide-button{font-size:11px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-
-</style></head>
+:root { color-scheme: light; font-family: Arial, "PingFang TC", "Microsoft JhengHei", sans-serif; color: #222b27; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 16px; line-height: 1.65; }
+button, input { font: inherit; }
+button { cursor: pointer; color: inherit; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid #76a18c; outline-offset: 4px; }
+button:disabled { opacity: .35; cursor: default; }
+[hidden] { display: none !important; }
+.reader { max-width: 620px; margin: 0 auto; padding: 32px 28px 24px; }
+.top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 18px; border-bottom: 1px solid #e8ece9; }
+.top h1 { margin: 0; font-size: 17px; font-weight: 500; }
+#position { color: #707973; font-size: 14px; font-variant-numeric: tabular-nums; }
+.word-section { margin: 34px 0 30px; }
+.word-section h2 { margin: 0; }
+.read-aloud { display: flex; align-items: center; justify-content: space-between; gap: 18px; width: 100%; min-height: 44px; padding: 4px 0; border: 0; background: none; text-align: left; }
+#word { font-size: 46px; font-weight: 650; line-height: 1.25; letter-spacing: -.5px; overflow-wrap: anywhere; }
+.sound { display: grid; place-items: center; flex: 0 0 38px; height: 38px; border-radius: 50%; color: #235c48; }
+.sound svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.stop-icon { display: none; }
+.read-aloud:hover .sound { background: #eef4f0; }
+.read-aloud.playing .sound { background: #235c48; color: #fff; }
+.read-aloud.playing .speaker-icon { display: none; }
+.read-aloud.playing .stop-icon { display: block; }
+.meaning-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin: 10px 0 0; }
+#pos { color: #707973; font-size: 14px; }
+#meaning { font-size: 21px; }
+.example { margin: 0 0 25px; }
+.example .en { font-size: 21px; line-height: 1.7; }
+.example p { margin: 4px 50px 0 0; font-size: 16px; color: #68716c; }
+.hide-chinese .zh { visibility: hidden; }
+.options { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 28px; color: #68716c; font-size: 14px; }
+.options label { display: flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; }
+#slow { width: 17px; height: 17px; margin: 0; accent-color: #235c48; }
+#hide-chinese { min-height: 44px; padding: 6px 0 6px 12px; border: 0; background: none; color: #68716c; font-size: 14px; }
+.navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+.navigation button { min-height: 48px; border: 1px solid #dbe2dd; border-radius: 6px; background: #fff; font-size: 16px; }
+#next { background: #235c48; color: #fff; border-color: #235c48; }
+#next:hover { background: #194a39; }
+.message { margin: 14px 0 0; font-size: 14px; color: #91422f; }
+footer { margin-top: 32px; font-size: 12px; color: #7a817c; }
+footer a { color: inherit; text-underline-offset: 3px; }
+@media (max-width: 500px) {
+  .reader { padding: 22px 22px 24px; }
+  .word-section { margin: 28px 0; }
+  #word { font-size: 40px; }
+  #meaning { font-size: 20px; }
+  .example .en { font-size: 20px; }
+  .example { margin-bottom: 24px; }
+  .options { margin-top: 22px; }
+}
+</style>
+</head>
 <body>
-<a class="skip-link" href="#card">跳到單字</a>
-<header class="site-header"><a class="brand" href="#" aria-label="Wordstep 首頁"><span class="brand-mark" aria-hidden="true">w.</span><span>Wordstep</span></a><span class="header-note">多益單字練習</span><button id="source-open" class="text-button" type="button">來源說明</button></header>
-<main class="layout">
-<aside class="sidebar" aria-label="單字篩選與目錄">
-<div class="sidebar-intro"><h1>一個字，<br>聽懂兩種說法。</h1><p>先聽單字，再把它放進句子裡。</p></div>
-<label class="search-label" for="search">搜尋單字或中文</label><div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="search" type="search" placeholder="例如 meeting、會議" autocomplete="off" spellcheck="false"></div>
-<label class="sr-only" for="category">情境分類</label><select id="category"><option value="all">全部情境</option></select>
-<div class="filters" role="group" aria-label="學習狀態"><button data-filter="all" aria-pressed="true">全部</button><button data-filter="new" aria-pressed="false">未熟悉</button><button data-filter="known" aria-pressed="false">已熟悉</button></div>
-<div class="list-heading"><span>單字目錄</span><span id="result-count">載入中</span></div><nav id="word-list" aria-label="選擇單字"></nav>
-<label class="sr-only" for="word-jump">選擇單字</label><select id="word-jump" class="mobile-jump"></select>
-<div class="learning-progress"><div><span>已熟悉</span><strong id="known-count">0 / 16</strong></div><progress id="progress" max="16" value="0" aria-label="熟悉程度"></progress><p>進度只儲存在這台裝置的瀏覽器。</p></div>
-</aside>
-<section class="reader" aria-label="單字學習卡">
-<div class="reader-top"><span id="category-label">商務溝通</span><span id="position">01 / 16</span></div>
-<article id="card" class="word-card" tabindex="-1"><div class="loading">正在載入單字…</div></article>
-<div class="reader-controls"><button id="previous" class="secondary" type="button">上一字</button><button id="known-toggle" class="primary" type="button" aria-pressed="false">標記為已熟悉</button><button id="next" class="secondary" type="button">下一字</button></div>
-<section class="audio-settings" aria-label="朗讀設定"><label for="rate">語速 <select id="rate"><option value="0.7">0.7× 慢速</option><option value="0.9" selected>0.9× 稍慢</option><option value="1">1.0× 正常</option><option value="1.15">1.15× 稍快</option></select></label><label class="voice-label" for="voice">聲音 <select id="voice"><option value="">系統英文（自動）</option></select></label></section>
-<div class="playback-bar"><span class="status-dot" aria-hidden="true"></span><p id="play-status" role="status" aria-live="polite">點擊單字或例句，即可聽發音。</p><button id="stop" class="text-button" type="button" hidden>停止</button></div>
-<p class="audio-help">朗讀使用裝置的合成語音，不是原站真人錄音。手機內嵌瀏覽器若無聲，請改用 Safari 或 Chrome，並確認媒體音量與英文語音設定。</p>
-<div class="source-strip"><span><strong id="verified-count">16</strong> 個原頁核實單字 · <strong id="example-count">32</strong> 句自寫例句</span><button id="source-bottom" class="text-button" type="button">不是完整千字表 · 查看說明</button></div>
-</section>
+<main class="reader">
+  <header class="top"><h1>英文單字</h1><span id="position" aria-live="polite"></span></header>
+  <section id="lesson" aria-label="目前單字">
+    <div class="word-section">
+      <h2><button class="read-aloud" type="button" data-play="word" aria-pressed="false"><span id="word" lang="en"></span><span class="sound" aria-hidden="true"></span></button></h2>
+      <p class="meaning-line"><span id="pos"></span><span id="meaning" class="zh"></span></p>
+    </div>
+    <section class="example" aria-label="例句一">
+      <button class="read-aloud" type="button" data-play="example0" aria-pressed="false"><span class="en" lang="en"></span><span class="sound" aria-hidden="true"></span></button>
+      <p class="zh"></p>
+    </section>
+    <section class="example" aria-label="例句二">
+      <button class="read-aloud" type="button" data-play="example1" aria-pressed="false"><span class="en" lang="en"></span><span class="sound" aria-hidden="true"></span></button>
+      <p class="zh"></p>
+    </section>
+  </section>
+  <div class="options">
+    <label><input type="checkbox" id="slow" checked>慢速朗讀</label>
+    <button id="hide-chinese" type="button" aria-pressed="false">遮住中文</button>
+  </div>
+  <nav class="navigation" aria-label="切換單字">
+    <button id="previous" type="button">上一個</button>
+    <button id="next" type="button">下一個</button>
+  </nav>
+  <p id="audio-message" class="message" role="status" hidden></p>
+  <p id="save-message" class="message" role="status" hidden>目前無法儲存進度，但仍可繼續練習。</p>
+  <footer><a href="https://www.david.com.tw/toeic/vocabulary/must-know-words/1000-words/" target="_blank" rel="noopener noreferrer">單字來源</a> · 例句另行編寫</footer>
+  <noscript><p>請啟用 JavaScript，才能顯示單字與使用朗讀。</p></noscript>
 </main>
-<dialog id="source-dialog" aria-labelledby="source-title"><div class="dialog-heading"><h2 id="source-title">來源與收錄範圍</h2><button id="source-close" class="secondary" type="button">關閉</button></div><p>先前介紹將該頁稱為「完整 1,000 字表」，不夠準確。同一網址的讀取結果曾不一致；本版只收錄目前可重複核實的 <strong>16 個不同單字</strong>，不宣稱已抓到完整 1,000 字。</p><p>單字選取自原頁五個情境的示例，以及內文提到的 <span lang="en">approve</span>。詞性、中文解釋、32 句例句與句型提示均為本練習站另行編寫，並非原站例句或官方試題。</p><p><a href="https://www.david.com.tw/toeic/vocabulary/must-know-words/1000-words/" target="_blank" rel="noopener noreferrer">查看大衛美語原頁</a> <span class="muted">核對日期：2026-10-11</span></p><hr><p>學習進度儲存在瀏覽器本機；清除網站資料、更換瀏覽器或裝置，不會自動保留或同步。本站不需要登入、不錄音、不要求麥克風權限。裝置可能使用本機或線上語音服務。</p><p class="muted">本網站不是 ETS、多益或大衛美語的官方產品，亦不保證考試分數。</p></dialog>
-<noscript><p class="fatal">請啟用 JavaScript，才能使用單字卡與點擊朗讀功能。</p></noscript>
-<footer>Wordstep <span>·</span> 看懂，聽懂，再往前一步。</footer>
-<script id="word-data" type="application/json">{"meta": {"title": "多益單字練習", "sourceTitle": "多益必考單字1000有哪些？高頻整理", "sourceUrl": "https://www.david.com.tw/toeic/vocabulary/must-know-words/1000-words/", "checkedOn": "2026-10-11", "verifiedCount": 16, "note": "同一網址的讀取結果曾不一致；本版僅收錄目前可重複核實的16個不同單字，不宣稱已取得完整1000字表。詞性、中文解釋、例句與句型提示由本練習站另行編寫。"}, "words": [{"id": "meeting", "word": "meeting", "pos": "n. 名詞", "meaning": "會議", "category": "商務溝通", "phrase": "attend a meeting｜參加會議", "tip": "例句2的 was moved 表示「被改到」。會議本身沒有移動，是時間被更改。", "examples": [{"en": "The meeting starts at nine.", "zh": "會議九點開始。"}, {"en": "The meeting was moved to Friday.", "zh": "會議被改到星期五。"}]}, {"id": "schedule", "word": "schedule", "pos": "n. 名詞 / v. 動詞", "meaning": "行程表；安排時間", "category": "商務溝通", "phrase": "a busy schedule｜忙碌的行程", "tip": "例句1的 schedule 是名詞「行程表」；例句2放在 need to 後，是動詞「安排」。", "examples": [{"en": "Please check the schedule.", "zh": "請查看行程表。"}, {"en": "We need to schedule a meeting.", "zh": "我們需要安排一場會議。"}]}, {"id": "confirm", "word": "confirm", "pos": "v. 動詞", "meaning": "確認", "category": "商務溝通", "phrase": "confirm a reservation｜確認預訂", "tip": "Can you + 動詞原形，是常見的請求句。例句2的 confirmed 則表示已確認。", "examples": [{"en": "Can you confirm the time?", "zh": "你可以確認時間嗎？"}, {"en": "Your booking has been confirmed.", "zh": "你的預訂已獲確認。"}]}, {"id": "employee", "word": "employee", "pos": "n. 名詞", "meaning": "員工", "category": "辦公職場", "phrase": "a new employee｜新員工", "tip": "employee 是受雇的「員工」，employer 才是「雇主」。Every employee 後面用單數形式。", "examples": [{"en": "The new employee starts on Monday.", "zh": "新員工星期一到職。"}, {"en": "Every employee will receive an email.", "zh": "每位員工都會收到一封電子郵件。"}]}, {"id": "department", "word": "department", "pos": "n. 名詞", "meaning": "部門", "category": "辦公職場", "phrase": "the sales department｜業務部", "tip": "work in + 部門，表示在某部門工作。例句2的 Which 用來詢問是哪一個。", "examples": [{"en": "She works in the sales department.", "zh": "她在業務部工作。"}, {"en": "Which department should I contact?", "zh": "我應該聯絡哪個部門？"}]}, {"id": "manager", "word": "manager", "pos": "n. 名詞", "meaning": "經理；管理者", "category": "辦公職場", "phrase": "the store manager｜店經理", "tip": "例句1描述人在哪裡；例句2的 to speak to 表示「和某人說話」，不是只背 manager 的中文。", "examples": [{"en": "The manager is in her office.", "zh": "經理在她的辦公室裡。"}, {"en": "I would like to speak to the manager.", "zh": "我想和經理談一談。"}]}, {"id": "invoice", "word": "invoice", "pos": "n. 名詞", "meaning": "發票；請款單", "category": "金融交易", "phrase": "send an invoice｜寄出請款單", "tip": "invoice 常用來請款，不等同於付款後取得的 receipt（收據）。was sent 表示「被寄出」。", "examples": [{"en": "Please send me the invoice.", "zh": "請把請款單寄給我。"}, {"en": "The invoice was sent yesterday.", "zh": "請款單昨天已寄出。"}]}, {"id": "payment", "word": "payment", "pos": "n. 名詞", "meaning": "付款；款項", "category": "金融交易", "phrase": "make a payment｜付款", "tip": "pay 是動詞，payment 是名詞。例句2的 is due 表示款項「到期應付」。", "examples": [{"en": "We received your payment today.", "zh": "我們今天收到你的款項。"}, {"en": "Payment is due by Friday.", "zh": "最遲必須在星期五付款。"}]}, {"id": "contract", "word": "contract", "pos": "n. 名詞", "meaning": "合約", "category": "金融交易", "phrase": "sign a contract｜簽署合約", "tip": "例句1的 before + 動名詞 signing 表示「簽署之前」。例句2用 will 表示未來。", "examples": [{"en": "Please read the contract before signing.", "zh": "簽署前請先閱讀合約。"}, {"en": "The contract will end next month.", "zh": "合約將於下個月到期。"}]}, {"id": "reservation", "word": "reservation", "pos": "n. 名詞", "meaning": "預約；預訂", "category": "旅遊服務", "phrase": "make a reservation｜預約；訂位", "tip": "a reservation for two 在餐廳常指「兩人的訂位」。例句2的 cancel 表示取消。", "examples": [{"en": "I have a reservation for two.", "zh": "我有一個兩人的訂位。"}, {"en": "Can I cancel my reservation?", "zh": "我可以取消預訂嗎？"}]}, {"id": "check-in", "word": "check-in", "pos": "n. 名詞", "meaning": "報到；辦理入住", "category": "旅遊服務", "phrase": "the check-in desk｜報到櫃檯", "tip": "check-in 有連字號時可當名詞或修飾名詞；動詞片語寫作 check in，例如 check in at the hotel。", "examples": [{"en": "Hotel check-in begins at three.", "zh": "飯店下午三點開始辦理入住。"}, {"en": "Please go to the check-in desk.", "zh": "請前往報到櫃檯。"}]}, {"id": "itinerary", "word": "itinerary", "pos": "n. 名詞", "meaning": "行程表；旅遊行程", "category": "旅遊服務", "phrase": "a travel itinerary｜旅行行程表", "tip": "itinerary 通常指旅行的詳細安排。例句2的 has changed 表示行程已經改變。", "examples": [{"en": "Please email me the itinerary.", "zh": "請用電子郵件把行程表寄給我。"}, {"en": "Our travel itinerary has changed.", "zh": "我們的旅行行程已經改變。"}]}, {"id": "submit", "word": "submit", "pos": "v. 動詞", "meaning": "提交；繳交", "category": "日常動作", "phrase": "submit a report｜繳交報告", "tip": "例句2是被動句：The form（表格）+ was submitted（被提交）。submit 的過去式要寫 submitted。", "examples": [{"en": "Please submit your report today.", "zh": "請在今天繳交你的報告。"}, {"en": "The form was submitted online.", "zh": "表格已在線上提交。"}]}, {"id": "receive", "word": "receive", "pos": "v. 動詞", "meaning": "收到；接到", "category": "日常動作", "phrase": "receive an email｜收到電子郵件", "tip": "例句1的 will receive 表示「將收到」。例句2用了 Did，後面的 receive 要維持原形。", "examples": [{"en": "You will receive a reply today.", "zh": "你今天會收到回覆。"}, {"en": "Did you receive my email?", "zh": "你有收到我的電子郵件嗎？"}]}, {"id": "request", "word": "request", "pos": "n. 名詞 / v. 動詞", "meaning": "請求；提出要求", "category": "日常動作", "phrase": "request a refund｜要求退款", "tip": "例句1的 request 是名詞「請求」；例句2在 can 後面當動詞，表示提出要求。", "examples": [{"en": "Your request is being reviewed.", "zh": "你的請求正在審核中。"}, {"en": "You can request a refund online.", "zh": "你可以在線上要求退款。"}]}, {"id": "approve", "word": "approve", "pos": "v. 動詞", "meaning": "核准；批准", "category": "日常動作", "phrase": "approve a request｜核准請求", "tip": "例句1是主管執行動作；例句2改以 request 為主詞，has been approved 表示「已被核准」。", "examples": [{"en": "The manager will approve the request.", "zh": "經理將會核准這項請求。"}, {"en": "Your request has been approved.", "zh": "你的請求已獲核准。"}]}]}</script>
+<script id="word-data" type="application/json">[
+{"id":"meeting","word":"meeting","pos":"n. 名詞","meaning":"會議","examples":[{"en":"The meeting starts at nine.","zh":"會議九點開始。"},{"en":"The meeting was moved to Friday.","zh":"會議被改到星期五。"}]},
+{"id":"schedule","word":"schedule","pos":"n. 名詞 / v. 動詞","meaning":"行程表；安排時間","examples":[{"en":"Please check the schedule.","zh":"請查看行程表。"},{"en":"We need to schedule a meeting.","zh":"我們需要安排一場會議。"}]},
+{"id":"confirm","word":"confirm","pos":"v. 動詞","meaning":"確認","examples":[{"en":"Can you confirm the time?","zh":"你可以確認時間嗎？"},{"en":"Your booking has been confirmed.","zh":"你的預訂已獲確認。"}]},
+{"id":"employee","word":"employee","pos":"n. 名詞","meaning":"員工","examples":[{"en":"The new employee starts on Monday.","zh":"新員工星期一到職。"},{"en":"Every employee will receive an email.","zh":"每位員工都會收到一封電子郵件。"}]},
+{"id":"department","word":"department","pos":"n. 名詞","meaning":"部門","examples":[{"en":"She works in the sales department.","zh":"她在業務部工作。"},{"en":"Which department should I contact?","zh":"我應該聯絡哪個部門？"}]},
+{"id":"manager","word":"manager","pos":"n. 名詞","meaning":"經理；管理者","examples":[{"en":"The manager is in her office.","zh":"經理在她的辦公室裡。"},{"en":"I would like to speak to the manager.","zh":"我想和經理談一談。"}]},
+{"id":"invoice","word":"invoice","pos":"n. 名詞","meaning":"發票；請款單","examples":[{"en":"Please send me the invoice.","zh":"請把請款單寄給我。"},{"en":"The invoice was sent yesterday.","zh":"請款單昨天已寄出。"}]},
+{"id":"payment","word":"payment","pos":"n. 名詞","meaning":"付款；款項","examples":[{"en":"We received your payment today.","zh":"我們今天收到你的款項。"},{"en":"Payment is due by Friday.","zh":"最遲必須在星期五付款。"}]},
+{"id":"contract","word":"contract","pos":"n. 名詞","meaning":"合約","examples":[{"en":"Please read the contract before signing.","zh":"簽署前請先閱讀合約。"},{"en":"The contract will end next month.","zh":"合約將於下個月到期。"}]},
+{"id":"reservation","word":"reservation","pos":"n. 名詞","meaning":"預約；預訂","examples":[{"en":"I have a reservation for two.","zh":"我有一個兩人的訂位。"},{"en":"Can I cancel my reservation?","zh":"我可以取消預訂嗎？"}]},
+{"id":"check-in","word":"check-in","pos":"n. 名詞","meaning":"報到；辦理入住","examples":[{"en":"Hotel check-in begins at three.","zh":"飯店下午三點開始辦理入住。"},{"en":"Please go to the check-in desk.","zh":"請前往報到櫃檯。"}]},
+{"id":"itinerary","word":"itinerary","pos":"n. 名詞","meaning":"行程表；旅遊行程","examples":[{"en":"Please email me the itinerary.","zh":"請用電子郵件把行程表寄給我。"},{"en":"Our travel itinerary has changed.","zh":"我們的旅行行程已經改變。"}]},
+{"id":"submit","word":"submit","pos":"v. 動詞","meaning":"提交；繳交","examples":[{"en":"Please submit your report today.","zh":"請在今天繳交你的報告。"},{"en":"The form was submitted online.","zh":"表格已在線上提交。"}]},
+{"id":"receive","word":"receive","pos":"v. 動詞","meaning":"收到；接到","examples":[{"en":"You will receive a reply today.","zh":"你今天會收到回覆。"},{"en":"Did you receive my email?","zh":"你有收到我的電子郵件嗎？"}]},
+{"id":"request","word":"request","pos":"n. 名詞 / v. 動詞","meaning":"請求；提出要求","examples":[{"en":"Your request is being reviewed.","zh":"你的請求正在審核中。"},{"en":"You can request a refund online.","zh":"你可以在線上要求退款。"}]},
+{"id":"approve","word":"approve","pos":"v. 動詞","meaning":"核准；批准","examples":[{"en":"The manager will approve the request.","zh":"經理將會核准這項請求。"},{"en":"Your request has been approved.","zh":"你的請求已獲核准。"}]}
+]</script>
 <script>
-(function(){
-const esc = escapeHTML;
-/** Small pure helpers shared by the reader and its tests. */
-function filterWords(words, {query = '', category = 'all', status = 'all'} = {}, known = {}) {
-  const q = query.trim().toLocaleLowerCase();
-  return words.filter(w => (category === 'all' || w.category === category)
-    && (status === 'all' || (status === 'known' ? known[w.id] === true : known[w.id] !== true))
-    && (!q || `${w.word} ${w.meaning}`.toLocaleLowerCase().includes(q)));
-}
-function readProgress(raw) {
+(() => {
+  'use strict';
+  const $ = selector => document.querySelector(selector);
+  const words = JSON.parse($('#word-data').textContent);
+  const key = 'wordstep.preferences.v1';
+  let prefs = {};
   try {
-    const value = JSON.parse(raw || '{}');
-    if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
-    return Object.fromEntries(Object.entries(value).filter(([,v]) => v === true));
-  } catch { return {}; }
-}
-function chooseVoice(voices, lang = 'en-US') {
-  return voices.find(v => v.lang.replace('_','-').toLowerCase() === lang.toLowerCase())
-    || voices.find(v => /^en[-_]?/i.test(v.lang)) || null;
-}
-function escapeHTML(value) {
-  return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
+    const saved = JSON.parse(localStorage.getItem(key) || '{}');
+    if (saved && typeof saved === 'object' && !Array.isArray(saved)) prefs = saved;
+  } catch { /* A blocked or damaged store must not prevent learning. */ }
+  let index = Math.max(0, words.findIndex(word => word.id === prefs.selected));
+  let hidden = prefs.hidden === true;
+  let activeId = null;
+  $('#slow').checked = typeof prefs.slow === 'boolean' ? prefs.slow : Number(prefs.rate || .75) < 1;
+  const synth = window.speechSynthesis || null;
+  const icon = '<svg class="speaker-icon" viewBox="0 0 24 24"><path d="M11 4 5 9H2v6h3l6 5V4Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg><svg class="stop-icon" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1" fill="currentColor" stroke="none"/></svg>';
+  document.querySelectorAll('.sound').forEach(element => { element.innerHTML = icon; });
 
+  function save() {
+    Object.assign(prefs, { selected: words[index].id, hidden, slow: $('#slow').checked });
+    try { localStorage.setItem(key, JSON.stringify(prefs)); }
+    catch { $('#save-message').hidden = false; }
+  }
+  function settings() {
+    const voices = synth ? synth.getVoices() : [];
+    const voice = voices.find(v => /^en[-_]us$/i.test(v.lang))
+      || voices.find(v => /^en[-_]/i.test(v.lang)) || null;
+    return { voice, rate: $('#slow').checked ? .75 : 1 };
+  }
+  function playback(state, id) {
+    activeId = ['waiting', 'playing'].includes(state) ? id : null;
+    document.querySelectorAll('[data-play]').forEach(button => {
+      const active = button.dataset.play === activeId;
+      button.classList.toggle('playing', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    const message = $('#audio-message');
+    message.hidden = !['unsupported', 'error'].includes(state);
+    message.textContent = state === 'unsupported'
+      ? '這個瀏覽器不支援朗讀，請改用 Chrome 或 Safari 開啟。'
+      : '未能播放，請確認媒體音量與裝置的英文語音，再點一次。';
+  }
+  const player = createPlayer(synth, window.SpeechSynthesisUtterance, settings, playback);
+
+  function showChinese() {
+    $('#lesson').classList.toggle('hide-chinese', hidden);
+    $('#hide-chinese').textContent = hidden ? '顯示中文' : '遮住中文';
+    $('#hide-chinese').setAttribute('aria-pressed', String(hidden));
+    document.querySelectorAll('.zh').forEach(element => element.setAttribute('aria-hidden', String(hidden)));
+  }
+  function render() {
+    player.stop();
+    const word = words[index];
+    $('#word').textContent = word.word;
+    $('#pos').textContent = word.pos;
+    $('#meaning').textContent = word.meaning;
+    $('[data-play="word"]').setAttribute('aria-label', `朗讀單字 ${word.word}，再點一次停止`);
+    document.querySelectorAll('.example').forEach((element, i) => {
+      element.querySelector('.en').textContent = word.examples[i].en;
+      element.querySelector('.zh').textContent = word.examples[i].zh;
+      element.querySelector('button').setAttribute('aria-label', `朗讀例句 ${i + 1}，再點一次停止`);
+    });
+    $('#position').textContent = `${index + 1} / ${words.length}`;
+    $('#previous').disabled = index === 0;
+    $('#next').textContent = index === words.length - 1 ? '從頭複習' : '下一個';
+    showChinese();
+    save();
+  }
+  function move(delta) {
+    index = delta > 0 ? (index + 1) % words.length : Math.max(0, index - 1);
+    render();
+  }
+  $('#previous').addEventListener('click', () => move(-1));
+  $('#next').addEventListener('click', () => move(1));
+  $('#slow').addEventListener('change', () => { player.stop(); save(); });
+  $('#hide-chinese').addEventListener('click', () => { hidden = !hidden; showChinese(); save(); });
+  $('#lesson').addEventListener('click', event => {
+    const button = event.target.closest('[data-play]');
+    if (!button) return;
+    const id = button.dataset.play;
+    if (id === activeId) { player.stop(); return; }
+    const word = words[index];
+    const text = id === 'word' ? word.word : word.examples[Number(id.slice(-1))].en;
+    player.play([{ id, text }]);
+  });
+  window.addEventListener('keydown', event => {
+    if (event.key === 'Escape') player.stop();
+    if (event.altKey || event.ctrlKey || event.metaKey || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName)) return;
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      move(event.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+  window.addEventListener('pagehide', player.stop);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) player.stop(); });
+  render();
+
+  // Retain the existing speech player: cancel old playback and ignore late callbacks.
 /** Owns the device speech queue. Tokens prevent canceled callbacks changing new playback. */
 function createPlayer(synth, Utterance, settings, notify) {
   let token = 0, timer = null, retained = [];
@@ -112,163 +257,7 @@ function createPlayer(synth, Utterance, settings, notify) {
   }
   return {play, stop, destroy: stop};
 }
-
-
-
-const $ = selector => document.querySelector(selector);
-const storageKey = 'wordstep.progress.v1', prefsKey = 'wordstep.preferences.v1';
-let storageAvailable = true;
-function load(key) { try { return localStorage.getItem(key); } catch { storageAvailable = false; return null; } }
-function save(key, value) {
-  try { localStorage.setItem(key, JSON.stringify(value)); }
-  catch { storageAvailable = false; showStorageWarning(); }
-}
-function showStorageWarning() {
-  if (storageAvailable) return;
-  const p = $('.learning-progress p');
-  p.textContent = '瀏覽器禁止儲存，目前進度只保留到本頁關閉。'; p.classList.add('save-warning');
-  $('.audio-help').textContent = '瀏覽器禁止儲存，進度只保留到本頁關閉。朗讀使用裝置合成語音；若無聲，請改用 Safari 或 Chrome 並確認媒體音量。';
-}
-let prefs = {};
-try { const p = JSON.parse(load(prefsKey) || '{}'); if (p && typeof p === 'object' && !Array.isArray(p)) prefs = p; } catch {}
-let known = readProgress(load(storageKey));
-let words = [], matches = [], selected = typeof prefs.selected === 'string' ? prefs.selected : 'meeting';
-let hidden = prefs.hidden === true, status = 'all', voices = [];
-const allowedRates = ['0.7','0.9','1','1.15'];
-$('#rate').value = allowedRates.includes(String(prefs.rate)) ? String(prefs.rate) : '0.9';
-const speakerIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4 5 9H2v6h3l6 5V4Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg>';
-const playIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg>';
-const synth = window.speechSynthesis || null;
-function currentVoice() { return voices.find(v => v.voiceURI === $('#voice').value) || chooseVoice(voices, 'en-US'); }
-function updatePlayback(state, id) {
-  document.querySelectorAll('.playing').forEach(el => el.classList.remove('playing'));
-  const bar = $('.playback-bar');
-  bar.classList.toggle('active', state === 'playing');
-  bar.classList.toggle('error', state === 'error' || state === 'unsupported');
-  $('#stop').hidden = !['waiting','playing'].includes(state);
-  const text = {
-    idle: '點擊單字或例句，即可聽發音。', waiting: '正在啟動裝置語音…',
-    playing: id === 'word' ? '正在朗讀單字…' : '正在朗讀例句…', done: '播放完畢。再點一次，可以重聽。',
-    unsupported: '這個瀏覽器不支援語音朗讀，請以 Safari 或 Chrome 開啟。',
-    error: '裝置未能完成朗讀。請改用 Safari 或 Chrome，並檢查英文語音及媒體音量。'
-  };
-  $('#play-status').textContent = text[state] || text.idle;
-  if (state === 'playing') document.querySelector(`[data-play="${id}"]`)?.classList.add('playing');
-}
-const player = createPlayer(synth, window.SpeechSynthesisUtterance, () => ({rate: Number($('#rate').value), voice: currentVoice()}), updatePlayback);
-function savePrefs() { save(prefsKey, {selected, hidden, rate: $('#rate').value, voice: $('#voice').value}); }
-function loadVoices() {
-  if (!synth) return;
-  voices = synth.getVoices().filter(v => /^en[-_]/i.test(v.lang));
-  const previous = $('#voice').value || prefs.voice || '';
-  $('#voice').replaceChildren(new Option('系統英文（自動）', ''), ...voices.map(v => new Option(`${v.name} · ${v.lang}`, v.voiceURI)));
-  if (voices.some(v => v.voiceURI === previous)) $('#voice').value = previous;
-  else $('#voice').value = '';
-}
-loadVoices();
-if (synth) synth.addEventListener('voiceschanged', loadVoices);
-function highlighted(text, word) {
-  const pattern = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return esc(text).replace(new RegExp(`\\b(${pattern}[a-z-]*)`, 'gi'), '<mark>$1</mark>');
-}
-function translationClass() { return hidden ? 'translation is-hidden' : 'translation'; }
-function translationAttrs() { return hidden ? ' aria-hidden="true"' : ''; }
-function renderCard(word) {
-  const [phrase, chinese] = word.phrase.split('｜');
-  $('#card').innerHTML = `<div class="word-header"><button class="word-pronounce" type="button" data-play="word" aria-label="播放單字 ${esc(word.word)}"><span class="word" lang="en">${esc(word.word)}</span><span class="sound">${speakerIcon}</span></button></div>
-    <div class="pos">${esc(word.pos)}</div><h2 class="meaning ${translationClass()}"${translationAttrs()}>${esc(word.meaning)}</h2>
-    <p class="phrase"><span lang="en">${esc(phrase)}</span><span class="${translationClass()}"${translationAttrs()}> · ${esc(chinese || '')}</span></p>
-    <div class="card-actions"><button type="button" class="play-all" data-play="all">${playIcon}單字＋兩句一起聽</button><button type="button" id="hide-translation" class="hide-button" aria-pressed="${hidden}">${hidden ? '顯示中文' : '遮住中文'}</button></div>
-    ${word.examples.map((e,i)=>`<section class="example"><div class="example-label">例句 0${i+1} · ${i===0 ? '基本用法' : '換個說法'}</div><button type="button" class="sentence" data-play="example${i}" aria-label="播放例句 ${i+1}"><span class="en" lang="en">${highlighted(e.en,word.word)}</span><span class="sound">${speakerIcon}</span></button><p class="${translationClass()}"${translationAttrs()}>${esc(e.zh)}</p></section>`).join('')}
-    <aside class="tip"><span class="tip-label">看懂句子的變化</span><p class="${translationClass()}"${translationAttrs()}>${esc(word.tip)}</p></aside>`;
-}
-function render() {
-  player.stop();
-  matches = filterWords(words,{query:$('#search').value,category:$('#category').value,status},known);
-  if (!matches.some(w => w.id === selected)) selected = matches[0]?.id || '';
-  const index = matches.findIndex(w => w.id === selected), current = matches[index];
-  $('#result-count').textContent = `${matches.length} 字`;
-  $('#position').textContent = `${String(index+1).padStart(2,'0')} / ${String(matches.length).padStart(2,'0')}`;
-  $('#word-list').innerHTML = matches.map((w,i)=>`<button class="word-link" data-id="${esc(w.id)}" aria-current="${w.id===selected}"><span class="num">${String(i+1).padStart(2,'0')}</span><span class="list-word" lang="en">${esc(w.word)}<small lang="zh-Hant">${esc(w.meaning)}</small></span>${known[w.id] ? '<span class="check" aria-label="已熟悉">✓</span>' : ''}</button>`).join('');
-  $('#word-jump').replaceChildren(...matches.map((w,i)=>new Option(`${String(i+1).padStart(2,'0')}  ${w.word} — ${w.meaning}${known[w.id]?' · 已熟悉':''}`,w.id)));
-  $('#word-jump').value = selected; $('#word-jump').disabled = !current;
-  $('#previous').disabled = index <= 0; $('#next').disabled = index < 0 || index >= matches.length-1;
-  $('#known-toggle').disabled = !current;
-  $('#known-toggle').setAttribute('aria-pressed', String(!!known[selected]));
-  $('#known-toggle').textContent = known[selected] ? '已熟悉 · 撤銷標記' : '標記為已熟悉';
-  $('#category-label').textContent = current?.category || '沒有符合的單字';
-  if (current) renderCard(current);
-  else $('#card').innerHTML = '<div class="empty"><h2>這裡還沒有單字</h2><p>試試其他搜尋條件，或先把單字標記為已熟悉。</p><button id="reset-filters" class="secondary" type="button">顯示全部單字</button></div>';
-  const count = words.filter(w => known[w.id]).length;
-  $('#known-count').textContent = `${count} / ${words.length}`;
-  $('#progress').max = words.length; $('#progress').value = count;
-  savePrefs();
-}
-function selectWord(id) { selected = id; render(); }
-function move(delta) {
-  const index = matches.findIndex(w => w.id === selected), next = matches[index + delta];
-  if (next) selectWord(next.id);
-}
-$('#search').addEventListener('input', render);
-$('#category').addEventListener('change', render);
-$('.filters').addEventListener('click', e => {
-  const button = e.target.closest('[data-filter]'); if (!button) return;
-  status = button.dataset.filter;
-  document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
-  render();
-});
-$('#word-list').addEventListener('click', e => { const button = e.target.closest('[data-id]'); if (button) selectWord(button.dataset.id); });
-$('#word-jump').addEventListener('change', e => selectWord(e.target.value));
-$('#previous').addEventListener('click', () => move(-1));
-$('#next').addEventListener('click', () => move(1));
-$('#known-toggle').addEventListener('click', () => {
-  if (!selected) return;
-  if (known[selected]) delete known[selected]; else known[selected] = true;
-  save(storageKey, known); render();
-});
-$('#card').addEventListener('click', e => {
-  if (e.target.closest('#hide-translation')) { hidden = !hidden; savePrefs(); renderCard(matches.find(w=>w.id===selected)); return; }
-  if (e.target.closest('#reset-filters')) {
-    $('#search').value = ''; $('#category').value = 'all'; status = 'all';
-    document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.filter==='all'))); render(); return;
-  }
-  const button = e.target.closest('[data-play]'); if (!button) return;
-  const word = matches.find(w => w.id === selected); if (!word) return;
-  const items = [{text:word.word,id:'word'}, ...word.examples.map((ex,i)=>({text:ex.en,id:`example${i}`}))];
-  player.play(button.dataset.play === 'all' ? items : items.filter(item => item.id === button.dataset.play));
-});
-$('#stop').addEventListener('click', player.stop);
-for (const id of ['rate','voice']) $(`#${id}`).addEventListener('change', ()=>{player.stop();savePrefs();});
-const dialog = $('#source-dialog');
-for (const id of ['source-open','source-bottom']) $(`#${id}`).addEventListener('click', ()=>{player.stop();dialog.showModal();});
-$('#source-close').addEventListener('click',()=>dialog.close());
-dialog.addEventListener('click', e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
-window.addEventListener('keydown', e=>{
-  if (e.key === 'Escape') player.stop();
-  if (dialog.open || e.altKey || e.metaKey || e.ctrlKey || /INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return;
-  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {e.preventDefault();move(e.key==='ArrowLeft'?-1:1);}
-});
-window.addEventListener('pagehide', player.destroy);
-document.addEventListener('visibilitychange',()=>{if(document.hidden)player.stop();});
-async function init() {
-  try {
-    const data = JSON.parse(document.getElementById('word-data').textContent);
-    if (!Array.isArray(data.words) || !data.words.length || data.words.some(w=>!w.id||!w.word||!w.meaning||!w.category||!Array.isArray(w.examples)||w.examples.length!==2)) throw new Error('Invalid vocabulary data');
-    words = data.words;
-    $('#category').append(...[...new Set(words.map(w=>w.category))].map(c=>new Option(c,c)));
-    $('#verified-count').textContent = words.length;
-    $('#example-count').textContent = words.reduce((sum,w)=>sum+w.examples.length,0);
-    render(); showStorageWarning();
-  } catch (error) {
-    $('#card').innerHTML = '<div class="empty"><h2>單字暫時載入失敗</h2><p>請確認網路連線後重新整理。</p><button class="secondary" id="retry-load">重新載入</button></div>';
-    $('#retry-load').addEventListener('click', ()=>location.reload());
-    $('#previous').disabled = $('#next').disabled = $('#known-toggle').disabled = true;
-    $('#result-count').textContent = '載入失敗';
-    console.error('Vocabulary load failed:',error);
-  }
-}
-init();
-
 })();
 </script>
-</body></html>
+</body>
+</html>
