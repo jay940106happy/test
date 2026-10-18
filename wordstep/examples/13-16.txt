@@ -1,0 +1,199 @@
+New technology can help us save time.|新科技可以幫助我們節省時間。
+My computer is on the desk.|我的電腦在桌上。
+The software is easy to use.|這套軟體很容易使用。
+The hardware will need an upgrade.|硬體將需要升級。
+The system is working well.|系統運作正常。
+Our network is not available today.|我們的網路今天無法使用。
+The server will restart tonight.|伺服器今晚會重新啟動。
+The database contains customer records.|資料庫包含客戶紀錄。
+The website is available in English.|這個網站有英文版本。
+This webpage is loading slowly.|這個網頁載入得很慢。
+The internet connection is free.|網路連線是免費的。
+You can order the tickets online.|你可以在線上訂票。
+A digital copy is available.|有電子版本可以取得。
+The electronic ticket is on my phone.|電子票在我的手機上。
+This program can open the file.|這個程式可以開啟檔案。
+The platform is easy to access.|這個平台很容易使用。
+You should update your browser.|你應該更新瀏覽器。
+Your password must be kept secret.|你的密碼必須保密。
+Your username is shown at the top.|你的使用者名稱顯示在上方。
+The login page is ready.|登入頁面已經準備好了。
+Each user will receive a password.|每位使用者都會收到一組密碼。
+The data is stored on this computer.|資料儲存在這台電腦上。
+More information is on our website.|更多資訊在我們的網站上。
+You should update the software today.|你應該在今天更新軟體。
+You can download the form here.|你可以在這裡下載表格。
+You can upload a photo later.|你可以稍後上傳照片。
+A backup is saved every night.|每晚都會儲存一份備份。
+You can connect the printer to this computer.|你可以把印表機連接到這台電腦。
+The connection is working again.|連線恢復正常了。
+The hotel offers wireless internet.|飯店提供無線網路。
+The screen is too bright.|螢幕太亮了。
+The monitor is connected to my laptop.|螢幕已連接到我的筆記型電腦。
+The keyboard is on the desk.|鍵盤在桌上。
+The battery is fully charged.|電池已經充飽電。
+My charger is in my bag.|我的充電器在包包裡。
+The cable is long enough.|這條線夠長。
+The plug is loose.|插頭鬆了。
+The power will be off this afternoon.|今天下午會停電。
+Our team can troubleshoot the problem.|我們的團隊可以排除這個問題。
+An error is shown on the screen.|螢幕上顯示一個錯誤。
+The equipment failure will cause a delay.|設備故障將造成延誤。
+This function can save you time.|這個功能可以節省你的時間。
+The device is compatible with your computer.|這個裝置與你的電腦相容。
+The new version is available now.|新版本現在可以使用了。
+You can configure the printer yourself.|你可以自行設定印表機。
+This setting will change the volume.|這個設定會改變音量。
+You can scan the document here.|你可以在這裡掃描文件。
+This portable speaker is light.|這個可攜式喇叭很輕。
+Your privacy is important to us.|我們很重視你的隱私。
+The report is confidential.|這份報告是機密文件。
+We will travel to Japan next week.|我們下星期會去日本旅行。
+The trip will last three days.|這趟旅行會持續三天。
+The journey will take two hours.|這段旅程將需要兩小時。
+Every traveler should carry a passport.|每位旅客都應該攜帶護照。
+The itinerary is in your email.|行程表在你的電子郵件裡。
+The departure time is nine o'clock.|出發時間是九點。
+The train will depart in ten minutes.|火車將在十分鐘後出發。
+Your booking is confirmed.|你的預訂已確認。
+You can book a room online.|你可以在線上訂房。
+The airfare is included in the price.|價格已包含機票費用。
+Your passport must be valid.|你的護照必須在有效期限內。
+You may need a visa for this trip.|這趟旅行你可能需要簽證。
+Your luggage is in the lobby.|你的行李在大廳。
+The baggage is ready for collection.|行李已經可以領取了。
+My suitcase is too heavy.|我的行李箱太重了。
+His briefcase is under the seat.|他的公事包在座位下方。
+The consulate is open this morning.|領事館今天上午有開放。
+Consular services are available by appointment.|領事服務可以預約辦理。
+The travel agency is near the station.|旅行社在車站附近。
+Our agent can help you book the flight.|我們的服務人員可以幫你訂機票。
+The accommodation is included in the fee.|費用已包含住宿。
+A sightseeing tour is planned for Sunday.|觀光行程安排在星期日。
+The embassy is closed today.|大使館今天沒有開放。
+The immigration officer will check your passport.|移民官會檢查你的護照。
+International flights leave from this terminal.|國際航班從這個航廈出發。
+She will work abroad next year.|她明年會到國外工作。
+Your appointment is at ten.|你的預約時間是十點。
+The convention will begin tomorrow.|大型會議將於明天開始。
+The seminar is open to all employees.|所有員工都可以參加這場研討會。
+The workshop will last two hours.|工作坊將持續兩小時。
+Registration is free for students.|學生可以免費報名。
+You can register on our website.|你可以在我們的網站上報名。
+The venue is close to the hotel.|活動場地離飯店很近。
+Our company will host the event.|我們公司將主辦這場活動。
+Each delegate will receive a name tag.|每位代表都會收到一張名牌。
+The invitation is attached to this email.|邀請函附在這封電子郵件中。
+The reception will begin at six.|招待會將於六點開始。
+The staff are known for their hospitality.|工作人員以熱情好客聞名。
+A colleague will accompany you on the trip.|一位同事會陪你一起出差。
+The guide can speak English.|導遊會說英文。
+The tour will start at the front gate.|導覽將從大門開始。
+You can extend your stay by one night.|你可以延長住宿一晚。
+An extension is possible.|可以辦理延期。
+Our team will coordinate the visit.|我們的團隊將協調這次拜訪。
+You should prepare the documents today.|你應該在今天準備文件。
+You can unpack your bag in the room.|你可以在房間裡打開行李整理物品。
+This ticket is valid for one day.|這張票的有效期限為一天。
+Your visa will expire next month.|你的簽證將於下個月到期。
+The renewal will take two weeks.|續辦將需要兩星期。
+The airport is far from the city.|機場離市區很遠。
+The airline will contact you soon.|航空公司很快就會聯絡你。
+The aircraft is ready for departure.|飛機已準備好出發。
+Your flight is on time.|你的航班準時起飛。
+Each passenger can bring one bag.|每位乘客可以帶一件行李。
+The terminal is very busy today.|航廈今天很忙碌。
+The gate number is on your ticket.|登機門號碼在你的票上。
+Boarding will begin in twenty minutes.|二十分鐘後將開始登機。
+Your boarding pass is on your phone.|你的登機證在手機上。
+The runway is closed for repairs.|跑道因維修而關閉。
+The pilot will make an announcement.|機師將進行廣播。
+The crew are ready to help.|機組人員已準備好提供協助。
+The aisle must remain clear.|走道必須保持暢通。
+Your seat is by the window.|你的座位靠窗。
+The transit system is easy to use.|大眾運輸系統很容易使用。
+The layover will last two hours.|轉機停留時間將為兩小時。
+The railway connects the two cities.|鐵路連接這兩座城市。
+The train is arriving now.|火車現在進站了。
+The station is across the street.|車站在街道對面。
+The train will arrive on track three.|火車將停靠第三股道。
+The subway is the fastest way to get there.|搭地鐵是到那裡最快的方式。
+The bus will arrive in five minutes.|公車將在五分鐘後到達。
+A taxi is waiting outside.|一輛計程車正在外面等候。
+The shuttle is free for hotel guests.|飯店住客可以免費搭乘接駁車。
+The vehicle is ready for use.|車輛已準備好可以使用。
+The automobile industry is growing.|汽車產業正在成長。
+The driver will meet you at the entrance.|司機會在入口與你碰面。
+Traffic is heavy this morning.|今天早上交通繁忙。
+The congestion is causing delays.|交通壅塞正在造成延誤。
+My commute is about thirty minutes.|我的通勤時間大約是三十分鐘。
+Each commuter can use this monthly pass.|每位通勤者都可以使用這張月票。
+The highway is closed tonight.|高速公路今晚封閉。
+The intersection is just ahead.|交叉路口就在前方。
+This lane is for buses only.|這條車道僅供公車使用。
+The bridge is open again.|橋梁重新開放了。
+The tunnel will close at midnight.|隧道將在午夜關閉。
+The road is wet.|路面是濕的。
+The detour will add ten minutes to the trip.|繞道將使行程增加十分鐘。
+The sign shows the direction to the station.|標誌顯示前往車站的方向。
+The map is on the wall.|地圖在牆上。
+Your ticket is valid today.|你的票今天有效。
+A one-way ticket is cheaper.|單程票比較便宜。
+The round-trip fare is fifty dollars.|來回票價是五十元。
+The toll is five dollars.|通行費是五元。
+The vehicle needs more fuel.|車輛需要更多燃料。
+The price of gasoline is rising.|汽油價格正在上漲。
+Your mileage is recorded automatically.|你的行駛里程會自動記錄。
+This app can help you navigate the city.|這個應用程式可以幫你在市區導航。
+We will reroute the bus today.|我們今天會更改公車路線。
+A pedestrian is crossing the road.|一位行人正在過馬路。
+The hotel is near the beach.|飯店在海灘附近。
+The motel has free parking.|這間汽車旅館提供免費停車。
+The resort is open all year.|這間度假村全年營業。
+Every guest can use the pool.|每位住客都可以使用游泳池。
+Your room is ready.|你的房間已經準備好了。
+The suite has a small kitchen.|套房有一個小廚房。
+The concierge can arrange a taxi.|禮賓人員可以幫忙叫計程車。
+The receptionist is answering the phone.|櫃檯接待員正在接電話。
+The front desk is open all night.|櫃檯整晚都有提供服務。
+Lodging is included in the travel budget.|住宿已納入旅行預算。
+Check-in is available after three.|三點過後可以辦理入住。
+Check-out is at eleven.|退房時間是十一點。
+You can leave your car here overnight.|你可以把車停在這裡過夜。
+Your stay will include breakfast.|你的住宿將包含早餐。
+The nightly rate is eighty dollars.|每晚房價是八十元。
+A single room is available.|有一間單人房可以預訂。
+The double room has one large bed.|雙人房有一張大床。
+The adjoining rooms are ready.|相鄰的房間已經準備好了。
+Complimentary tea is available in the lobby.|大廳提供免費的茶。
+The pool is a popular amenity.|游泳池是很受歡迎的設施。
+Housekeeping will clean your room later.|房務人員稍後會打掃你的房間。
+The housekeeper is on the third floor.|房務人員在三樓。
+The linen is changed every day.|床單等布品每天都會更換。
+An extra towel is in the closet.|衣櫃裡有一條備用毛巾。
+Laundry service is available today.|今天有提供洗衣服務。
+The minibar is inside the cabinet.|迷你吧在櫃子裡。
+Your room has a balcony.|你的房間有陽台。
+The view from this room is beautiful.|這個房間的景色很美。
+The pool closes at nine.|游泳池九點關閉。
+The fitness center is on the second floor.|健身中心在二樓。
+The gym is open early in the morning.|健身房清晨就開放了。
+The spa is open until ten.|水療中心營業到十點。
+The banquet will begin at seven.|宴會將於七點開始。
+The ballroom can hold two hundred people.|宴會廳可容納兩百人。
+The hall is at the end of the corridor.|大廳在走廊盡頭。
+The bellhop can carry your bags.|行李員可以幫你搬行李。
+Your keycard will open the door.|你的房卡可以開門。
+Incidental charges will appear on your bill.|額外費用將顯示在你的帳單上。
+A no-show fee may apply.|未出席可能需要支付費用。
+Your room preference is noted.|你的房型偏好已記錄下來。
+Smoking is allowed only outside.|只有室外允許吸菸。
+This is a non-smoking room.|這是一間禁菸房。
+The suite is unavailable tonight.|今晚沒有套房可供預訂。
+Each occupant will receive a keycard.|每位入住者都會收到一張房卡。
+The guestroom is on the fifth floor.|客房在五樓。
+You must vacate the room by noon.|你必須在中午以前騰空房間。
+You can renew your membership online.|你可以在線上續訂會員資格。
+The job requires managerial experience.|這份工作需要管理經驗。
+We will furnish the room next week.|我們下星期會為房間添置家具。
+The apartment is fully furnished.|這間公寓附有完整家具。
