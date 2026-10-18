@@ -1,0 +1,200 @@
+Your order will arrive tomorrow.|你的訂單明天會送達。
+Our supplier can provide the materials.|我們的供應商可以提供材料。
+The procurement team is comparing prices.|採購團隊正在比較價格。
+The inventory is checked every week.|庫存每星期都會清點。
+The stockroom is behind the shop.|庫房在商店後方。
+The quantity is listed on the order form.|數量列在訂購單上。
+The unit price is ten dollars.|單價是十美元。
+A bulk order can reduce the price.|大量訂購可以降低價格。
+The wholesale price is lower.|批發價格比較低。
+The retail price is on the label.|零售價格標示在標籤上。
+You can check availability online.|你可以在線上查詢供應情況。
+This specification is important for the design.|這項規格對設計很重要。
+The requisition is ready for approval.|請購單可以送審了。
+The quotation is valid for thirty days.|這份報價有效期為三十天。
+You can submit a bid online.|你可以在線上提交投標書。
+The tender will close on Friday.|這個標案將於星期五截止。
+The payment terms are in the contract.|付款條件寫在合約裡。
+The equipment is in good condition.|設備狀況良好。
+This provision is part of the agreement.|這項條款是協議的一部分。
+The manager can authorize the purchase.|經理可以核准這筆採購。
+Written authorization is required.|必須取得書面授權。
+Your order confirmation will arrive by email.|你的訂單確認通知將以電子郵件寄達。
+We can process your order today.|我們今天可以處理你的訂單。
+You can place an order by phone.|你可以打電話下訂單。
+We can reserve one for you.|我們可以為你預留一個。
+Your reservation is confirmed.|你的預訂已確認。
+A cancellation fee may apply.|可能需要支付取消手續費。
+You can modify the order before shipping.|你可以在出貨前修改訂單。
+This modification is included in the price.|這項修改已包含在價格中。
+A substitute product is available.|有替代商品可以供應。
+This is a cheaper alternative.|這是一個較便宜的替代方案。
+The shortage will cause a delay.|這次短缺會造成延誤。
+We can source the materials locally.|我們可以在當地採購材料。
+This material is strong and light.|這種材料堅固又輕巧。
+The equipment will arrive on Monday.|設備將於星期一送達。
+The machinery is ready for use.|機器設備可以使用了。
+This component is easy to replace.|這個零組件很容易更換。
+The replacement part is in stock.|替換零件有庫存。
+This model is available in three colors.|這款型號有三種顏色。
+The manufacturer will replace the damaged item.|製造商會更換損壞的商品。
+The distributor is based in Taipei.|經銷商位於台北。
+Your local dealer can order the part.|你當地的經銷商可以訂購這個零件。
+The contractor will visit the site tomorrow.|承包商明天將到現場查看。
+The subcontractor is installing the windows.|分包商正在安裝窗戶。
+You can obtain a copy at the front desk.|你可以在櫃檯取得一份副本。
+We will procure the materials next week.|我們下星期將採購材料。
+You can select a delivery date.|你可以選擇配送日期。
+We can compare the two offers.|我們可以比較這兩個報價。
+The team will inspect the goods today.|團隊今天會檢查貨物。
+We can fulfill the order by Friday.|我們可以在星期五前完成這筆訂單。
+The shipment is on its way.|這批貨物正在運送中。
+Shipping is free on this order.|這筆訂單免運費。
+The delivery is scheduled for tomorrow.|配送安排在明天。
+We can deliver the package today.|我們今天可以配送包裹。
+The carrier will collect the boxes at noon.|承運商將於中午收取箱子。
+The courier is waiting at the entrance.|快遞員正在入口等候。
+The freight charges are included.|貨運費用已包含在內。
+The cargo is ready to load.|貨物已準備好可以裝載。
+Your parcel is at the post office.|你的包裹在郵局。
+The container is full of furniture.|貨櫃裡裝滿了家具。
+The truck is at the loading dock.|卡車在裝卸區。
+The warehouse is near the airport.|倉庫在機場附近。
+More storage space is needed.|需要更多儲存空間。
+The logistics team will arrange delivery.|物流團隊將安排配送。
+The distribution center is open all night.|配送中心整晚營業。
+Our final destination is Taipei.|我們的最終目的地是台北。
+The country of origin is printed on the box.|原產國印在盒子上。
+The route will change next week.|路線將於下星期更改。
+Your tracking number is in the email.|你的物流追蹤號碼在電子郵件裡。
+We will dispatch your order tomorrow.|我們明天將寄出你的訂單。
+This truck can transport heavy goods.|這輛卡車可以運送重型貨物。
+Transportation costs are included in the budget.|運輸費用已包含在預算中。
+We can load the truck now.|我們現在可以把貨物裝上卡車。
+The driver will unload the boxes.|司機會卸下箱子。
+You can pack the items in this box.|你可以把物品裝進這個箱子。
+The packaging is made from recycled paper.|包裝是用再生紙製成的。
+We can wrap the gift for you.|我們可以為你包裝禮物。
+You should seal the box with tape.|你應該用膠帶封好箱子。
+We can weigh the parcel here.|我們可以在這裡替包裹秤重。
+The weight is written on the label.|重量寫在標籤上。
+Each dimension is listed in centimeters.|每個尺寸都以公分列出。
+These items are fragile.|這些物品容易破碎。
+The box was damaged during delivery.|這個箱子在配送途中損壞了。
+A small defect was found in the product.|產品中發現了一個小瑕疵。
+The defective part will be replaced.|有瑕疵的零件將被更換。
+There is a delay in delivery.|配送有所延誤。
+Your shipment is delayed.|你的貨物運送延誤了。
+The truck will arrive before noon.|卡車將在中午以前抵達。
+The arrival time is on the screen.|抵達時間顯示在螢幕上。
+You will receive the package tomorrow.|你明天會收到包裹。
+The recipient must sign for the parcel.|收件人必須簽收包裹。
+The sender's address is on the envelope.|寄件人的地址在信封上。
+The goods are being checked by customs.|貨物正在接受海關檢查。
+Customs clearance will take another day.|清關還需要一天。
+We can import the parts from Japan.|我們可以從日本進口零件。
+The company will export its products overseas.|公司將把產品出口到海外。
+Domestic shipping is free.|國內運送免運費。
+Our overseas office is in London.|我們的海外辦公室在倫敦。
+We will respond promptly to your request.|我們會迅速回覆你的請求。
+The items are packed securely.|物品已牢固地包裝好。
+This factory can manufacture car parts.|這間工廠可以製造汽車零件。
+The manufacturing process is shown in the video.|製造流程顯示在影片中。
+Production will begin next month.|生產將於下個月開始。
+The factory can produce five hundred units a day.|這間工廠每天可以生產五百件產品。
+The factory is closed on Sunday.|這間工廠星期日不開工。
+The new plant will open in July.|新廠房將於七月啟用。
+Assembly will take about an hour.|組裝大約需要一小時。
+You can assemble the desk with these tools.|你可以用這些工具組裝桌子。
+The production line is running smoothly.|生產線正在順利運作。
+Our output is higher this month.|我們這個月的產量較高。
+The plant is operating at full capacity.|這座工廠正在以最大產能運作。
+Better tools can increase productivity.|更好的工具可以提高生產力。
+The new system can improve efficiency.|新系統可以改善效率。
+Product quality is checked every day.|產品品質每天都會檢查。
+You can control the speed with this switch.|你可以用這個開關控制速度。
+The inspection is scheduled for Monday.|檢查安排在星期一。
+The inspector is checking the equipment.|檢查員正在檢查設備。
+We can test the device here.|我們可以在這裡測試裝置。
+Product testing will begin tomorrow.|產品測試明天將開始。
+Our workflow is simpler now.|我們的工作流程現在比較簡單。
+This technique can save time.|這項技術可以節省時間。
+The new method is easy to learn.|新方法很容易學會。
+The raw materials will arrive tomorrow.|原料將於明天送達。
+Water is an important resource.|水是一項重要資源。
+Labor costs are included in the estimate.|人工成本已包含在估價中。
+Our workforce is growing.|我們的員工總數正在增加。
+The machine is ready to use.|這台機器可以使用了。
+This tool is useful for small repairs.|這個工具適合用來進行小型修理。
+The device is connected to the computer.|裝置已連接到電腦。
+This instrument can measure temperature.|這個儀器可以測量溫度。
+Routine maintenance is scheduled for Friday.|例行保養安排在星期五。
+We can maintain the equipment ourselves.|我們可以自行保養設備。
+The technician can repair the printer.|技術人員可以修理印表機。
+The technician will arrive at ten.|技術人員將於十點抵達。
+The engineer is checking the design.|工程師正在檢查設計。
+Technical support is available by phone.|可以透過電話取得技術支援。
+A malfunction can stop the machine.|故障可能使機器停止運作。
+The breakdown caused a delay.|這次故障造成了延誤。
+A replacement is on its way.|替換品正在運送途中。
+We can upgrade the equipment next year.|我們明年可以升級設備。
+The team will install the machine tomorrow.|團隊明天將安裝機器。
+Installation is included in the price.|價格包含安裝費用。
+Safety is our first priority.|安全是我們的首要考量。
+The broken cable is a safety hazard.|損壞的電纜是一項安全隱患。
+The accident was reported this morning.|這起事故在今天早上通報了。
+Protective clothing is required in this area.|這個區域要求穿著防護衣物。
+All workers must comply with the safety rules.|所有員工都必須遵守安全規則。
+Compliance is checked during the inspection.|檢查時會確認是否合規。
+We can automate this part of the process.|我們可以將流程中的這個部分自動化。
+Automation can reduce repetitive work.|自動化可以減少重複性的工作。
+The property is available for rent.|這間房產可以出租。
+The real estate office is nearby.|房地產仲介辦公室就在附近。
+The building is across from the station.|大樓在車站對面。
+The new facility will open next month.|新設施將於下個月開放。
+The premises are closed for renovation.|營業場所因整修而暫停開放。
+Visitors must wear helmets on this site.|訪客在這個工地必須戴安全帽。
+The location is convenient for commuters.|這個地點對通勤者很方便。
+There is enough space for another desk.|有足夠的空間再放一張辦公桌。
+Our office is on the top floor.|我們的辦公室在頂樓。
+The lobby is open all day.|大廳全天開放。
+The main entrance is on the left.|主要入口在左側。
+The emergency exit is at the end of the hall.|緊急出口在走廊盡頭。
+The elevator is out of service.|電梯暫停使用。
+You can take the escalator to the second floor.|你可以搭手扶梯到二樓。
+The staircase is beside the elevator.|樓梯在電梯旁邊。
+Parking is available behind the building.|大樓後方可以停車。
+The garage is open until midnight.|停車場開放到午夜。
+The tenant is moving in next week.|房客下星期會搬進來。
+The landlord will arrange the repairs.|房東將安排修繕。
+The owner is available this afternoon.|業主今天下午有空。
+The lease will end next month.|租約將於下個月到期。
+The rental fee includes internet access.|租金包含網路使用費。
+The occupancy rate is higher this summer.|今年夏天的入住率比較高。
+Our team will occupy the third floor.|我們的團隊將使用三樓。
+This office is currently vacant.|這間辦公室目前空置。
+The road is under construction.|這條路正在施工。
+The company will construct a new warehouse.|公司將興建一座新倉庫。
+We will renovate the lobby in May.|我們將於五月翻修大廳。
+The renovation will take two weeks.|整修工程需要兩星期。
+They will remodel the kitchen.|他們將重新裝修廚房。
+The broker can show you the property.|仲介可以帶你看這間房子。
+The leaseholder is responsible for the rent.|承租人負責支付租金。
+The blueprint is on the architect's desk.|藍圖在建築師的桌上。
+A permit is required for the construction.|這項工程需要施工許可證。
+Utility costs are included in the rent.|水電等公用事業費用包含在租金中。
+The electricity will be turned off briefly.|電力將短暫關閉。
+The heating is not working.|暖氣沒有正常運作。
+The ventilation system is being cleaned.|通風系統正在清潔中。
+The plumbing needs repairs.|水管系統需要修理。
+The lighting is better in this room.|這個房間的照明比較好。
+The security team is at the entrance.|保全團隊在入口處。
+You can access the building with this card.|你可以用這張卡進入大樓。
+Your key is at the front desk.|你的鑰匙在櫃檯。
+You should lock the door when you leave.|離開時你應該鎖門。
+The inspector will assess the damage.|檢查員將評估損壞情況。
+The assessment will be ready tomorrow.|評估結果明天會準備好。
+We can restore the old building.|我們可以修復這棟老建築。
+Our office will relocate in June.|我們的辦公室將於六月搬遷。
+The relocation will take place next week.|搬遷將在下星期進行。
+The building is accessible by bus.|搭公車可以到達這棟大樓。
