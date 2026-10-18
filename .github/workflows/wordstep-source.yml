@@ -29,7 +29,7 @@ jobs:
               rows = []
               for tr in table.find_all('tr'):
                   cells = [' '.join(td.stripped_strings) for td in tr.find_all(['td','th'], recursive=False)]
-                  if len(cells) == 4 and re.fullmatch(r"[A-Za-z][A-Za-z '\-]*", cells[0]) and re.search(r'(?:n|v|adj|adv|prep|conj)\.', cells[1]):
+                  if len(cells) == 4 and cells[0] and re.search(r'(?:n|v|adj|adv|prep|conj)\.', cells[1]):
                       rows.append(cells)
               if rows:
                   groups.append(rows)
