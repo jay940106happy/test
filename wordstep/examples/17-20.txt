@@ -1,0 +1,200 @@
+The restaurant is open for lunch.|餐廳午餐時段有營業。
+The café is next to the station.|咖啡館在車站旁邊。
+The cafeteria is on the ground floor.|自助餐廳在一樓。
+Each patron will receive a free drink.|每位顧客都會獲得一杯免費飲料。
+The chef is preparing dinner.|主廚正在準備晚餐。
+We can cook dinner together.|我們可以一起煮晚餐。
+The waiter will bring the menu.|服務生會拿菜單過來。
+The reservationist can help you book a table.|訂位人員可以協助你訂位。
+Takeout is available until nine.|外帶服務提供到九點。
+The menu is available in English.|菜單有英文版本。
+This dish is popular with our customers.|這道菜很受我們顧客歡迎。
+Your meal is ready.|你的餐點已經準備好了。
+Breakfast is served at seven.|早餐七點開始供應。
+Lunch is included in the price.|價格已包含午餐。
+Dinner will be served in the main hall.|晚餐將在大廳供應。
+A beverage is included with your meal.|你的餐點附有一杯飲料。
+Your drink is on the counter.|你的飲料在櫃檯上。
+Milk is an ingredient in this dish.|牛奶是這道菜的食材之一。
+The restaurant serves Italian cuisine.|這間餐廳供應義大利料理。
+The appetizer is a small salad.|前菜是一小份沙拉。
+The entrée will be served next.|下一道將上主菜。
+Dessert is included in the set menu.|套餐包含甜點。
+The portion is large enough to share.|這份餐點的份量大到可以分食。
+The buffet is open until ten.|自助餐供應到十點。
+The catering service is available on weekends.|週末有提供外燴服務。
+Our restaurant can cater for large groups.|我們的餐廳可以為大型團體供餐。
+Outdoor seating is available.|有戶外座位可以使用。
+Your table is ready.|你的桌位已經準備好了。
+You can pay at the counter.|你可以在櫃檯付款。
+You can dine on the terrace.|你可以在露臺用餐。
+Our chefs specialize in seafood.|我們的廚師專精於海鮮料理。
+The selection of desserts is excellent.|甜點的選擇很豐富而且品質很好。
+Seasonal vegetables are on the menu.|菜單上有當季蔬菜。
+The bread is fresh.|麵包很新鮮。
+The soup is delicious.|湯很好喝。
+This fish dish is our specialty.|這道魚料理是我們的特色菜。
+The tip is included in the bill.|帳單已包含小費。
+Your drinks are on the tab.|你的飲料已記在帳上。
+Guests are treated with courtesy.|工作人員對待客人很有禮貌。
+The staff are courteous.|工作人員很有禮貌。
+A prompt reply is important.|迅速回覆很重要。
+We can find a solution together.|我們可以一起找到解決方案。
+Cleanliness is important in a restaurant.|清潔對餐廳很重要。
+The kitchen must be kept sanitary.|廚房必須維持衛生。
+Good hygiene is important when preparing food.|準備食物時，良好的衛生習慣很重要。
+Your dietary needs are noted.|你的飲食需求已經記錄下來。
+A vegetarian option is available.|有素食餐點可以選擇。
+Your food allergy is listed on the form.|表格上已列出你的食物過敏資訊。
+We can customize the menu for your group.|我們可以為你的團體調整菜單。
+Guests can consume their own food outside.|客人可以在外面食用自備的食物。
+The event will begin at six.|活動將在六點開始。
+Live entertainment is included in the price.|價格已包含現場表演。
+The ceremony will take place outside.|典禮將在戶外舉行。
+The celebration is planned for Friday.|慶祝活動安排在星期五。
+The festival will last three days.|節慶活動將持續三天。
+The exhibition is open to the public.|展覽對大眾開放。
+We will discuss the issue tomorrow.|我們明天會討論這個問題。
+The book fair is held every year.|書展每年都會舉行。
+The gathering will be held in the park.|聚會將在公園舉行。
+The lecture is free for students.|學生可以免費參加講座。
+The afternoon session will start at two.|下午的場次將於兩點開始。
+The concert is sold out.|音樂會的票已經售完。
+The theater is near the museum.|劇院在博物館附近。
+The museum is closed on Mondays.|博物館每週一休館。
+The gallery will open next month.|藝廊將於下個月開幕。
+The auditorium can hold five hundred people.|禮堂可容納五百人。
+The stadium is full.|體育場已經坐滿了。
+Admission is free today.|今天可以免費入場。
+Your pass is valid for two days.|你的入場證可使用兩天。
+Enrollment is open now.|現在已開放報名。
+Each spectator must show a ticket.|每位觀眾都必須出示門票。
+Every visitor will receive a map.|每位參觀者都會收到一份地圖。
+The crowd is waiting at the entrance.|人群正在入口等候。
+The performer is on the stage.|表演者在舞臺上。
+The problem can be solved today.|這個問題今天就能解決。
+The sign is easy to read.|標誌很容易看清楚。
+The artwork is on display.|這件藝術作品正在展出。
+The collection includes modern paintings.|這個收藏系列包含現代畫作。
+The lineup will be announced tomorrow.|演出陣容將於明天公布。
+The premiere is on Friday.|首映在星期五舉行。
+The organizer will contact you soon.|主辦人很快就會聯絡你。
+The planning is almost complete.|籌備工作即將完成。
+We will promote the event online.|我們將在線上宣傳這場活動。
+We can publicize the opening in the newspaper.|我們可以在報紙上宣傳開幕活動。
+Your participation is welcome.|我們歡迎你的參與。
+Students can compete in the contest.|學生可以參加這項比賽。
+The contest is open to everyone.|所有人都可以參加這項比賽。
+The prize will be sent to the winner.|獎品將寄給得獎者。
+The award will be presented tonight.|獎項將於今晚頒發。
+The price will decrease next month.|價格將於下個月下降。
+The upcoming event is on our website.|即將舉辦的活動已刊登在我們的網站上。
+The annual festival is held in June.|年度節慶活動在六月舉行。
+The monthly meeting is tomorrow.|每月例行會議就在明天。
+Local artists will join the exhibition.|當地藝術家將參加展覽。
+The public meeting will start soon.|公開會議很快就會開始。
+This is a private event.|這是一場非公開活動。
+Cultural events are popular here.|文化活動在這裡很受歡迎。
+Recreational activities are available in the park.|公園內有休閒活動可以參加。
+The activity is suitable for children.|這個活動適合兒童。
+The band will entertain the guests.|樂團將為賓客表演助興。
+Your health is important.|你的健康很重要。
+Medical services are available nearby.|附近有提供醫療服務。
+The clinic is open this evening.|診所今天晚上有看診。
+The hospital is near the station.|醫院在車站附近。
+The doctor will see you next.|醫師接下來會看你的診。
+The physician is available this afternoon.|醫師今天下午有空。
+The nurse will call your name.|護理師會叫你的名字。
+The patient is waiting outside.|病患正在外面等候。
+The examination will take twenty minutes.|檢查將需要二十分鐘。
+The doctor will examine your knee.|醫師會檢查你的膝蓋。
+The treatment will begin next week.|治療將於下星期開始。
+The clinic can treat this condition.|這間診所可以治療這種病症。
+The medicine is in the bag.|藥在袋子裡。
+Your medication is ready to collect.|你的藥已經可以領取了。
+A prescription is required for this medicine.|這種藥需要處方箋。
+The pharmacy is next to the clinic.|藥局在診所旁邊。
+The pharmacist can answer your questions.|藥師可以回答你的問題。
+This symptom should be reported to the doctor.|這個症狀應該告知醫師。
+The illness has kept him at home.|他因為生病而待在家裡。
+The injury will be checked today.|今天會檢查傷勢。
+The emergency exit is at the back.|緊急出口在後方。
+Your insurance coverage includes this service.|你的保險保障範圍包含這項服務。
+The wellness program is open to all staff.|所有員工都可以參加健康促進計畫。
+The exercise class will begin at six.|運動課程將在六點開始。
+Your membership will expire next month.|你的會員資格將於下個月到期。
+Each member can bring one guest.|每位會員可以帶一位客人。
+The salon is open on Sundays.|美髮店星期日有營業。
+A haircut is included in this package.|這個方案包含理髮服務。
+The cleaning service will arrive at nine.|清潔服務人員將於九點到達。
+The cleaner is on the second floor.|清潔人員在二樓。
+Dry-cleaning is available at this store.|這間店有提供乾洗服務。
+The mechanic will inspect your car.|汽車維修技師會檢查你的車。
+The service center is closed today.|維修中心今天沒有營業。
+Regular servicing can keep the machine working.|定期保養可以讓機器正常運作。
+Pickup is available after five.|五點以後可以取件。
+Online booking is offered for your convenience.|提供線上預約是為了方便你使用。
+The location is convenient.|地點很方便。
+The neighborhood is quiet.|這個社區很安靜。
+The community center is open today.|社區中心今天有開放。
+Each resident will receive a notice.|每位住戶都會收到通知。
+Each household will receive one form.|每個家庭都會收到一份表格。
+We will respond within one day.|我們會在一天內回覆。
+The plumber will arrive this afternoon.|水管工將於今天下午到達。
+The electrician is checking the lights.|電工正在檢查燈具。
+The specialist is available on Thursday.|專家星期四有空。
+The consultation will last thirty minutes.|諮詢將持續三十分鐘。
+You can consult a specialist about this problem.|你可以就這個問題諮詢專家。
+Our support team can help you.|我們的支援團隊可以幫助你。
+The service provider will contact you.|服務供應商會聯絡你。
+This is a routine check.|這是一項例行檢查。
+The repairs will require more time.|維修將需要更多時間。
+We can provide more information.|我們可以提供更多資訊。
+The store will remain open until ten.|商店將持續營業到十點。
+You can expect a reply tomorrow.|你可以預期明天收到回覆。
+The manager may allow you to leave early.|經理可能會允許你提早離開。
+This feature will enable you to save time.|這個功能會讓你節省時間。
+The team will ensure that everything is ready.|團隊會確保一切準備就緒。
+The price will include breakfast.|價格將包含早餐。
+The box may contain glass items.|箱子裡可能裝有玻璃物品。
+The job will involve some travel.|這份工作將需要一些出差。
+Delays may occur during busy periods.|忙碌時段可能發生延誤。
+The sign will indicate the correct entrance.|標誌會指出正確的入口。
+The manager will determine the final price.|經理會決定最終價格。
+We will consider your suggestion.|我們會考慮你的建議。
+Our guests usually prefer a quiet room.|我們的客人通常比較喜歡安靜的房間。
+You can choose a different date.|你可以選擇不同的日期。
+The cost will depend on the size.|費用將取決於尺寸。
+The weather may affect our plans.|天氣可能影響我們的計畫。
+The train is likely to be late.|火車很可能會誤點。
+The recent changes are listed below.|最近的變更列在下方。
+The current price is on the website.|目前的價格在網站上。
+The previous report is in this folder.|上一份報告在這個資料夾裡。
+Additional information is available online.|線上有更多資訊可以查閱。
+A reservation is necessary.|預約是必要的。
+The required documents are ready.|必備文件已經準備好了。
+This room is suitable for meetings.|這個房間適合開會。
+This date is appropriate for the event.|這個日期適合舉辦活動。
+The new system is effective.|新系統很有效。
+The event was successful.|活動很成功。
+The change is significant.|這項變更很重大。
+The trip will take approximately two hours.|這趟行程將需要大約兩小時。
+The manager is currently in a meeting.|經理目前正在開會。
+The building was recently renovated.|這棟建築最近整修過。
+We can send the document immediately.|我們可以立刻寄出文件。
+The problem will eventually be solved.|這個問題最終會獲得解決。
+The entrance is temporarily closed.|入口暫時關閉。
+The equipment is checked regularly.|設備會定期檢查。
+The schedule is frequently updated.|行程表經常更新。
+The store is generally quiet in the morning.|商店早上通常很安靜。
+This dish is particularly popular.|這道菜特別受歡迎。
+The package will probably arrive today.|包裹今天很可能會送達。
+Your order is already on its way.|你的訂單已經在運送途中。
+The offer is still available.|這項優惠仍然有效。
+You can pay online instead.|你可以改在線上付款。
+The manager is busy but otherwise well.|經理很忙，不過除此之外一切都好。
+We will therefore leave tomorrow.|因此，我們將於明天離開。
+The hotel is, however, too expensive.|不過，這間飯店太貴了。
+I will attend although I am busy.|雖然我很忙，我還是會參加。
+The event will take place unless it rains.|除非下雨，否則活動將照常舉行。
+The train is on time according to the schedule.|根據時刻表，火車是準時的。
