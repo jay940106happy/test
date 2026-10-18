@@ -1,0 +1,53 @@
+name: Verify Wordstep vocabulary source
+on:
+  push:
+    branches: [wordstep-site-2026]
+    paths: [.github/workflows/wordstep-source.yml]
+permissions:
+  contents: read
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Extract original vocabulary tables
+        run: |
+          python -m pip install --quiet beautifulsoup4==4.13.4
+          mkdir -p vocabulary-source
+          python - <<'PY'
+          import json, re, urllib.request
+          from pathlib import Path
+          from bs4 import BeautifulSoup
+          url = 'https://www.david.com.tw/toeic/vocabulary/must-know-words/1000-words/'
+          req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; Wordstep vocabulary import)'})
+          with urllib.request.urlopen(req, timeout=60) as response:
+              html = response.read().decode('utf-8')
+          soup = BeautifulSoup(html, 'html.parser')
+          categories = ['辦公室與工作','人事與招募','會議與商務溝通','公司與管理','行銷與廣告','銷售與客戶','金融與銀行','會計與付款','採購與訂單','物流與配送','製造與生產','房地產與設施','科技與設備','商務旅行','交通','飯店與住宿','餐飲與服務','活動與娛樂','健康與日常服務','跨情境高頻字彙']
+          groups = []
+          for table in soup.find_all('table'):
+              rows = []
+              for tr in table.find_all('tr'):
+                  cells = [' '.join(td.stripped_strings) for td in tr.find_all(['td','th'], recursive=False)]
+                  if len(cells) == 4 and re.fullmatch(r"[A-Za-z][A-Za-z '\-]*", cells[0]) and re.search(r'(?:n|v|adj|adv|prep|conj)\.', cells[1]):
+                      rows.append(cells)
+              if rows:
+                  groups.append(rows)
+          counts = [len(g) for g in groups]
+          print('Vocabulary table counts:', counts)
+          assert counts == [50] * 20, f'Incomplete source: {counts}; refusing to label it as 1000 words.'
+          words = []
+          for category, rows in zip(categories, groups):
+              for word, pos, meaning, phrase in rows:
+                  words.append({'word':word,'pos':pos,'meaning':meaning,'phrase':phrase,'category':category})
+          result = {'source':url,'count':len(words),'categories':categories,'words':words}
+          Path('vocabulary-source/source.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+          Path('vocabulary-source/words.txt').write_text('\n'.join(w['word'] for w in words), encoding='utf-8')
+          print('Verified rows:', len(words), 'Distinct spellings:', len(set(w['word'] for w in words)))
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wordstep-vocabulary-source
+          path: vocabulary-source/
+          retention-days: 3
+          if-no-files-found: error
