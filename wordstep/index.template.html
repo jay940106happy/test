@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff"><meta name="description" content="完整1000筆多益字詞、每筆兩句中英例句，點擊朗讀。">
+<title>多益單字練習 · 1000 字詞</title><link rel="icon" href="data:,">
+<style>
+:root{font-family:Arial,"PingFang TC","Microsoft JhengHei",sans-serif;color:#222b27;background:#fff;color-scheme:light;line-height:1.65}*{box-sizing:border-box}body{margin:0}button,input,select,summary{font:inherit}button,summary,select{cursor:pointer}button,a,summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}button:disabled{opacity:.35;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #76a18c;outline-offset:3px}[hidden]{display:none!important}.reader{max-width:660px;margin:auto;padding:26px 26px 30px}.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.top h1{font-size:18px;font-weight:600;margin:0}.muted{color:#69736d;font-size:13px}#search{width:100%;min-height:44px;border:1px solid #dce3de;border-radius:6px;padding:8px 12px;margin-top:16px;font-size:16px;background:#fff}.tools{border-bottom:1px solid #e6ebe7;margin-top:3px}.tools>summary{padding:10px 0;color:#657169;font-size:13px;min-height:44px}.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:6px 0 16px}.tool-grid label{font-size:13px;color:#657169}.tool-grid select{display:block;width:100%;min-width:0;margin-top:5px;border:1px solid #dce3de;border-radius:5px;padding:9px 7px;font-size:14px;background:#fff;color:#222b27}.wide{grid-column:1/-1}.tool-grid p{margin:0}.text-button{border:0;background:transparent;color:#486354;min-height:42px;padding:6px 0}.context{display:flex;justify-content:space-between;gap:10px;margin-top:18px;font-size:12px;color:#69736d}#position{white-space:nowrap;font-variant-numeric:tabular-nums}.word-section{margin:22px 0 24px}.word-section h2{margin:0}.read-aloud{display:flex;align-items:center;justify-content:space-between;gap:15px;width:100%;min-height:44px;border:0;background:none;color:inherit;text-align:left;padding:4px 0}.read-aloud .sound{color:#235c48;flex:0 0 36px;display:grid;place-items:center;height:36px;border-radius:50%}.read-aloud:hover .sound{background:#eef4f0}.playing .sound{background:#235c48!important;color:#fff!important}.sound svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.stop-icon{display:none}.playing .stop-icon{display:block}.playing .speaker-icon{display:none}#word{font-size:44px;font-weight:650;line-height:1.25;letter-spacing:-.5px;overflow-wrap:anywhere}.meaning-line{display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;margin:9px 0 0}#pos{font-size:14px;color:#69736d}#meaning{font-size:21px}.example{margin:0 0 22px}.example .en{font-size:20px;line-height:1.7}.example p{margin:4px 45px 0 0;font-size:16px;color:#657169}.example mark{background:none;color:inherit;font-weight:700}.hide-chinese .zh{visibility:hidden}.extra>summary{font-size:13px;color:#69736d;min-height:38px;padding:6px 0}.extra p{font-size:14px;margin:8px 0;color:#526057}.actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}.actions button,.actions label{font-size:13px;min-height:44px}.actions label{display:flex;align-items:center;gap:6px;color:#657169}.actions input{accent-color:#235c48;width:16px;height:16px}.actions button{background:none;border:0;padding:6px 0;color:#486354}.navigation{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:9px;margin-top:8px}.navigation button{min-height:48px;border:1px solid #dce3de;border-radius:6px;background:#fff;color:#293a30;font-size:15px;padding:9px 6px}#next{background:#235c48;color:#fff;border-color:#235c48}#known[aria-pressed=true]{background:#edf4ef;border-color:#97b7a4;color:#235c48}.message{font-size:13px;color:#91422f;margin:12px 0 0}.empty{text-align:center;padding:50px 10px}.empty p{font-size:16px}.empty button{border:1px solid #dce3de;border-radius:6px;background:#fff;padding:10px 16px}footer{margin-top:25px;border-top:1px solid #e6ebe7;padding-top:12px;font-size:12px;color:#748078}footer summary{min-height:34px;cursor:pointer}footer p{margin:8px 0}a{color:#486354;text-underline-offset:3px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}@media(max-width:500px){.reader{padding:19px 20px 24px}.top h1{font-size:17px}#word{font-size:39px}.word-section{margin:20px 0 23px}.example .en{font-size:19px}.navigation button{font-size:14px}.actions{gap:7px}.actions button,.actions label{font-size:12px}}@media(max-width:340px){.reader{padding:17px 16px}.tool-grid{grid-template-columns:1fr}.wide{grid-column:auto}.actions{flex-wrap:wrap}.top h1{font-size:16px}}
+</style>
+</head>
+<body>
+<main class="reader">
+<header class="top"><h1>多益單字練習</h1><span id="total" class="muted">正在載入字庫</span></header>
+<label for="search" class="sr-only">搜尋英文單字或中文意思</label><input id="search" type="search" placeholder="搜尋單字或中文" autocomplete="off" spellcheck="false">
+<details class="tools" id="tools"><summary>分類、單字表與設定</summary><div class="tool-grid">
+<label>情境分類<select id="category"><option value="all">全部分類</option></select></label>
+<label>學習狀態<select id="filter"><option value="all">全部單字</option><option value="new">未熟悉</option><option value="known">已熟悉</option></select></label>
+<label class="wide">直接選字<select id="word-jump"></select></label>
+<label>朗讀語音<select id="voice"><option value="">自動選擇英文語音</option></select></label>
+<label>朗讀速度<select id="rate"><option value="0.7">0.7 倍</option><option value="0.9">0.9 倍</option><option value="1">1 倍</option><option value="1.15">1.15 倍</option></select></label>
+<p class="wide muted"><span id="progress"></span>；進度儲存在目前瀏覽器。</p>
+<button id="clear-filters" class="text-button" type="button">清除篩選</button><button id="reset-progress" class="text-button" type="button">重設熟悉標記</button>
+</div></details>
+<div class="context"><span id="category-label"></span><span id="position" aria-live="polite"></span></div>
+<section id="lesson" aria-label="目前單字" hidden>
+<div class="word-section"><h2><button type="button" class="read-aloud" data-play="word" aria-pressed="false"><span id="word" lang="en"></span><span class="sound" aria-hidden="true"></span></button></h2><p class="meaning-line"><span id="pos"></span><span id="meaning" class="zh"></span></p></div>
+<section class="example" aria-label="例句一"><button type="button" class="read-aloud" data-play="example0" aria-pressed="false"><span class="en" lang="en"></span><span class="sound" aria-hidden="true"></span></button><p class="zh"></p></section>
+<section class="example" aria-label="例句二"><button type="button" class="read-aloud" data-play="example1" aria-pressed="false"><span class="en" lang="en"></span><span class="sound" aria-hidden="true"></span></button><p class="zh"></p></section>
+<details class="extra"><summary>搭配與用法</summary><p id="phrase" lang="en"></p><div id="tips" class="zh"></div></details>
+</section>
+<div id="empty" class="empty" hidden><p>沒有符合條件的單字。</p><button type="button" id="empty-clear">顯示全部單字</button></div>
+<div id="practice-controls" hidden><div class="actions"><button type="button" id="play-all" aria-pressed="false">整組播放</button><label><input type="checkbox" id="slow">慢速朗讀</label><button id="hide-chinese" type="button" aria-pressed="false">遮住中文</button></div>
+<nav class="navigation" aria-label="切換單字"><button id="previous" type="button">上一個</button><button id="known" type="button" aria-pressed="false">標記已熟</button><button id="next" type="button">下一個</button></nav></div>
+<p id="audio-message" class="message" role="status" hidden></p><p id="save-message" class="message" role="status" hidden>目前無法儲存進度，但仍可繼續練習。</p>
+<footer><details><summary>資料來源與說明</summary><p>保留<a href="https://www.david.com.tw/toeic/vocabulary/must-know-words/1000-words/" target="_blank" rel="noopener noreferrer">戴維美語原始字表</a>的20類、1,000筆詞條。promotion 的「升遷」與「促銷」分列兩筆，共999種拼寫。</p><p>部分例句取自 kknono668 的<a href="https://huggingface.co/datasets/kknono668/toeic-vocab-tw" target="_blank" rel="noopener noreferrer">公開中英字庫</a>，另補寫與修訂例句；衍生例句資料採<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>授權。非ETS官方教材。</p><p>朗讀使用裝置的英文合成語音。手機無聲時，請確認媒體音量，或用Safari／Chrome開啟。</p></details></footer>
+<noscript>請啟用JavaScript以使用單字與朗讀功能。</noscript>
+</main>
+<script id="word-data" type="application/json">__WORDSTEP_DATA__</script>
+<script>
+(() => {
+'use strict';
+const $ = s => document.querySelector(s);
+const words = JSON.parse($('#word-data').textContent);
+if (words.length !== 1000 || words.some(w => w.examples.length !== 2)) throw Error('字庫不完整');
+const PREFS='wordstep.preferences.v1', PROGRESS='wordstep.progress.v1';
+function load(key){try{const v=JSON.parse(localStorage.getItem(key)||'{}');return v&&typeof v==='object'&&!Array.isArray(v)?v:{};}catch{return {};}}
+function store(key,value){try{localStorage.setItem(key,JSON.stringify(value));}catch{$('#save-message').hidden=false;}}
+let prefs=load(PREFS),known=load(PROGRESS),selected=prefs.selected,active=null,matches=[],voices=[];
+const oldSelected=words.find(w=>w.word===selected);if(oldSelected)selected=oldSelected.id;
+for(const w of words){if(known[w.word]===true)known[w.id]=true;}
+known=Object.fromEntries(words.filter(w=>known[w.id]===true).map(w=>[w.id,true]));
+let hidden=prefs.hidden===true;
+let rate=['0.7','0.9','1','1.15'].includes(String(prefs.rate))?Number(prefs.rate):(prefs.slow===false?1:0.7);
+$('#rate').value=String(rate);$('#slow').checked=rate<1;
+const synth=window.speechSynthesis||null;
+const icon='<svg class="speaker-icon" viewBox="0 0 24 24"><path d="M11 4 5 9H2v6h3l6 5V4Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg><svg class="stop-icon" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1" fill="currentColor" stroke="none"/></svg>';
+document.querySelectorAll('.sound').forEach(el=>el.innerHTML=icon);
+const current=()=>words.find(w=>w.id===selected);
+function save(){store(PREFS,{...prefs,selected,hidden,rate,slow:rate<1,voice:$('#voice').value});store(PROGRESS,known);}
+function loadVoices(){
+ voices=synth?synth.getVoices().filter(v=>/^en(?:[-_]|$)/i.test(v.lang)):[];
+ const previous=$('#voice').value||prefs.voice||'';
+ $('#voice').replaceChildren(new Option('自動選擇英文語音',''),...voices.map(v=>new Option(v.name+' · '+v.lang,v.voiceURI)));
+ if(voices.some(v=>v.voiceURI===previous))$('#voice').value=previous;
+}
+function settings(){return{rate,voice:voices.find(v=>v.voiceURI===$('#voice').value)||voices.find(v=>/^en[-_]US$/i.test(v.lang))||voices[0]||null};}
+function playback(state,id){
+ active=['waiting','playing'].includes(state)?id:null;
+ document.querySelectorAll('[data-play]').forEach(b=>{const on=b.dataset.play===active;b.classList.toggle('playing',on);b.setAttribute('aria-pressed',String(on));});
+ $('#play-all').textContent=active?'停止播放':'整組播放';$('#play-all').setAttribute('aria-pressed',String(!!active));
+ const message=$('#audio-message');message.hidden=!['unsupported','error'].includes(state);
+ message.textContent=state==='unsupported'?'目前瀏覽器不支援朗讀，請改用Safari或Chrome。':'未能播放，請確認媒體音量與裝置的英文語音，再點一次。';
+}
+const player=createPlayer(synth,window.SpeechSynthesisUtterance,settings,playback);
+const normalize=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
+function highlight(el,text,w){
+ const forms=[w.word,...(w.forms||[])].filter(v=>typeof v==='string'&&v.length<50);
+ const pattern=forms.sort((a,b)=>b.length-a.length).map(v=>v.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|');
+ const re=new RegExp('(?<![A-Za-z])('+pattern+')(?![A-Za-z])','gi');
+ const nodes=[];let last=0;
+ for(const match of text.matchAll(re)){nodes.push(document.createTextNode(text.slice(last,match.index)));const mark=document.createElement('mark');mark.textContent=match[0];nodes.push(mark);last=match.index+match[0].length;}
+ nodes.push(document.createTextNode(text.slice(last)));el.replaceChildren(...nodes);
+}
+function showChinese(){
+ $('#lesson').classList.toggle('hide-chinese',hidden);$('#hide-chinese').textContent=hidden?'顯示中文':'遮住中文';$('#hide-chinese').setAttribute('aria-pressed',String(hidden));
+ $('#lesson').querySelectorAll('.zh').forEach(e=>e.setAttribute('aria-hidden',String(hidden)));
+}
+function render(){
+ player.stop();
+ const q=normalize($('#search').value.trim()),cat=$('#category').value,status=$('#filter').value;
+ matches=words.filter(w=>(cat==='all'||w.category===cat)&&(status==='all'||(status==='known'?known[w.id]===true:known[w.id]!==true))&&(!q||normalize(w.word+' '+w.meaning+' '+w.phrase).includes(q)));
+ if(!matches.some(w=>w.id===selected))selected=matches[0]?.id||null;
+ const w=current(),index=matches.findIndex(w=>w.id===selected),count=words.filter(w=>known[w.id]===true).length;
+ $('#total').textContent='1,000 字詞';$('#progress').textContent=`已熟悉 ${count} / 1000`;
+ $('#position').textContent=matches.length?`${index+1} / ${matches.length} · 已熟 ${count}`:'0 / 0';
+ $('#category-label').textContent=w?w.category:'';
+ $('#word-jump').replaceChildren(...matches.map(w=>new Option(`${w.number}. ${w.word} — ${hidden?'':w.meaning}${known[w.id]?' ✓':''}`,w.id)));
+ $('#word-jump').value=selected||'';$('#word-jump').disabled=!w;
+ $('#lesson').hidden=!w;$('#practice-controls').hidden=!w;$('#empty').hidden=!!w;
+ if(!w){save();return;}
+ $('#word').textContent=w.word;$('#pos').textContent=w.pos;$('#meaning').textContent=w.meaning;
+ $('[data-play="word"]').setAttribute('aria-label',`朗讀單字 ${w.word}`);
+ document.querySelectorAll('.example').forEach((el,i)=>{highlight(el.querySelector('.en'),w.examples[i].en,w);el.querySelector('.zh').textContent=w.examples[i].zh;el.querySelector('button').setAttribute('aria-label',`朗讀例句${i+1}`);});
+ $('#phrase').textContent=w.phrase||'';$('#tips').replaceChildren(...(w.tips||[]).map(text=>{const p=document.createElement('p');p.textContent=text;return p;}));
+ $('#previous').disabled=index===0;$('#next').textContent=index===matches.length-1?'從頭複習':'下一個';
+ $('#known').textContent=known[w.id]?'已熟 · 撤銷':'標記已熟';$('#known').setAttribute('aria-pressed',String(!!known[w.id]));
+ showChinese();save();
+}
+function move(delta){if(!matches.length)return;let i=matches.findIndex(w=>w.id===selected);i=delta>0?(i+1)%matches.length:Math.max(0,i-1);selected=matches[i].id;render();}
+function clearFilters(){$('#search').value='';$('#category').value='all';$('#filter').value='all';render();}
+$('#search').addEventListener('input',render);$('#category').addEventListener('change',render);$('#filter').addEventListener('change',render);
+$('#word-jump').addEventListener('change',()=>{selected=$('#word-jump').value;render();$('#tools').open=false;});
+$('#previous').onclick=()=>move(-1);$('#next').onclick=()=>move(1);
+$('#known').onclick=()=>{if(!current())return;if(known[selected])delete known[selected];else known[selected]=true;render();};
+$('#clear-filters').onclick=clearFilters;$('#empty-clear').onclick=clearFilters;
+$('#reset-progress').onclick=()=>{if(confirm('清除所有熟悉標記？單字與例句不會被刪除。')){known={};render();}};
+$('#hide-chinese').onclick=()=>{hidden=!hidden;render();};
+$('#slow').onchange=()=>{player.stop();rate=$('#slow').checked?0.7:1;$('#rate').value=String(rate);save();};
+$('#rate').onchange=()=>{player.stop();rate=Number($('#rate').value);$('#slow').checked=rate<1;save();};
+$('#voice').onchange=()=>{player.stop();prefs.voice=$('#voice').value;save();};
+$('#lesson').addEventListener('click',event=>{
+ const b=event.target.closest('[data-play]');if(!b||!current())return;const id=b.dataset.play;if(id===active){player.stop();return;}
+ const w=current();player.play([{id,text:id==='word'?w.word:w.examples[Number(id.slice(-1))].en}]);
+});
+$('#play-all').onclick=()=>{if(active){player.stop();return;}const w=current();if(!w)return;player.play([{id:'word',text:w.word},...w.examples.map((e,i)=>({id:'example'+i,text:e.en}))]);};
+window.addEventListener('keydown',event=>{if(event.key==='Escape')player.stop();if(event.altKey||event.ctrlKey||event.metaKey||/INPUT|TEXTAREA|SELECT/.test(event.target.tagName)||event.target.isContentEditable)return;if(['ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();move(event.key==='ArrowLeft'?-1:1);}});
+window.addEventListener('pagehide',player.stop);document.addEventListener('visibilitychange',()=>{if(document.hidden)player.stop();});
+if(synth)synth.addEventListener('voiceschanged',loadVoices);loadVoices();
+for(const c of [...new Set(words.map(w=>w.category))])$('#category').append(new Option(c,c));
+render();
+function createPlayer(synth, Utterance, settings, notify) {
+ let token=0,timer=null,retained=[];
+ const clear=()=>{clearTimeout(timer);timer=null;};
+ function stop(){token++;clear();retained=[];if(synth)synth.cancel();notify('idle',null);}
+ function play(items){
+  stop();if(!synth||!Utterance){notify('unsupported',null);return;}if(!items.length)return;
+  const run=token,config=settings();notify('waiting',items[0].id);
+  function fail(reason){if(run!==token)return;token++;clear();retained=[];synth.cancel();notify('error',null,reason);}
+  timer=setTimeout(()=>fail('not-started'),8000);
+  retained=items.map((item,index)=>{
+   const u=new Utterance(item.text);u.lang=config.voice?.lang||'en-US';u.rate=config.rate||.9;u.pitch=1;if(config.voice)u.voice=config.voice;
+   u.onstart=()=>{if(run!==token)return;clear();notify('playing',item.id);timer=setTimeout(()=>fail('timed-out'),Math.max(20000,item.text.length*300/u.rate));};
+   u.onend=()=>{if(run!==token)return;clear();if(index===items.length-1){retained=[];notify('done',null);}else timer=setTimeout(()=>fail('not-started'),8000);};
+   u.onerror=e=>{if(run===token)fail(e.error||'unknown');};return u;
+  });
+  try{retained.forEach(u=>synth.speak(u));}catch(e){fail(e.message);}
+ }
+ return{play,stop,destroy:stop};
+}
+})();
+</script>
+</body></html>
