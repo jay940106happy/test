@@ -8,7 +8,7 @@ import re
 ROOT = pathlib.Path(__file__).resolve().parent
 REPO = ROOT.parent
 WORK = REPO/'working'
-BANK_HASHES = {'01-04.txt':'861aab708a969e9b0ecb0e0f5db8fc939d67d6c0dd030d278f8e89e27bb44104','05-08.txt':'41eeb5e0dca6efa355532a8e1b5c28225593d8792727d88e57e577f808bdd5fc','09-12.txt':'613c9a886e031eda6b7ef0790da4e72b1504353020cefed0fa938f159980a59b','13-16.txt':'400090259263c4c7cd8e6cbef75992cf93fe1e8b49165f6a0d776b638135f04e','17-20.txt':'7ddbeb05d8e954dbf30e311c837439af5d763b7cdef94d694e1ff0713d23252d'}
+BANK_HASHES = {'01-04.txt':'861aab708a969e9b0ecb0e0f5db8fc939d67d6c0dd030d278f8e89e27bb44104','05-08.txt':'41eeb5e0dca6efa355532a8e1b5c28225593d8792727d88e57e577f808bdd5fc','09-12.txt':'613c9a886e031eda6b7ef0790da4e72b1504353020cefed0fa938f159980a59b','13-16.txt':'8bec88877b101d7ecf11ebbdc748b38ffd140a7bd2d8367a65ee1548bd8f315b','17-20.txt':'7ddbeb05d8e954dbf30e311c837439af5d763b7cdef94d694e1ff0713d23252d'}
 source_path = ROOT/'source.json' if (ROOT/'source.json').exists() else WORK/'source.json'
 base_path = ROOT/'words.json' if (ROOT/'words.json').exists() else WORK/'matched.json'
 source = json.loads(source_path.read_text(encoding='utf-8'))
