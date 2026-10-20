@@ -84,6 +84,7 @@ The venue is close to the hotel.|活動場地離飯店很近。
 Our company will host the event.|我們公司將主辦這場活動。
 Each delegate will receive a name tag.|每位代表都會收到一張名牌。
 The invitation is attached to this email.|邀請函附在這封電子郵件中。
+We will invite all employees to the event.|我們將邀請所有員工參加這場活動。
 The reception will begin at six.|招待會將於六點開始。
 The staff are known for their hospitality.|工作人員以熱情好客聞名。
 A colleague will accompany you on the trip.|一位同事會陪你一起出差。
