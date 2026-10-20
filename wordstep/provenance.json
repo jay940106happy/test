@@ -1,0 +1,18 @@
+{
+  "originalSource": "https://www.david.com.tw/toeic/vocabulary/must-know-words/1000-words/",
+  "originalCount": 1000,
+  "corpusSource": "https://huggingface.co/datasets/kknono668/toeic-vocab-tw",
+  "corpusRevision": "7b1f881c2474bcb96fa8eacfbb8f63754c8cccef",
+  "corpusSHA256": "b483eb18113a82da288f1ed943adbde38a8070cdcef3055f2a4231c717d6511a",
+  "corpusLicense": "CC BY-SA 4.0",
+  "corpusAuthor": "kknono668",
+  "matched": 913,
+  "missing": 87,
+  "entries": 1000,
+  "uniqueSpellings": 999,
+  "examples": 2000,
+  "categories": 20,
+  "incomplete": 0,
+  "originalExampleEntries": 116,
+  "changes": "All original entries and order preserved. Basic sentence bank retained. Missing and ambiguous examples completed. Original 16 pairs and tips restored. Promotion has separate career and sales senses."
+}

@@ -88,7 +88,7 @@ function showChinese(){
 function render(){
  player.stop();
  const q=normalize($('#search').value.trim()),cat=$('#category').value,status=$('#filter').value;
- matches=words.filter(w=>(cat==='all'||w.category===cat)&&(status==='all'||(status==='known'?known[w.id]===true:known[w.id]!==true))&&(!q||normalize(w.word+' '+w.meaning+' '+w.phrase).includes(q)));
+ matches=words.filter(w=>(cat==='all'||w.category===cat)&&(status==='all'||(status==='known'?known[w.id]===true:known[w.id]!==true))&&(!q||normalize(w.word+' '+w.meaning).includes(q)));
  if(!matches.some(w=>w.id===selected))selected=matches[0]?.id||null;
  const w=current(),index=matches.findIndex(w=>w.id===selected),count=words.filter(w=>known[w.id]===true).length;
  $('#total').textContent='1,000 字詞';$('#progress').textContent=`已熟悉 ${count} / 1000`;

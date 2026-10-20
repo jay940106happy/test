@@ -1,0 +1,7028 @@
+{
+  "source": "https://www.david.com.tw/toeic/vocabulary/must-know-words/1000-words/",
+  "count": 1000,
+  "categories": [
+    "辦公室與工作",
+    "人事與招募",
+    "會議與商務溝通",
+    "公司與管理",
+    "行銷與廣告",
+    "銷售與客戶",
+    "金融與銀行",
+    "會計與付款",
+    "採購與訂單",
+    "物流與配送",
+    "製造與生產",
+    "房地產與設施",
+    "科技與設備",
+    "商務旅行",
+    "交通",
+    "飯店與住宿",
+    "餐飲與服務",
+    "活動與娛樂",
+    "健康與日常服務",
+    "跨情境高頻字彙"
+  ],
+  "words": [
+    {
+      "word": "office",
+      "pos": "n.",
+      "meaning": "辦公室",
+      "phrase": "office building",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "workplace",
+      "pos": "n.",
+      "meaning": "工作場所",
+      "phrase": "workplace safety",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "employee",
+      "pos": "n.",
+      "meaning": "員工",
+      "phrase": "full-time employee",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "employer",
+      "pos": "n.",
+      "meaning": "雇主",
+      "phrase": "potential employer",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "colleague",
+      "pos": "n.",
+      "meaning": "同事",
+      "phrase": "work with colleagues",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "coworker",
+      "pos": "n.",
+      "meaning": "同事",
+      "phrase": "ask a coworker",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "staff",
+      "pos": "n.",
+      "meaning": "員工；職員",
+      "phrase": "staff member",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "department",
+      "pos": "n.",
+      "meaning": "部門",
+      "phrase": "sales department",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "position",
+      "pos": "n.",
+      "meaning": "職位",
+      "phrase": "available position",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "occupation",
+      "pos": "n.",
+      "meaning": "職業",
+      "phrase": "current occupation",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "deadline",
+      "pos": "n.",
+      "meaning": "截止期限",
+      "phrase": "meet a deadline",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "career",
+      "pos": "n.",
+      "meaning": "職涯",
+      "phrase": "career opportunity",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "duty",
+      "pos": "n.",
+      "meaning": "職責",
+      "phrase": "perform duties",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "task",
+      "pos": "n.",
+      "meaning": "任務；工作",
+      "phrase": "complete a task",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "assignment",
+      "pos": "n.",
+      "meaning": "工作任務",
+      "phrase": "finish an assignment",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "workload",
+      "pos": "n.",
+      "meaning": "工作量",
+      "phrase": "heavy workload",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "schedule",
+      "pos": "n./v.",
+      "meaning": "行程；安排",
+      "phrase": "work schedule",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "shift",
+      "pos": "n.",
+      "meaning": "輪班；班次",
+      "phrase": "night shift",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "overtime",
+      "pos": "n.",
+      "meaning": "加班",
+      "phrase": "work overtime",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "attendance",
+      "pos": "n.",
+      "meaning": "出勤；出席",
+      "phrase": "attendance record",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "absence",
+      "pos": "n.",
+      "meaning": "缺席",
+      "phrase": "absence from work",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "leave",
+      "pos": "n.",
+      "meaning": "休假；假期",
+      "phrase": "take leave",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "vacation",
+      "pos": "n.",
+      "meaning": "假期",
+      "phrase": "vacation request",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "holiday",
+      "pos": "n.",
+      "meaning": "假日",
+      "phrase": "public holiday",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "break",
+      "pos": "n.",
+      "meaning": "休息時間",
+      "phrase": "lunch break",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "desk",
+      "pos": "n.",
+      "meaning": "辦公桌",
+      "phrase": "front desk",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "workstation",
+      "pos": "n.",
+      "meaning": "工作站；工作區",
+      "phrase": "computer workstation",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "document",
+      "pos": "n.",
+      "meaning": "文件",
+      "phrase": "prepare a document",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "file",
+      "pos": "n./v.",
+      "meaning": "檔案；歸檔",
+      "phrase": "file a report",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "folder",
+      "pos": "n.",
+      "meaning": "資料夾",
+      "phrase": "shared folder",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "form",
+      "pos": "n.",
+      "meaning": "表格",
+      "phrase": "complete a form",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "paperwork",
+      "pos": "n.",
+      "meaning": "文書工作；文件",
+      "phrase": "complete paperwork",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "report",
+      "pos": "n./v.",
+      "meaning": "報告；報告",
+      "phrase": "submit a report",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "notice",
+      "pos": "n.",
+      "meaning": "通知；公告",
+      "phrase": "post a notice",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "memo",
+      "pos": "n.",
+      "meaning": "備忘錄",
+      "phrase": "send a memo",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "announcement",
+      "pos": "n.",
+      "meaning": "公告；宣布",
+      "phrase": "make an announcement",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "correspondence",
+      "pos": "n.",
+      "meaning": "通信；往來信件",
+      "phrase": "business correspondence",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "mail",
+      "pos": "n./v.",
+      "meaning": "郵件；郵寄",
+      "phrase": "mail a document",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "signature",
+      "pos": "n.",
+      "meaning": "簽名",
+      "phrase": "require a signature",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "stationery",
+      "pos": "n.",
+      "meaning": "文具",
+      "phrase": "office stationery",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "supply",
+      "pos": "n.",
+      "meaning": "用品；供應品",
+      "phrase": "office supplies",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "cabinet",
+      "pos": "n.",
+      "meaning": "櫃子",
+      "phrase": "filing cabinet",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "copier",
+      "pos": "n.",
+      "meaning": "影印機",
+      "phrase": "office copier",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "printer",
+      "pos": "n.",
+      "meaning": "印表機",
+      "phrase": "use a printer",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "photocopy",
+      "pos": "n./v.",
+      "meaning": "影本；影印",
+      "phrase": "photocopy a document",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "organize",
+      "pos": "v.",
+      "meaning": "整理；安排",
+      "phrase": "organize files",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "submit",
+      "pos": "v.",
+      "meaning": "提交",
+      "phrase": "submit a form",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "complete",
+      "pos": "v.",
+      "meaning": "完成；填妥",
+      "phrase": "complete a report",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "attach",
+      "pos": "v.",
+      "meaning": "附上",
+      "phrase": "attach a document",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "forward",
+      "pos": "v.",
+      "meaning": "轉寄；轉交",
+      "phrase": "forward an email",
+      "category": "辦公室與工作"
+    },
+    {
+      "word": "applicant",
+      "pos": "n.",
+      "meaning": "申請人；應徵者",
+      "phrase": "job applicant",
+      "category": "人事與招募"
+    },
+    {
+      "word": "application",
+      "pos": "n.",
+      "meaning": "申請；申請表",
+      "phrase": "job application",
+      "category": "人事與招募"
+    },
+    {
+      "word": "candidate",
+      "pos": "n.",
+      "meaning": "候選人；應徵者",
+      "phrase": "qualified candidate",
+      "category": "人事與招募"
+    },
+    {
+      "word": "recruit",
+      "pos": "v./n.",
+      "meaning": "招募；新進人員",
+      "phrase": "recruit new employees",
+      "category": "人事與招募"
+    },
+    {
+      "word": "recruitment",
+      "pos": "n.",
+      "meaning": "招募",
+      "phrase": "recruitment process",
+      "category": "人事與招募"
+    },
+    {
+      "word": "hire",
+      "pos": "v.",
+      "meaning": "雇用",
+      "phrase": "hire new staff",
+      "category": "人事與招募"
+    },
+    {
+      "word": "interview",
+      "pos": "n./v.",
+      "meaning": "面試；訪談",
+      "phrase": "job interview",
+      "category": "人事與招募"
+    },
+    {
+      "word": "résumé",
+      "pos": "n.",
+      "meaning": "履歷",
+      "phrase": "submit a résumé",
+      "category": "人事與招募"
+    },
+    {
+      "word": "qualification",
+      "pos": "n.",
+      "meaning": "資格；資歷",
+      "phrase": "meet the qualifications",
+      "category": "人事與招募"
+    },
+    {
+      "word": "experience",
+      "pos": "n.",
+      "meaning": "經驗",
+      "phrase": "work experience",
+      "category": "人事與招募"
+    },
+    {
+      "word": "skill",
+      "pos": "n.",
+      "meaning": "技能",
+      "phrase": "communication skills",
+      "category": "人事與招募"
+    },
+    {
+      "word": "ability",
+      "pos": "n.",
+      "meaning": "能力",
+      "phrase": "ability to work independently",
+      "category": "人事與招募"
+    },
+    {
+      "word": "requirement",
+      "pos": "n.",
+      "meaning": "要求；條件",
+      "phrase": "job requirement",
+      "category": "人事與招募"
+    },
+    {
+      "word": "reference",
+      "pos": "n.",
+      "meaning": "推薦人；推薦資料",
+      "phrase": "provide references",
+      "category": "人事與招募"
+    },
+    {
+      "word": "vacancy",
+      "pos": "n.",
+      "meaning": "職缺；空缺",
+      "phrase": "fill a vacancy",
+      "category": "人事與招募"
+    },
+    {
+      "word": "opening",
+      "pos": "n.",
+      "meaning": "職缺",
+      "phrase": "job opening",
+      "category": "人事與招募"
+    },
+    {
+      "word": "employment",
+      "pos": "n.",
+      "meaning": "就業；雇用",
+      "phrase": "employment opportunity",
+      "category": "人事與招募"
+    },
+    {
+      "word": "personnel",
+      "pos": "n.",
+      "meaning": "人事；員工",
+      "phrase": "personnel department",
+      "category": "人事與招募"
+    },
+    {
+      "word": "supervisor",
+      "pos": "n.",
+      "meaning": "主管",
+      "phrase": "immediate supervisor",
+      "category": "人事與招募"
+    },
+    {
+      "word": "subordinate",
+      "pos": "n.",
+      "meaning": "部屬；下屬",
+      "phrase": "supervise subordinates",
+      "category": "人事與招募"
+    },
+    {
+      "word": "trainee",
+      "pos": "n.",
+      "meaning": "受訓人員",
+      "phrase": "management trainee",
+      "category": "人事與招募"
+    },
+    {
+      "word": "intern",
+      "pos": "n.",
+      "meaning": "實習生",
+      "phrase": "summer intern",
+      "category": "人事與招募"
+    },
+    {
+      "word": "orientation",
+      "pos": "n.",
+      "meaning": "新人說明；職前介紹",
+      "phrase": "employee orientation",
+      "category": "人事與招募"
+    },
+    {
+      "word": "training",
+      "pos": "n.",
+      "meaning": "培訓；訓練",
+      "phrase": "staff training",
+      "category": "人事與招募"
+    },
+    {
+      "word": "promotion",
+      "pos": "n.",
+      "meaning": "升遷",
+      "phrase": "receive a promotion",
+      "category": "人事與招募"
+    },
+    {
+      "word": "transfer",
+      "pos": "n./v.",
+      "meaning": "調職；調動",
+      "phrase": "transfer to another branch",
+      "category": "人事與招募"
+    },
+    {
+      "word": "resign",
+      "pos": "v.",
+      "meaning": "辭職",
+      "phrase": "resign from a position",
+      "category": "人事與招募"
+    },
+    {
+      "word": "resignation",
+      "pos": "n.",
+      "meaning": "辭職",
+      "phrase": "submit a resignation",
+      "category": "人事與招募"
+    },
+    {
+      "word": "retire",
+      "pos": "v.",
+      "meaning": "退休",
+      "phrase": "retire from the company",
+      "category": "人事與招募"
+    },
+    {
+      "word": "retirement",
+      "pos": "n.",
+      "meaning": "退休",
+      "phrase": "retirement plan",
+      "category": "人事與招募"
+    },
+    {
+      "word": "dismiss",
+      "pos": "v.",
+      "meaning": "解雇",
+      "phrase": "dismiss an employee",
+      "category": "人事與招募"
+    },
+    {
+      "word": "terminate",
+      "pos": "v.",
+      "meaning": "終止；解雇",
+      "phrase": "terminate employment",
+      "category": "人事與招募"
+    },
+    {
+      "word": "salary",
+      "pos": "n.",
+      "meaning": "薪資",
+      "phrase": "annual salary",
+      "category": "人事與招募"
+    },
+    {
+      "word": "wage",
+      "pos": "n.",
+      "meaning": "工資",
+      "phrase": "hourly wage",
+      "category": "人事與招募"
+    },
+    {
+      "word": "payroll",
+      "pos": "n.",
+      "meaning": "薪資名冊；薪資系統",
+      "phrase": "payroll department",
+      "category": "人事與招募"
+    },
+    {
+      "word": "compensation",
+      "pos": "n.",
+      "meaning": "薪酬；補償",
+      "phrase": "compensation package",
+      "category": "人事與招募"
+    },
+    {
+      "word": "benefit",
+      "pos": "n.",
+      "meaning": "福利",
+      "phrase": "employee benefits",
+      "category": "人事與招募"
+    },
+    {
+      "word": "bonus",
+      "pos": "n.",
+      "meaning": "獎金",
+      "phrase": "annual bonus",
+      "category": "人事與招募"
+    },
+    {
+      "word": "pension",
+      "pos": "n.",
+      "meaning": "退休金",
+      "phrase": "pension plan",
+      "category": "人事與招募"
+    },
+    {
+      "word": "insurance",
+      "pos": "n.",
+      "meaning": "保險",
+      "phrase": "health insurance",
+      "category": "人事與招募"
+    },
+    {
+      "word": "evaluate",
+      "pos": "v.",
+      "meaning": "評估",
+      "phrase": "evaluate performance",
+      "category": "人事與招募"
+    },
+    {
+      "word": "evaluation",
+      "pos": "n.",
+      "meaning": "評估",
+      "phrase": "performance evaluation",
+      "category": "人事與招募"
+    },
+    {
+      "word": "performance",
+      "pos": "n.",
+      "meaning": "工作表現；績效",
+      "phrase": "employee performance",
+      "category": "人事與招募"
+    },
+    {
+      "word": "productive",
+      "pos": "adj.",
+      "meaning": "有生產力的；有效率的",
+      "phrase": "productive employee",
+      "category": "人事與招募"
+    },
+    {
+      "word": "experienced",
+      "pos": "adj.",
+      "meaning": "有經驗的",
+      "phrase": "experienced applicant",
+      "category": "人事與招募"
+    },
+    {
+      "word": "qualified",
+      "pos": "adj.",
+      "meaning": "符合資格的",
+      "phrase": "qualified candidate",
+      "category": "人事與招募"
+    },
+    {
+      "word": "eligible",
+      "pos": "adj.",
+      "meaning": "符合資格的",
+      "phrase": "eligible for promotion",
+      "category": "人事與招募"
+    },
+    {
+      "word": "temporary",
+      "pos": "adj.",
+      "meaning": "臨時的；短期的",
+      "phrase": "temporary employee",
+      "category": "人事與招募"
+    },
+    {
+      "word": "permanent",
+      "pos": "adj.",
+      "meaning": "永久的；長期的",
+      "phrase": "permanent position",
+      "category": "人事與招募"
+    },
+    {
+      "word": "professional",
+      "pos": "adj./n.",
+      "meaning": "專業的；專業人士",
+      "phrase": "professional experience",
+      "category": "人事與招募"
+    },
+    {
+      "word": "meeting",
+      "pos": "n.",
+      "meaning": "會議",
+      "phrase": "attend a meeting",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "conference",
+      "pos": "n.",
+      "meaning": "會議；研討會",
+      "phrase": "annual conference",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "agenda",
+      "pos": "n.",
+      "meaning": "議程",
+      "phrase": "meeting agenda",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "minutes",
+      "pos": "n.",
+      "meaning": "會議紀錄",
+      "phrase": "meeting minutes",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "participant",
+      "pos": "n.",
+      "meaning": "參與者",
+      "phrase": "conference participant",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "attendee",
+      "pos": "n.",
+      "meaning": "出席者",
+      "phrase": "meeting attendee",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "speaker",
+      "pos": "n.",
+      "meaning": "講者；發言者",
+      "phrase": "guest speaker",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "presentation",
+      "pos": "n.",
+      "meaning": "簡報；發表",
+      "phrase": "give a presentation",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "discussion",
+      "pos": "n.",
+      "meaning": "討論",
+      "phrase": "group discussion",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "proposal",
+      "pos": "n.",
+      "meaning": "提案；建議",
+      "phrase": "submit a proposal",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "suggestion",
+      "pos": "n.",
+      "meaning": "建議",
+      "phrase": "make a suggestion",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "opinion",
+      "pos": "n.",
+      "meaning": "意見；看法",
+      "phrase": "express an opinion",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "feedback",
+      "pos": "n.",
+      "meaning": "回饋；意見",
+      "phrase": "provide feedback",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "comment",
+      "pos": "n./v.",
+      "meaning": "評論；意見",
+      "phrase": "make a comment",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "response",
+      "pos": "n.",
+      "meaning": "回覆；回應",
+      "phrase": "receive a response",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "reply",
+      "pos": "n./v.",
+      "meaning": "回覆",
+      "phrase": "reply to an email",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "message",
+      "pos": "n.",
+      "meaning": "訊息；留言",
+      "phrase": "leave a message",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "email",
+      "pos": "n./v.",
+      "meaning": "電子郵件；寄電子郵件",
+      "phrase": "send an email",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "telephone",
+      "pos": "n./v.",
+      "meaning": "電話；打電話",
+      "phrase": "telephone number",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "contact",
+      "pos": "n./v.",
+      "meaning": "聯絡；聯絡人",
+      "phrase": "contact a client",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "communicate",
+      "pos": "v.",
+      "meaning": "溝通；傳達",
+      "phrase": "communicate effectively",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "inform",
+      "pos": "v.",
+      "meaning": "告知",
+      "phrase": "inform employees",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "notify",
+      "pos": "v.",
+      "meaning": "通知",
+      "phrase": "notify customers",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "mention",
+      "pos": "v.",
+      "meaning": "提及",
+      "phrase": "mention a problem",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "explain",
+      "pos": "v.",
+      "meaning": "解釋；說明",
+      "phrase": "explain a procedure",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "describe",
+      "pos": "v.",
+      "meaning": "描述；說明",
+      "phrase": "describe the situation",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "discuss",
+      "pos": "v.",
+      "meaning": "討論",
+      "phrase": "discuss a proposal",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "recommend",
+      "pos": "v.",
+      "meaning": "推薦；建議",
+      "phrase": "recommend a solution",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "propose",
+      "pos": "v.",
+      "meaning": "提議；提出",
+      "phrase": "propose a change",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "request",
+      "pos": "n./v.",
+      "meaning": "要求；請求",
+      "phrase": "make a request",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "inquire",
+      "pos": "v.",
+      "meaning": "詢問；查詢",
+      "phrase": "inquire about availability",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "confirm",
+      "pos": "v.",
+      "meaning": "確認",
+      "phrase": "confirm a meeting",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "clarify",
+      "pos": "v.",
+      "meaning": "澄清；說明清楚",
+      "phrase": "clarify the details",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "emphasize",
+      "pos": "v.",
+      "meaning": "強調",
+      "phrase": "emphasize the importance",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "announce",
+      "pos": "v.",
+      "meaning": "宣布；公布",
+      "phrase": "announce a decision",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "introduce",
+      "pos": "v.",
+      "meaning": "介紹；引進",
+      "phrase": "introduce a new policy",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "address",
+      "pos": "v.",
+      "meaning": "處理；應對",
+      "phrase": "address a concern",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "negotiate",
+      "pos": "v.",
+      "meaning": "協商；談判",
+      "phrase": "negotiate a contract",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "negotiation",
+      "pos": "n.",
+      "meaning": "協商；談判",
+      "phrase": "contract negotiation",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "agreement",
+      "pos": "n.",
+      "meaning": "協議；同意",
+      "phrase": "reach an agreement",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "decision",
+      "pos": "n.",
+      "meaning": "決定",
+      "phrase": "make a decision",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "approve",
+      "pos": "v.",
+      "meaning": "核准；批准",
+      "phrase": "approve a proposal",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "approval",
+      "pos": "n.",
+      "meaning": "核准；批准",
+      "phrase": "receive approval",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "postpone",
+      "pos": "v.",
+      "meaning": "延後；延期",
+      "phrase": "postpone a meeting",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "cancel",
+      "pos": "v.",
+      "meaning": "取消",
+      "phrase": "cancel an appointment",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "arrange",
+      "pos": "v.",
+      "meaning": "安排",
+      "phrase": "arrange a meeting",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "reschedule",
+      "pos": "v.",
+      "meaning": "重新安排時間",
+      "phrase": "reschedule an appointment",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "attend",
+      "pos": "v.",
+      "meaning": "出席；參加",
+      "phrase": "attend a conference",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "participate",
+      "pos": "v.",
+      "meaning": "參與",
+      "phrase": "participate in a discussion",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "summarize",
+      "pos": "v.",
+      "meaning": "總結；摘要",
+      "phrase": "summarize the discussion",
+      "category": "會議與商務溝通"
+    },
+    {
+      "word": "company",
+      "pos": "n.",
+      "meaning": "公司",
+      "phrase": "work for a company",
+      "category": "公司與管理"
+    },
+    {
+      "word": "corporation",
+      "pos": "n.",
+      "meaning": "公司；企業",
+      "phrase": "large corporation",
+      "category": "公司與管理"
+    },
+    {
+      "word": "organization",
+      "pos": "n.",
+      "meaning": "組織；機構",
+      "phrase": "business organization",
+      "category": "公司與管理"
+    },
+    {
+      "word": "enterprise",
+      "pos": "n.",
+      "meaning": "企業；事業",
+      "phrase": "business enterprise",
+      "category": "公司與管理"
+    },
+    {
+      "word": "headquarters",
+      "pos": "n.",
+      "meaning": "總部",
+      "phrase": "company headquarters",
+      "category": "公司與管理"
+    },
+    {
+      "word": "branch",
+      "pos": "n.",
+      "meaning": "分公司；分店",
+      "phrase": "branch office",
+      "category": "公司與管理"
+    },
+    {
+      "word": "division",
+      "pos": "n.",
+      "meaning": "部門；事業部",
+      "phrase": "sales division",
+      "category": "公司與管理"
+    },
+    {
+      "word": "subsidiary",
+      "pos": "n.",
+      "meaning": "子公司",
+      "phrase": "overseas subsidiary",
+      "category": "公司與管理"
+    },
+    {
+      "word": "executive",
+      "pos": "n./adj.",
+      "meaning": "主管；高階主管的",
+      "phrase": "senior executive",
+      "category": "公司與管理"
+    },
+    {
+      "word": "manager",
+      "pos": "n.",
+      "meaning": "經理；管理者",
+      "phrase": "general manager",
+      "category": "公司與管理"
+    },
+    {
+      "word": "director",
+      "pos": "n.",
+      "meaning": "主管；董事",
+      "phrase": "board of directors",
+      "category": "公司與管理"
+    },
+    {
+      "word": "president",
+      "pos": "n.",
+      "meaning": "公司總裁；董事長",
+      "phrase": "company president",
+      "category": "公司與管理"
+    },
+    {
+      "word": "chairman",
+      "pos": "n.",
+      "meaning": "主席；董事長",
+      "phrase": "board chairman",
+      "category": "公司與管理"
+    },
+    {
+      "word": "board",
+      "pos": "n.",
+      "meaning": "董事會；委員會",
+      "phrase": "board meeting",
+      "category": "公司與管理"
+    },
+    {
+      "word": "management",
+      "pos": "n.",
+      "meaning": "管理；管理階層",
+      "phrase": "senior management",
+      "category": "公司與管理"
+    },
+    {
+      "word": "leadership",
+      "pos": "n.",
+      "meaning": "領導；領導能力",
+      "phrase": "leadership skills",
+      "category": "公司與管理"
+    },
+    {
+      "word": "strategy",
+      "pos": "n.",
+      "meaning": "策略",
+      "phrase": "business strategy",
+      "category": "公司與管理"
+    },
+    {
+      "word": "objective",
+      "pos": "n.",
+      "meaning": "目標",
+      "phrase": "business objective",
+      "category": "公司與管理"
+    },
+    {
+      "word": "goal",
+      "pos": "n.",
+      "meaning": "目標",
+      "phrase": "achieve a goal",
+      "category": "公司與管理"
+    },
+    {
+      "word": "plan",
+      "pos": "n./v.",
+      "meaning": "計畫；規劃",
+      "phrase": "business plan",
+      "category": "公司與管理"
+    },
+    {
+      "word": "project",
+      "pos": "n.",
+      "meaning": "專案；計畫",
+      "phrase": "manage a project",
+      "category": "公司與管理"
+    },
+    {
+      "word": "operation",
+      "pos": "n.",
+      "meaning": "營運；作業",
+      "phrase": "business operations",
+      "category": "公司與管理"
+    },
+    {
+      "word": "procedure",
+      "pos": "n.",
+      "meaning": "程序；流程",
+      "phrase": "follow a procedure",
+      "category": "公司與管理"
+    },
+    {
+      "word": "policy",
+      "pos": "n.",
+      "meaning": "政策；規定",
+      "phrase": "company policy",
+      "category": "公司與管理"
+    },
+    {
+      "word": "regulation",
+      "pos": "n.",
+      "meaning": "規定；法規",
+      "phrase": "safety regulations",
+      "category": "公司與管理"
+    },
+    {
+      "word": "guideline",
+      "pos": "n.",
+      "meaning": "準則；指導方針",
+      "phrase": "follow the guidelines",
+      "category": "公司與管理"
+    },
+    {
+      "word": "standard",
+      "pos": "n./adj.",
+      "meaning": "標準；標準的",
+      "phrase": "quality standards",
+      "category": "公司與管理"
+    },
+    {
+      "word": "responsibility",
+      "pos": "n.",
+      "meaning": "責任；職責",
+      "phrase": "take responsibility",
+      "category": "公司與管理"
+    },
+    {
+      "word": "authority",
+      "pos": "n.",
+      "meaning": "權限；權力",
+      "phrase": "have the authority",
+      "category": "公司與管理"
+    },
+    {
+      "word": "budget",
+      "pos": "n.",
+      "meaning": "預算",
+      "phrase": "annual budget",
+      "category": "公司與管理"
+    },
+    {
+      "word": "expense",
+      "pos": "n.",
+      "meaning": "費用；支出",
+      "phrase": "business expenses",
+      "category": "公司與管理"
+    },
+    {
+      "word": "cost",
+      "pos": "n./v.",
+      "meaning": "成本；花費",
+      "phrase": "reduce costs",
+      "category": "公司與管理"
+    },
+    {
+      "word": "revenue",
+      "pos": "n.",
+      "meaning": "營收；收入",
+      "phrase": "annual revenue",
+      "category": "公司與管理"
+    },
+    {
+      "word": "profit",
+      "pos": "n.",
+      "meaning": "利潤",
+      "phrase": "increase profits",
+      "category": "公司與管理"
+    },
+    {
+      "word": "loss",
+      "pos": "n.",
+      "meaning": "虧損；損失",
+      "phrase": "report a loss",
+      "category": "公司與管理"
+    },
+    {
+      "word": "growth",
+      "pos": "n.",
+      "meaning": "成長；增長",
+      "phrase": "business growth",
+      "category": "公司與管理"
+    },
+    {
+      "word": "expansion",
+      "pos": "n.",
+      "meaning": "擴張；拓展",
+      "phrase": "business expansion",
+      "category": "公司與管理"
+    },
+    {
+      "word": "merger",
+      "pos": "n.",
+      "meaning": "合併",
+      "phrase": "company merger",
+      "category": "公司與管理"
+    },
+    {
+      "word": "acquire",
+      "pos": "v.",
+      "meaning": "收購；取得",
+      "phrase": "acquire a company",
+      "category": "公司與管理"
+    },
+    {
+      "word": "acquisition",
+      "pos": "n.",
+      "meaning": "收購；取得",
+      "phrase": "business acquisition",
+      "category": "公司與管理"
+    },
+    {
+      "word": "establish",
+      "pos": "v.",
+      "meaning": "建立；成立",
+      "phrase": "establish a company",
+      "category": "公司與管理"
+    },
+    {
+      "word": "operate",
+      "pos": "v.",
+      "meaning": "營運；經營",
+      "phrase": "operate a business",
+      "category": "公司與管理"
+    },
+    {
+      "word": "manage",
+      "pos": "v.",
+      "meaning": "管理；經營",
+      "phrase": "manage a department",
+      "category": "公司與管理"
+    },
+    {
+      "word": "supervise",
+      "pos": "v.",
+      "meaning": "監督；管理",
+      "phrase": "supervise employees",
+      "category": "公司與管理"
+    },
+    {
+      "word": "implement",
+      "pos": "v.",
+      "meaning": "實施；執行",
+      "phrase": "implement a policy",
+      "category": "公司與管理"
+    },
+    {
+      "word": "achieve",
+      "pos": "v.",
+      "meaning": "達成",
+      "phrase": "achieve an objective",
+      "category": "公司與管理"
+    },
+    {
+      "word": "improve",
+      "pos": "v.",
+      "meaning": "改善；提升",
+      "phrase": "improve efficiency",
+      "category": "公司與管理"
+    },
+    {
+      "word": "reduce",
+      "pos": "v.",
+      "meaning": "減少；降低",
+      "phrase": "reduce expenses",
+      "category": "公司與管理"
+    },
+    {
+      "word": "increase",
+      "pos": "v./n.",
+      "meaning": "增加；提高",
+      "phrase": "increase revenue",
+      "category": "公司與管理"
+    },
+    {
+      "word": "efficient",
+      "pos": "adj.",
+      "meaning": "有效率的",
+      "phrase": "efficient operation",
+      "category": "公司與管理"
+    },
+    {
+      "word": "marketing",
+      "pos": "n.",
+      "meaning": "行銷",
+      "phrase": "marketing strategy",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "market",
+      "pos": "n./v.",
+      "meaning": "市場；行銷",
+      "phrase": "target market",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "advertise",
+      "pos": "v.",
+      "meaning": "刊登廣告；宣傳",
+      "phrase": "advertise a product",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "advertisement",
+      "pos": "n.",
+      "meaning": "廣告",
+      "phrase": "place an advertisement",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "campaign",
+      "pos": "n.",
+      "meaning": "行銷活動；宣傳活動",
+      "phrase": "advertising campaign",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "promotion",
+      "pos": "n.",
+      "meaning": "促銷；推廣",
+      "phrase": "sales promotion",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "publicity",
+      "pos": "n.",
+      "meaning": "宣傳；曝光",
+      "phrase": "generate publicity",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "brochure",
+      "pos": "n.",
+      "meaning": "宣傳冊；簡介",
+      "phrase": "company brochure",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "catalog",
+      "pos": "n.",
+      "meaning": "目錄；商品型錄",
+      "phrase": "product catalog",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "leaflet",
+      "pos": "n.",
+      "meaning": "傳單；宣傳單",
+      "phrase": "promotional leaflet",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "poster",
+      "pos": "n.",
+      "meaning": "海報",
+      "phrase": "advertising poster",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "banner",
+      "pos": "n.",
+      "meaning": "橫幅；廣告布條",
+      "phrase": "advertising banner",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "brand",
+      "pos": "n.",
+      "meaning": "品牌",
+      "phrase": "brand awareness",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "logo",
+      "pos": "n.",
+      "meaning": "標誌；商標圖案",
+      "phrase": "company logo",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "slogan",
+      "pos": "n.",
+      "meaning": "標語；廣告口號",
+      "phrase": "advertising slogan",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "audience",
+      "pos": "n.",
+      "meaning": "受眾；觀眾",
+      "phrase": "target audience",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "consumer",
+      "pos": "n.",
+      "meaning": "消費者",
+      "phrase": "consumer demand",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "demand",
+      "pos": "n./v.",
+      "meaning": "需求；要求",
+      "phrase": "meet demand",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "survey",
+      "pos": "n./v.",
+      "meaning": "調查；進行調查",
+      "phrase": "customer survey",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "research",
+      "pos": "n./v.",
+      "meaning": "研究；調查",
+      "phrase": "market research",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "trend",
+      "pos": "n.",
+      "meaning": "趨勢",
+      "phrase": "market trend",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "competitor",
+      "pos": "n.",
+      "meaning": "競爭對手",
+      "phrase": "major competitor",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "competition",
+      "pos": "n.",
+      "meaning": "競爭",
+      "phrase": "market competition",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "segment",
+      "pos": "n.",
+      "meaning": "市場區隔；部分",
+      "phrase": "market segment",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "target",
+      "pos": "n./v.",
+      "meaning": "目標；鎖定",
+      "phrase": "target customers",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "launch",
+      "pos": "n./v.",
+      "meaning": "推出；上市",
+      "phrase": "launch a product",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "display",
+      "pos": "n./v.",
+      "meaning": "展示；陳列",
+      "phrase": "product display",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "exhibit",
+      "pos": "n./v.",
+      "meaning": "展品；展示",
+      "phrase": "exhibit products",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "feature",
+      "pos": "n./v.",
+      "meaning": "特色；以…為特色",
+      "phrase": "product features",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "design",
+      "pos": "n./v.",
+      "meaning": "設計",
+      "phrase": "product design",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "package",
+      "pos": "n./v.",
+      "meaning": "包裝；套裝方案",
+      "phrase": "promotional package",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "label",
+      "pos": "n./v.",
+      "meaning": "標籤；貼標籤",
+      "phrase": "product label",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "sample",
+      "pos": "n.",
+      "meaning": "樣品；試用品",
+      "phrase": "free sample",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "coupon",
+      "pos": "n.",
+      "meaning": "優惠券",
+      "phrase": "discount coupon",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "discount",
+      "pos": "n./v.",
+      "meaning": "折扣；打折",
+      "phrase": "offer a discount",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "special",
+      "pos": "adj./n.",
+      "meaning": "特別的；特價商品",
+      "phrase": "special price",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "offer",
+      "pos": "n./v.",
+      "meaning": "優惠；提供",
+      "phrase": "special offer",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "sponsor",
+      "pos": "n./v.",
+      "meaning": "贊助者；贊助",
+      "phrase": "sponsor an event",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "sponsorship",
+      "pos": "n.",
+      "meaning": "贊助",
+      "phrase": "corporate sponsorship",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "media",
+      "pos": "n.",
+      "meaning": "媒體",
+      "phrase": "social media",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "commercial",
+      "pos": "n./adj.",
+      "meaning": "商業廣告；商業的",
+      "phrase": "television commercial",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "circulation",
+      "pos": "n.",
+      "meaning": "發行量；流通",
+      "phrase": "newspaper circulation",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "subscription",
+      "pos": "n.",
+      "meaning": "訂閱",
+      "phrase": "annual subscription",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "subscriber",
+      "pos": "n.",
+      "meaning": "訂閱者",
+      "phrase": "new subscriber",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "reputation",
+      "pos": "n.",
+      "meaning": "聲譽；名聲",
+      "phrase": "company reputation",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "image",
+      "pos": "n.",
+      "meaning": "形象；圖像",
+      "phrase": "brand image",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "awareness",
+      "pos": "n.",
+      "meaning": "認知度；知名度",
+      "phrase": "increase brand awareness",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "attract",
+      "pos": "v.",
+      "meaning": "吸引",
+      "phrase": "attract customers",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "appeal",
+      "pos": "n./v.",
+      "meaning": "吸引力；吸引",
+      "phrase": "appeal to consumers",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "distribute",
+      "pos": "v.",
+      "meaning": "分發；配送",
+      "phrase": "distribute brochures",
+      "category": "行銷與廣告"
+    },
+    {
+      "word": "sale",
+      "pos": "n.",
+      "meaning": "銷售；特價",
+      "phrase": "sales volume",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "customer",
+      "pos": "n.",
+      "meaning": "顧客",
+      "phrase": "customer service",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "client",
+      "pos": "n.",
+      "meaning": "客戶",
+      "phrase": "meet with a client",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "buyer",
+      "pos": "n.",
+      "meaning": "買方；買家",
+      "phrase": "potential buyer",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "purchaser",
+      "pos": "n.",
+      "meaning": "購買者；採購人員",
+      "phrase": "prospective purchaser",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "retailer",
+      "pos": "n.",
+      "meaning": "零售商",
+      "phrase": "major retailer",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "wholesaler",
+      "pos": "n.",
+      "meaning": "批發商",
+      "phrase": "local wholesaler",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "vendor",
+      "pos": "n.",
+      "meaning": "供應商；賣方",
+      "phrase": "approved vendor",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "representative",
+      "pos": "n.",
+      "meaning": "代表；業務代表",
+      "phrase": "sales representative",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "salesperson",
+      "pos": "n.",
+      "meaning": "銷售人員",
+      "phrase": "experienced salesperson",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "merchandise",
+      "pos": "n.",
+      "meaning": "商品",
+      "phrase": "display merchandise",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "product",
+      "pos": "n.",
+      "meaning": "產品",
+      "phrase": "new product",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "item",
+      "pos": "n.",
+      "meaning": "商品；品項",
+      "phrase": "sale item",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "goods",
+      "pos": "n.",
+      "meaning": "商品；貨物",
+      "phrase": "consumer goods",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "service",
+      "pos": "n.",
+      "meaning": "服務",
+      "phrase": "provide a service",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "price",
+      "pos": "n.",
+      "meaning": "價格",
+      "phrase": "reasonable price",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "fee",
+      "pos": "n.",
+      "meaning": "費用；手續費",
+      "phrase": "service fee",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "charge",
+      "pos": "n./v.",
+      "meaning": "費用；收費",
+      "phrase": "additional charge",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "purchase",
+      "pos": "n./v.",
+      "meaning": "購買",
+      "phrase": "make a purchase",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "sell",
+      "pos": "v.",
+      "meaning": "銷售；出售",
+      "phrase": "sell a product",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "transaction",
+      "pos": "n.",
+      "meaning": "交易",
+      "phrase": "complete a transaction",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "deal",
+      "pos": "n.",
+      "meaning": "交易；協議",
+      "phrase": "close a deal",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "contract",
+      "pos": "n.",
+      "meaning": "合約",
+      "phrase": "sign a contract",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "warranty",
+      "pos": "n.",
+      "meaning": "保固；保證",
+      "phrase": "one-year warranty",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "guarantee",
+      "pos": "n./v.",
+      "meaning": "保證；擔保",
+      "phrase": "money-back guarantee",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "refund",
+      "pos": "n./v.",
+      "meaning": "退款；退費",
+      "phrase": "request a refund",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "return",
+      "pos": "n./v.",
+      "meaning": "退貨；退回",
+      "phrase": "return an item",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "exchange",
+      "pos": "n./v.",
+      "meaning": "換貨；交換",
+      "phrase": "exchange an item",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "receipt",
+      "pos": "n.",
+      "meaning": "收據",
+      "phrase": "keep the receipt",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "invoice",
+      "pos": "n.",
+      "meaning": "發票；請款單",
+      "phrase": "issue an invoice",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "quote",
+      "pos": "n./v.",
+      "meaning": "報價；報價單",
+      "phrase": "request a quote",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "estimate",
+      "pos": "n./v.",
+      "meaning": "估價；估計",
+      "phrase": "cost estimate",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "pricing",
+      "pos": "n.",
+      "meaning": "定價；價格設定",
+      "phrase": "pricing strategy",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "commission",
+      "pos": "n.",
+      "meaning": "佣金；抽成",
+      "phrase": "sales commission",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "account",
+      "pos": "n.",
+      "meaning": "帳戶；客戶帳號",
+      "phrase": "customer account",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "loyalty",
+      "pos": "n.",
+      "meaning": "忠誠度",
+      "phrase": "customer loyalty",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "satisfaction",
+      "pos": "n.",
+      "meaning": "滿意度",
+      "phrase": "customer satisfaction",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "complaint",
+      "pos": "n.",
+      "meaning": "客訴；抱怨",
+      "phrase": "customer complaint",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "complain",
+      "pos": "v.",
+      "meaning": "抱怨；投訴",
+      "phrase": "complain about a service",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "inquiry",
+      "pos": "n.",
+      "meaning": "詢問；查詢",
+      "phrase": "customer inquiry",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "assistance",
+      "pos": "n.",
+      "meaning": "協助；幫助",
+      "phrase": "provide assistance",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "assist",
+      "pos": "v.",
+      "meaning": "協助",
+      "phrase": "assist a customer",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "serve",
+      "pos": "v.",
+      "meaning": "服務；接待",
+      "phrase": "serve customers",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "resolve",
+      "pos": "v.",
+      "meaning": "解決",
+      "phrase": "resolve a complaint",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "replace",
+      "pos": "v.",
+      "meaning": "更換；替換",
+      "phrase": "replace a defective item",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "retain",
+      "pos": "v.",
+      "meaning": "留住；保留",
+      "phrase": "retain customers",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "accommodate",
+      "pos": "v.",
+      "meaning": "配合；滿足需求",
+      "phrase": "accommodate a request",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "available",
+      "pos": "adj.",
+      "meaning": "可取得的；有貨的",
+      "phrase": "currently available",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "popular",
+      "pos": "adj.",
+      "meaning": "受歡迎的",
+      "phrase": "popular product",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "competitive",
+      "pos": "adj.",
+      "meaning": "有競爭力的",
+      "phrase": "competitive price",
+      "category": "銷售與客戶"
+    },
+    {
+      "word": "bank",
+      "pos": "n.",
+      "meaning": "銀行",
+      "phrase": "local bank",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "banking",
+      "pos": "n.",
+      "meaning": "銀行業務",
+      "phrase": "online banking",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "finance",
+      "pos": "n./v.",
+      "meaning": "財務；融資",
+      "phrase": "finance a project",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "financial",
+      "pos": "adj.",
+      "meaning": "財務的；金融的",
+      "phrase": "financial report",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "investment",
+      "pos": "n.",
+      "meaning": "投資",
+      "phrase": "make an investment",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "invest",
+      "pos": "v.",
+      "meaning": "投資",
+      "phrase": "invest in a company",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "investor",
+      "pos": "n.",
+      "meaning": "投資者",
+      "phrase": "potential investor",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "fund",
+      "pos": "n./v.",
+      "meaning": "資金；提供資金",
+      "phrase": "investment fund",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "capital",
+      "pos": "n.",
+      "meaning": "資本；資金",
+      "phrase": "raise capital",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "asset",
+      "pos": "n.",
+      "meaning": "資產",
+      "phrase": "company assets",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "liability",
+      "pos": "n.",
+      "meaning": "負債；責任",
+      "phrase": "financial liabilities",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "loan",
+      "pos": "n.",
+      "meaning": "貸款",
+      "phrase": "apply for a loan",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "mortgage",
+      "pos": "n.",
+      "meaning": "房屋貸款；抵押貸款",
+      "phrase": "mortgage payment",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "interest",
+      "pos": "n.",
+      "meaning": "利息",
+      "phrase": "interest rate",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "rate",
+      "pos": "n.",
+      "meaning": "比率；利率",
+      "phrase": "exchange rate",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "credit",
+      "pos": "n.",
+      "meaning": "信用；貸方",
+      "phrase": "credit card",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "debit",
+      "pos": "n.",
+      "meaning": "借方；扣款",
+      "phrase": "debit card",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "deposit",
+      "pos": "n./v.",
+      "meaning": "存款；存入",
+      "phrase": "make a deposit",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "withdraw",
+      "pos": "v.",
+      "meaning": "提款；提領",
+      "phrase": "withdraw money",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "withdrawal",
+      "pos": "n.",
+      "meaning": "提款；提領",
+      "phrase": "cash withdrawal",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "balance",
+      "pos": "n.",
+      "meaning": "餘額；結餘",
+      "phrase": "account balance",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "cash",
+      "pos": "n.",
+      "meaning": "現金",
+      "phrase": "pay in cash",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "currency",
+      "pos": "n.",
+      "meaning": "貨幣",
+      "phrase": "foreign currency",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "conversion",
+      "pos": "n.",
+      "meaning": "兌換；轉換",
+      "phrase": "currency conversion",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "dollar",
+      "pos": "n.",
+      "meaning": "美元；元",
+      "phrase": "U.S. dollar",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "amount",
+      "pos": "n.",
+      "meaning": "金額；數量",
+      "phrase": "total amount",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "check",
+      "pos": "n.",
+      "meaning": "支票",
+      "phrase": "write a check",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "savings",
+      "pos": "n.",
+      "meaning": "存款；儲蓄",
+      "phrase": "savings account",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "checking",
+      "pos": "n.",
+      "meaning": "支票帳戶業務",
+      "phrase": "checking account",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "statement",
+      "pos": "n.",
+      "meaning": "對帳單；報表",
+      "phrase": "bank statement",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "institution",
+      "pos": "n.",
+      "meaning": "機構",
+      "phrase": "financial institution",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "lender",
+      "pos": "n.",
+      "meaning": "貸款方；放款人",
+      "phrase": "mortgage lender",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "borrower",
+      "pos": "n.",
+      "meaning": "借款人",
+      "phrase": "qualified borrower",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "debt",
+      "pos": "n.",
+      "meaning": "債務",
+      "phrase": "repay a debt",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "owe",
+      "pos": "v.",
+      "meaning": "欠款；欠",
+      "phrase": "owe money",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "repay",
+      "pos": "v.",
+      "meaning": "償還",
+      "phrase": "repay a loan",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "secure",
+      "pos": "v./adj.",
+      "meaning": "取得；有保障的",
+      "phrase": "secure financing",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "wealth",
+      "pos": "n.",
+      "meaning": "財富",
+      "phrase": "wealth management",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "portfolio",
+      "pos": "n.",
+      "meaning": "投資組合",
+      "phrase": "investment portfolio",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "stock",
+      "pos": "n.",
+      "meaning": "股票",
+      "phrase": "stock market",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "share",
+      "pos": "n.",
+      "meaning": "股份；股票",
+      "phrase": "company shares",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "bond",
+      "pos": "n.",
+      "meaning": "債券",
+      "phrase": "government bond",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "dividend",
+      "pos": "n.",
+      "meaning": "股利；股息",
+      "phrase": "pay a dividend",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "yield",
+      "pos": "n./v.",
+      "meaning": "收益；產生收益",
+      "phrase": "investment yield",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "economy",
+      "pos": "n.",
+      "meaning": "經濟",
+      "phrase": "global economy",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "economic",
+      "pos": "adj.",
+      "meaning": "經濟的",
+      "phrase": "economic growth",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "inflation",
+      "pos": "n.",
+      "meaning": "通貨膨脹",
+      "phrase": "inflation rate",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "fluctuate",
+      "pos": "v.",
+      "meaning": "波動；起伏",
+      "phrase": "prices fluctuate",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "decline",
+      "pos": "n./v.",
+      "meaning": "下降；減少",
+      "phrase": "decline in sales",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "recover",
+      "pos": "v.",
+      "meaning": "復甦；恢復",
+      "phrase": "economy recovers",
+      "category": "金融與銀行"
+    },
+    {
+      "word": "accounting",
+      "pos": "n.",
+      "meaning": "會計；會計業務",
+      "phrase": "accounting department",
+      "category": "會計與付款"
+    },
+    {
+      "word": "accountant",
+      "pos": "n.",
+      "meaning": "會計師；會計人員",
+      "phrase": "certified accountant",
+      "category": "會計與付款"
+    },
+    {
+      "word": "audit",
+      "pos": "n./v.",
+      "meaning": "稽核；審計",
+      "phrase": "conduct an audit",
+      "category": "會計與付款"
+    },
+    {
+      "word": "auditor",
+      "pos": "n.",
+      "meaning": "稽核員；審計人員",
+      "phrase": "independent auditor",
+      "category": "會計與付款"
+    },
+    {
+      "word": "bookkeeping",
+      "pos": "n.",
+      "meaning": "簿記；記帳",
+      "phrase": "bookkeeping services",
+      "category": "會計與付款"
+    },
+    {
+      "word": "payment",
+      "pos": "n.",
+      "meaning": "付款；款項",
+      "phrase": "make a payment",
+      "category": "會計與付款"
+    },
+    {
+      "word": "pay",
+      "pos": "v./n.",
+      "meaning": "付款；薪資",
+      "phrase": "pay a bill",
+      "category": "會計與付款"
+    },
+    {
+      "word": "payable",
+      "pos": "adj./n.",
+      "meaning": "應付的；應付款",
+      "phrase": "accounts payable",
+      "category": "會計與付款"
+    },
+    {
+      "word": "receivable",
+      "pos": "adj./n.",
+      "meaning": "應收的；應收款",
+      "phrase": "accounts receivable",
+      "category": "會計與付款"
+    },
+    {
+      "word": "bill",
+      "pos": "n./v.",
+      "meaning": "帳單；開帳單",
+      "phrase": "pay a bill",
+      "category": "會計與付款"
+    },
+    {
+      "word": "billing",
+      "pos": "n.",
+      "meaning": "帳務；開立帳單",
+      "phrase": "billing information",
+      "category": "會計與付款"
+    },
+    {
+      "word": "total",
+      "pos": "n./adj.",
+      "meaning": "總額；總計的",
+      "phrase": "total cost",
+      "category": "會計與付款"
+    },
+    {
+      "word": "subtotal",
+      "pos": "n.",
+      "meaning": "小計",
+      "phrase": "calculate the subtotal",
+      "category": "會計與付款"
+    },
+    {
+      "word": "tax",
+      "pos": "n.",
+      "meaning": "稅；稅款",
+      "phrase": "income tax",
+      "category": "會計與付款"
+    },
+    {
+      "word": "taxable",
+      "pos": "adj.",
+      "meaning": "應課稅的",
+      "phrase": "taxable income",
+      "category": "會計與付款"
+    },
+    {
+      "word": "income",
+      "pos": "n.",
+      "meaning": "收入；所得",
+      "phrase": "annual income",
+      "category": "會計與付款"
+    },
+    {
+      "word": "earnings",
+      "pos": "n.",
+      "meaning": "收益；所得",
+      "phrase": "quarterly earnings",
+      "category": "會計與付款"
+    },
+    {
+      "word": "expenditure",
+      "pos": "n.",
+      "meaning": "支出；開支",
+      "phrase": "capital expenditure",
+      "category": "會計與付款"
+    },
+    {
+      "word": "deduction",
+      "pos": "n.",
+      "meaning": "扣除額；扣款",
+      "phrase": "tax deduction",
+      "category": "會計與付款"
+    },
+    {
+      "word": "deduct",
+      "pos": "v.",
+      "meaning": "扣除",
+      "phrase": "deduct an amount",
+      "category": "會計與付款"
+    },
+    {
+      "word": "allowance",
+      "pos": "n.",
+      "meaning": "津貼；補助",
+      "phrase": "travel allowance",
+      "category": "會計與付款"
+    },
+    {
+      "word": "reimbursement",
+      "pos": "n.",
+      "meaning": "報銷；償還款",
+      "phrase": "expense reimbursement",
+      "category": "會計與付款"
+    },
+    {
+      "word": "reimburse",
+      "pos": "v.",
+      "meaning": "報銷；償還",
+      "phrase": "reimburse expenses",
+      "category": "會計與付款"
+    },
+    {
+      "word": "due",
+      "pos": "adj.",
+      "meaning": "到期的；應付的",
+      "phrase": "payment due",
+      "category": "會計與付款"
+    },
+    {
+      "word": "overdue",
+      "pos": "adj.",
+      "meaning": "逾期的",
+      "phrase": "overdue payment",
+      "category": "會計與付款"
+    },
+    {
+      "word": "outstanding",
+      "pos": "adj.",
+      "meaning": "未支付的；未結清的",
+      "phrase": "outstanding balance",
+      "category": "會計與付款"
+    },
+    {
+      "word": "installment",
+      "pos": "n.",
+      "meaning": "分期付款的一期",
+      "phrase": "monthly installment",
+      "category": "會計與付款"
+    },
+    {
+      "word": "balance sheet",
+      "pos": "n.",
+      "meaning": "資產負債表",
+      "phrase": "prepare a balance sheet",
+      "category": "會計與付款"
+    },
+    {
+      "word": "advance",
+      "pos": "n./adj.",
+      "meaning": "預付款；預先的",
+      "phrase": "advance payment",
+      "category": "會計與付款"
+    },
+    {
+      "word": "prepayment",
+      "pos": "n.",
+      "meaning": "預付款",
+      "phrase": "require prepayment",
+      "category": "會計與付款"
+    },
+    {
+      "word": "penalty",
+      "pos": "n.",
+      "meaning": "罰款；違約金",
+      "phrase": "late-payment penalty",
+      "category": "會計與付款"
+    },
+    {
+      "word": "surcharge",
+      "pos": "n.",
+      "meaning": "附加費",
+      "phrase": "fuel surcharge",
+      "category": "會計與付款"
+    },
+    {
+      "word": "payee",
+      "pos": "n.",
+      "meaning": "收款人",
+      "phrase": "name of the payee",
+      "category": "會計與付款"
+    },
+    {
+      "word": "fare",
+      "pos": "n.",
+      "meaning": "票價；車資",
+      "phrase": "taxi fare",
+      "category": "會計與付款"
+    },
+    {
+      "word": "tuition",
+      "pos": "n.",
+      "meaning": "學費",
+      "phrase": "tuition fee",
+      "category": "會計與付款"
+    },
+    {
+      "word": "rent",
+      "pos": "n./v.",
+      "meaning": "租金；租用",
+      "phrase": "monthly rent",
+      "category": "會計與付款"
+    },
+    {
+      "word": "creditor",
+      "pos": "n.",
+      "meaning": "債權人",
+      "phrase": "pay a creditor",
+      "category": "會計與付款"
+    },
+    {
+      "word": "premium",
+      "pos": "n.",
+      "meaning": "保費",
+      "phrase": "insurance premium",
+      "category": "會計與付款"
+    },
+    {
+      "word": "calculate",
+      "pos": "v.",
+      "meaning": "計算",
+      "phrase": "calculate the total",
+      "category": "會計與付款"
+    },
+    {
+      "word": "calculation",
+      "pos": "n.",
+      "meaning": "計算；計算結果",
+      "phrase": "accurate calculation",
+      "category": "會計與付款"
+    },
+    {
+      "word": "record",
+      "pos": "n./v.",
+      "meaning": "紀錄；記錄",
+      "phrase": "financial records",
+      "category": "會計與付款"
+    },
+    {
+      "word": "ledger",
+      "pos": "n.",
+      "meaning": "分類帳；總帳",
+      "phrase": "general ledger",
+      "category": "會計與付款"
+    },
+    {
+      "word": "entry",
+      "pos": "n.",
+      "meaning": "帳目；記錄項目",
+      "phrase": "accounting entry",
+      "category": "會計與付款"
+    },
+    {
+      "word": "quarterly",
+      "pos": "adj./adv.",
+      "meaning": "每季的；每季",
+      "phrase": "quarterly report",
+      "category": "會計與付款"
+    },
+    {
+      "word": "annually",
+      "pos": "adv.",
+      "meaning": "每年",
+      "phrase": "review annually",
+      "category": "會計與付款"
+    },
+    {
+      "word": "fiscal",
+      "pos": "adj.",
+      "meaning": "財政的；會計年度的",
+      "phrase": "fiscal year",
+      "category": "會計與付款"
+    },
+    {
+      "word": "deficit",
+      "pos": "n.",
+      "meaning": "赤字；虧絀",
+      "phrase": "budget deficit",
+      "category": "會計與付款"
+    },
+    {
+      "word": "surplus",
+      "pos": "n.",
+      "meaning": "盈餘；剩餘",
+      "phrase": "budget surplus",
+      "category": "會計與付款"
+    },
+    {
+      "word": "reconcile",
+      "pos": "v.",
+      "meaning": "核對；調節帳目",
+      "phrase": "reconcile accounts",
+      "category": "會計與付款"
+    },
+    {
+      "word": "allocate",
+      "pos": "v.",
+      "meaning": "分配；撥款",
+      "phrase": "allocate funds",
+      "category": "會計與付款"
+    },
+    {
+      "word": "order",
+      "pos": "n./v.",
+      "meaning": "訂單；訂購",
+      "phrase": "place an order",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "supplier",
+      "pos": "n.",
+      "meaning": "供應商",
+      "phrase": "reliable supplier",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "procurement",
+      "pos": "n.",
+      "meaning": "採購",
+      "phrase": "procurement process",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "inventory",
+      "pos": "n.",
+      "meaning": "庫存；存貨",
+      "phrase": "check inventory",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "stockroom",
+      "pos": "n.",
+      "meaning": "庫房；儲藏室",
+      "phrase": "stockroom inventory",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "quantity",
+      "pos": "n.",
+      "meaning": "數量",
+      "phrase": "order quantity",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "unit",
+      "pos": "n.",
+      "meaning": "單位；件",
+      "phrase": "unit price",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "bulk",
+      "pos": "n./adj.",
+      "meaning": "大量；大量的",
+      "phrase": "bulk order",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "wholesale",
+      "pos": "n./adj.",
+      "meaning": "批發；批發的",
+      "phrase": "wholesale price",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "retail",
+      "pos": "n./adj.",
+      "meaning": "零售；零售的",
+      "phrase": "retail price",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "availability",
+      "pos": "n.",
+      "meaning": "供應情況；可取得性",
+      "phrase": "check availability",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "specification",
+      "pos": "n.",
+      "meaning": "規格；規範",
+      "phrase": "product specifications",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "requisition",
+      "pos": "n.",
+      "meaning": "請購單；申請",
+      "phrase": "purchase requisition",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "quotation",
+      "pos": "n.",
+      "meaning": "報價；報價單",
+      "phrase": "request a quotation",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "bid",
+      "pos": "n./v.",
+      "meaning": "投標；出價",
+      "phrase": "submit a bid",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "tender",
+      "pos": "n.",
+      "meaning": "投標；標案",
+      "phrase": "submit a tender",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "terms",
+      "pos": "n.",
+      "meaning": "條款；條件",
+      "phrase": "payment terms",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "condition",
+      "pos": "n.",
+      "meaning": "條件；狀況",
+      "phrase": "terms and conditions",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "provision",
+      "pos": "n.",
+      "meaning": "條款；規定",
+      "phrase": "contract provision",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "authorize",
+      "pos": "v.",
+      "meaning": "授權；核准",
+      "phrase": "authorize a purchase",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "authorization",
+      "pos": "n.",
+      "meaning": "授權；核准",
+      "phrase": "obtain authorization",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "confirmation",
+      "pos": "n.",
+      "meaning": "確認；確認通知",
+      "phrase": "order confirmation",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "process",
+      "pos": "n./v.",
+      "meaning": "流程；處理",
+      "phrase": "process an order",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "place",
+      "pos": "v.",
+      "meaning": "下訂；提出",
+      "phrase": "place an order",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "reserve",
+      "pos": "v.",
+      "meaning": "預留；預訂",
+      "phrase": "reserve an item",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "reservation",
+      "pos": "n.",
+      "meaning": "預訂；保留",
+      "phrase": "make a reservation",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "cancellation",
+      "pos": "n.",
+      "meaning": "取消",
+      "phrase": "order cancellation",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "modify",
+      "pos": "v.",
+      "meaning": "修改；變更",
+      "phrase": "modify an order",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "modification",
+      "pos": "n.",
+      "meaning": "修改；變更",
+      "phrase": "order modification",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "substitute",
+      "pos": "n./v.",
+      "meaning": "替代品；替代",
+      "phrase": "substitute product",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "alternative",
+      "pos": "n./adj.",
+      "meaning": "替代方案；替代的",
+      "phrase": "alternative supplier",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "shortage",
+      "pos": "n.",
+      "meaning": "短缺；不足",
+      "phrase": "supply shortage",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "source",
+      "pos": "n./v.",
+      "meaning": "來源；採購",
+      "phrase": "source materials",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "material",
+      "pos": "n.",
+      "meaning": "材料；原料",
+      "phrase": "raw materials",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "equipment",
+      "pos": "n.",
+      "meaning": "設備",
+      "phrase": "purchase equipment",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "machinery",
+      "pos": "n.",
+      "meaning": "機械；機器設備",
+      "phrase": "industrial machinery",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "component",
+      "pos": "n.",
+      "meaning": "零組件",
+      "phrase": "electronic component",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "part",
+      "pos": "n.",
+      "meaning": "零件；部件",
+      "phrase": "replacement part",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "model",
+      "pos": "n.",
+      "meaning": "型號；款式",
+      "phrase": "latest model",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "manufacturer",
+      "pos": "n.",
+      "meaning": "製造商",
+      "phrase": "leading manufacturer",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "distributor",
+      "pos": "n.",
+      "meaning": "經銷商；代理商",
+      "phrase": "authorized distributor",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "dealer",
+      "pos": "n.",
+      "meaning": "經銷商",
+      "phrase": "local dealer",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "contractor",
+      "pos": "n.",
+      "meaning": "承包商",
+      "phrase": "general contractor",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "subcontractor",
+      "pos": "n.",
+      "meaning": "分包商；次承包商",
+      "phrase": "hire a subcontractor",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "obtain",
+      "pos": "v.",
+      "meaning": "取得；獲得",
+      "phrase": "obtain a quotation",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "procure",
+      "pos": "v.",
+      "meaning": "採購；取得",
+      "phrase": "procure materials",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "select",
+      "pos": "v.",
+      "meaning": "選擇；挑選",
+      "phrase": "select a supplier",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "compare",
+      "pos": "v.",
+      "meaning": "比較",
+      "phrase": "compare prices",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "inspect",
+      "pos": "v.",
+      "meaning": "檢查；檢驗",
+      "phrase": "inspect the goods",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "fulfill",
+      "pos": "v.",
+      "meaning": "履行；完成",
+      "phrase": "fulfill an order",
+      "category": "採購與訂單"
+    },
+    {
+      "word": "shipment",
+      "pos": "n.",
+      "meaning": "貨運；出貨",
+      "phrase": "track a shipment",
+      "category": "物流與配送"
+    },
+    {
+      "word": "shipping",
+      "pos": "n.",
+      "meaning": "運送；運費",
+      "phrase": "shipping cost",
+      "category": "物流與配送"
+    },
+    {
+      "word": "delivery",
+      "pos": "n.",
+      "meaning": "配送；交貨",
+      "phrase": "delivery date",
+      "category": "物流與配送"
+    },
+    {
+      "word": "deliver",
+      "pos": "v.",
+      "meaning": "運送；交付",
+      "phrase": "deliver a package",
+      "category": "物流與配送"
+    },
+    {
+      "word": "carrier",
+      "pos": "n.",
+      "meaning": "承運商；運輸公司",
+      "phrase": "shipping carrier",
+      "category": "物流與配送"
+    },
+    {
+      "word": "courier",
+      "pos": "n.",
+      "meaning": "快遞員；快遞公司",
+      "phrase": "courier service",
+      "category": "物流與配送"
+    },
+    {
+      "word": "freight",
+      "pos": "n.",
+      "meaning": "貨運；貨物",
+      "phrase": "freight charges",
+      "category": "物流與配送"
+    },
+    {
+      "word": "cargo",
+      "pos": "n.",
+      "meaning": "貨物",
+      "phrase": "air cargo",
+      "category": "物流與配送"
+    },
+    {
+      "word": "parcel",
+      "pos": "n.",
+      "meaning": "包裹",
+      "phrase": "send a parcel",
+      "category": "物流與配送"
+    },
+    {
+      "word": "container",
+      "pos": "n.",
+      "meaning": "貨櫃；容器",
+      "phrase": "shipping container",
+      "category": "物流與配送"
+    },
+    {
+      "word": "dock",
+      "pos": "n.",
+      "meaning": "碼頭；裝卸區",
+      "phrase": "loading dock",
+      "category": "物流與配送"
+    },
+    {
+      "word": "warehouse",
+      "pos": "n.",
+      "meaning": "倉庫",
+      "phrase": "warehouse facility",
+      "category": "物流與配送"
+    },
+    {
+      "word": "storage",
+      "pos": "n.",
+      "meaning": "儲存；倉儲",
+      "phrase": "storage space",
+      "category": "物流與配送"
+    },
+    {
+      "word": "logistics",
+      "pos": "n.",
+      "meaning": "物流",
+      "phrase": "logistics company",
+      "category": "物流與配送"
+    },
+    {
+      "word": "distribution",
+      "pos": "n.",
+      "meaning": "配送；分銷",
+      "phrase": "distribution center",
+      "category": "物流與配送"
+    },
+    {
+      "word": "destination",
+      "pos": "n.",
+      "meaning": "目的地",
+      "phrase": "final destination",
+      "category": "物流與配送"
+    },
+    {
+      "word": "origin",
+      "pos": "n.",
+      "meaning": "起點；原產地",
+      "phrase": "country of origin",
+      "category": "物流與配送"
+    },
+    {
+      "word": "route",
+      "pos": "n.",
+      "meaning": "路線",
+      "phrase": "delivery route",
+      "category": "物流與配送"
+    },
+    {
+      "word": "tracking",
+      "pos": "n.",
+      "meaning": "追蹤；物流查詢",
+      "phrase": "tracking number",
+      "category": "物流與配送"
+    },
+    {
+      "word": "dispatch",
+      "pos": "n./v.",
+      "meaning": "派送；發送",
+      "phrase": "dispatch an order",
+      "category": "物流與配送"
+    },
+    {
+      "word": "transport",
+      "pos": "n./v.",
+      "meaning": "運輸；運送",
+      "phrase": "transport goods",
+      "category": "物流與配送"
+    },
+    {
+      "word": "transportation",
+      "pos": "n.",
+      "meaning": "運輸；交通",
+      "phrase": "transportation costs",
+      "category": "物流與配送"
+    },
+    {
+      "word": "load",
+      "pos": "n./v.",
+      "meaning": "裝載；貨物",
+      "phrase": "load a truck",
+      "category": "物流與配送"
+    },
+    {
+      "word": "unload",
+      "pos": "v.",
+      "meaning": "卸貨",
+      "phrase": "unload a shipment",
+      "category": "物流與配送"
+    },
+    {
+      "word": "pack",
+      "pos": "v.",
+      "meaning": "包裝；打包",
+      "phrase": "pack the goods",
+      "category": "物流與配送"
+    },
+    {
+      "word": "packaging",
+      "pos": "n.",
+      "meaning": "包裝；包裝材料",
+      "phrase": "product packaging",
+      "category": "物流與配送"
+    },
+    {
+      "word": "wrap",
+      "pos": "v.",
+      "meaning": "包裝；包裹",
+      "phrase": "wrap a package",
+      "category": "物流與配送"
+    },
+    {
+      "word": "seal",
+      "pos": "n./v.",
+      "meaning": "封條；密封",
+      "phrase": "seal a container",
+      "category": "物流與配送"
+    },
+    {
+      "word": "weigh",
+      "pos": "v.",
+      "meaning": "稱重；重量為",
+      "phrase": "weigh a package",
+      "category": "物流與配送"
+    },
+    {
+      "word": "weight",
+      "pos": "n.",
+      "meaning": "重量",
+      "phrase": "package weight",
+      "category": "物流與配送"
+    },
+    {
+      "word": "dimension",
+      "pos": "n.",
+      "meaning": "尺寸；規格",
+      "phrase": "package dimensions",
+      "category": "物流與配送"
+    },
+    {
+      "word": "fragile",
+      "pos": "adj.",
+      "meaning": "易碎的",
+      "phrase": "fragile items",
+      "category": "物流與配送"
+    },
+    {
+      "word": "damaged",
+      "pos": "adj.",
+      "meaning": "損壞的",
+      "phrase": "damaged goods",
+      "category": "物流與配送"
+    },
+    {
+      "word": "defect",
+      "pos": "n.",
+      "meaning": "瑕疵；缺陷",
+      "phrase": "product defect",
+      "category": "物流與配送"
+    },
+    {
+      "word": "defective",
+      "pos": "adj.",
+      "meaning": "有瑕疵的；故障的",
+      "phrase": "defective product",
+      "category": "物流與配送"
+    },
+    {
+      "word": "delay",
+      "pos": "n./v.",
+      "meaning": "延誤；延遲",
+      "phrase": "delivery delay",
+      "category": "物流與配送"
+    },
+    {
+      "word": "delayed",
+      "pos": "adj.",
+      "meaning": "延誤的",
+      "phrase": "delayed shipment",
+      "category": "物流與配送"
+    },
+    {
+      "word": "arrive",
+      "pos": "v.",
+      "meaning": "抵達",
+      "phrase": "arrive on time",
+      "category": "物流與配送"
+    },
+    {
+      "word": "arrival",
+      "pos": "n.",
+      "meaning": "抵達；到貨",
+      "phrase": "expected arrival",
+      "category": "物流與配送"
+    },
+    {
+      "word": "receive",
+      "pos": "v.",
+      "meaning": "收到；接收",
+      "phrase": "receive a shipment",
+      "category": "物流與配送"
+    },
+    {
+      "word": "recipient",
+      "pos": "n.",
+      "meaning": "收件人",
+      "phrase": "recipient's address",
+      "category": "物流與配送"
+    },
+    {
+      "word": "sender",
+      "pos": "n.",
+      "meaning": "寄件人",
+      "phrase": "sender's information",
+      "category": "物流與配送"
+    },
+    {
+      "word": "customs",
+      "pos": "n.",
+      "meaning": "海關",
+      "phrase": "customs declaration",
+      "category": "物流與配送"
+    },
+    {
+      "word": "clearance",
+      "pos": "n.",
+      "meaning": "通關；清關",
+      "phrase": "customs clearance",
+      "category": "物流與配送"
+    },
+    {
+      "word": "import",
+      "pos": "n./v.",
+      "meaning": "進口；進口商品",
+      "phrase": "import goods",
+      "category": "物流與配送"
+    },
+    {
+      "word": "export",
+      "pos": "n./v.",
+      "meaning": "出口；出口商品",
+      "phrase": "export products",
+      "category": "物流與配送"
+    },
+    {
+      "word": "domestic",
+      "pos": "adj.",
+      "meaning": "國內的",
+      "phrase": "domestic shipping",
+      "category": "物流與配送"
+    },
+    {
+      "word": "overseas",
+      "pos": "adj./adv.",
+      "meaning": "海外的；在海外",
+      "phrase": "overseas delivery",
+      "category": "物流與配送"
+    },
+    {
+      "word": "promptly",
+      "pos": "adv.",
+      "meaning": "迅速地；及時地",
+      "phrase": "deliver promptly",
+      "category": "物流與配送"
+    },
+    {
+      "word": "securely",
+      "pos": "adv.",
+      "meaning": "安全地；牢固地",
+      "phrase": "pack securely",
+      "category": "物流與配送"
+    },
+    {
+      "word": "manufacture",
+      "pos": "v./n.",
+      "meaning": "製造；生產",
+      "phrase": "manufacture products",
+      "category": "製造與生產"
+    },
+    {
+      "word": "manufacturing",
+      "pos": "n./adj.",
+      "meaning": "製造業；製造的",
+      "phrase": "manufacturing process",
+      "category": "製造與生產"
+    },
+    {
+      "word": "production",
+      "pos": "n.",
+      "meaning": "生產；產量",
+      "phrase": "production schedule",
+      "category": "製造與生產"
+    },
+    {
+      "word": "produce",
+      "pos": "v.",
+      "meaning": "生產；製造",
+      "phrase": "produce goods",
+      "category": "製造與生產"
+    },
+    {
+      "word": "factory",
+      "pos": "n.",
+      "meaning": "工廠",
+      "phrase": "factory workers",
+      "category": "製造與生產"
+    },
+    {
+      "word": "plant",
+      "pos": "n.",
+      "meaning": "工廠；廠房",
+      "phrase": "manufacturing plant",
+      "category": "製造與生產"
+    },
+    {
+      "word": "assembly",
+      "pos": "n.",
+      "meaning": "組裝；裝配",
+      "phrase": "assembly line",
+      "category": "製造與生產"
+    },
+    {
+      "word": "assemble",
+      "pos": "v.",
+      "meaning": "組裝；裝配",
+      "phrase": "assemble components",
+      "category": "製造與生產"
+    },
+    {
+      "word": "line",
+      "pos": "n.",
+      "meaning": "生產線；作業線",
+      "phrase": "production line",
+      "category": "製造與生產"
+    },
+    {
+      "word": "output",
+      "pos": "n.",
+      "meaning": "產量；產出",
+      "phrase": "increase output",
+      "category": "製造與生產"
+    },
+    {
+      "word": "capacity",
+      "pos": "n.",
+      "meaning": "產能；容量",
+      "phrase": "production capacity",
+      "category": "製造與生產"
+    },
+    {
+      "word": "productivity",
+      "pos": "n.",
+      "meaning": "生產力",
+      "phrase": "increase productivity",
+      "category": "製造與生產"
+    },
+    {
+      "word": "efficiency",
+      "pos": "n.",
+      "meaning": "效率",
+      "phrase": "improve efficiency",
+      "category": "製造與生產"
+    },
+    {
+      "word": "quality",
+      "pos": "n.",
+      "meaning": "品質",
+      "phrase": "product quality",
+      "category": "製造與生產"
+    },
+    {
+      "word": "control",
+      "pos": "n./v.",
+      "meaning": "控制；管理",
+      "phrase": "quality control",
+      "category": "製造與生產"
+    },
+    {
+      "word": "inspection",
+      "pos": "n.",
+      "meaning": "檢查；檢驗",
+      "phrase": "quality inspection",
+      "category": "製造與生產"
+    },
+    {
+      "word": "inspector",
+      "pos": "n.",
+      "meaning": "檢查員；檢驗員",
+      "phrase": "quality inspector",
+      "category": "製造與生產"
+    },
+    {
+      "word": "test",
+      "pos": "n./v.",
+      "meaning": "測試；檢測",
+      "phrase": "test a product",
+      "category": "製造與生產"
+    },
+    {
+      "word": "testing",
+      "pos": "n.",
+      "meaning": "測試；檢測",
+      "phrase": "product testing",
+      "category": "製造與生產"
+    },
+    {
+      "word": "workflow",
+      "pos": "n.",
+      "meaning": "工作流程",
+      "phrase": "improve workflow",
+      "category": "製造與生產"
+    },
+    {
+      "word": "technique",
+      "pos": "n.",
+      "meaning": "技術；方法",
+      "phrase": "production technique",
+      "category": "製造與生產"
+    },
+    {
+      "word": "method",
+      "pos": "n.",
+      "meaning": "方法",
+      "phrase": "manufacturing method",
+      "category": "製造與生產"
+    },
+    {
+      "word": "raw",
+      "pos": "adj.",
+      "meaning": "未加工的；原始的",
+      "phrase": "raw material",
+      "category": "製造與生產"
+    },
+    {
+      "word": "resource",
+      "pos": "n.",
+      "meaning": "資源",
+      "phrase": "production resources",
+      "category": "製造與生產"
+    },
+    {
+      "word": "labor",
+      "pos": "n.",
+      "meaning": "勞動力；人工",
+      "phrase": "labor costs",
+      "category": "製造與生產"
+    },
+    {
+      "word": "workforce",
+      "pos": "n.",
+      "meaning": "勞動力；員工總數",
+      "phrase": "skilled workforce",
+      "category": "製造與生產"
+    },
+    {
+      "word": "machine",
+      "pos": "n.",
+      "meaning": "機器",
+      "phrase": "operate a machine",
+      "category": "製造與生產"
+    },
+    {
+      "word": "tool",
+      "pos": "n.",
+      "meaning": "工具",
+      "phrase": "use a tool",
+      "category": "製造與生產"
+    },
+    {
+      "word": "device",
+      "pos": "n.",
+      "meaning": "裝置；設備",
+      "phrase": "safety device",
+      "category": "製造與生產"
+    },
+    {
+      "word": "instrument",
+      "pos": "n.",
+      "meaning": "儀器；工具",
+      "phrase": "measuring instrument",
+      "category": "製造與生產"
+    },
+    {
+      "word": "maintenance",
+      "pos": "n.",
+      "meaning": "維護；保養",
+      "phrase": "routine maintenance",
+      "category": "製造與生產"
+    },
+    {
+      "word": "maintain",
+      "pos": "v.",
+      "meaning": "維護；保養",
+      "phrase": "maintain equipment",
+      "category": "製造與生產"
+    },
+    {
+      "word": "repair",
+      "pos": "n./v.",
+      "meaning": "維修；修理",
+      "phrase": "repair a machine",
+      "category": "製造與生產"
+    },
+    {
+      "word": "technician",
+      "pos": "n.",
+      "meaning": "技術人員",
+      "phrase": "service technician",
+      "category": "製造與生產"
+    },
+    {
+      "word": "engineer",
+      "pos": "n.",
+      "meaning": "工程師",
+      "phrase": "production engineer",
+      "category": "製造與生產"
+    },
+    {
+      "word": "technical",
+      "pos": "adj.",
+      "meaning": "技術的",
+      "phrase": "technical support",
+      "category": "製造與生產"
+    },
+    {
+      "word": "malfunction",
+      "pos": "n./v.",
+      "meaning": "故障；發生故障",
+      "phrase": "equipment malfunction",
+      "category": "製造與生產"
+    },
+    {
+      "word": "breakdown",
+      "pos": "n.",
+      "meaning": "故障；損壞",
+      "phrase": "machine breakdown",
+      "category": "製造與生產"
+    },
+    {
+      "word": "replacement",
+      "pos": "n.",
+      "meaning": "更換；替換品",
+      "phrase": "replacement equipment",
+      "category": "製造與生產"
+    },
+    {
+      "word": "upgrade",
+      "pos": "n./v.",
+      "meaning": "升級；改善",
+      "phrase": "upgrade equipment",
+      "category": "製造與生產"
+    },
+    {
+      "word": "install",
+      "pos": "v.",
+      "meaning": "安裝",
+      "phrase": "install machinery",
+      "category": "製造與生產"
+    },
+    {
+      "word": "installation",
+      "pos": "n.",
+      "meaning": "安裝；裝設",
+      "phrase": "equipment installation",
+      "category": "製造與生產"
+    },
+    {
+      "word": "safety",
+      "pos": "n.",
+      "meaning": "安全",
+      "phrase": "safety standards",
+      "category": "製造與生產"
+    },
+    {
+      "word": "hazard",
+      "pos": "n.",
+      "meaning": "危險；危害",
+      "phrase": "safety hazard",
+      "category": "製造與生產"
+    },
+    {
+      "word": "accident",
+      "pos": "n.",
+      "meaning": "事故；意外",
+      "phrase": "workplace accident",
+      "category": "製造與生產"
+    },
+    {
+      "word": "protective",
+      "pos": "adj.",
+      "meaning": "防護的；保護的",
+      "phrase": "protective equipment",
+      "category": "製造與生產"
+    },
+    {
+      "word": "comply",
+      "pos": "v.",
+      "meaning": "遵守",
+      "phrase": "comply with regulations",
+      "category": "製造與生產"
+    },
+    {
+      "word": "compliance",
+      "pos": "n.",
+      "meaning": "遵守；合規",
+      "phrase": "safety compliance",
+      "category": "製造與生產"
+    },
+    {
+      "word": "automate",
+      "pos": "v.",
+      "meaning": "自動化",
+      "phrase": "automate production",
+      "category": "製造與生產"
+    },
+    {
+      "word": "automation",
+      "pos": "n.",
+      "meaning": "自動化",
+      "phrase": "factory automation",
+      "category": "製造與生產"
+    },
+    {
+      "word": "property",
+      "pos": "n.",
+      "meaning": "房產；財產",
+      "phrase": "commercial property",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "real estate",
+      "pos": "n.",
+      "meaning": "房地產",
+      "phrase": "real estate market",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "building",
+      "pos": "n.",
+      "meaning": "建築物；大樓",
+      "phrase": "office building",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "facility",
+      "pos": "n.",
+      "meaning": "設施；場所",
+      "phrase": "office facility",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "premises",
+      "pos": "n.",
+      "meaning": "營業場所；建築物範圍",
+      "phrase": "business premises",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "site",
+      "pos": "n.",
+      "meaning": "地點；場址",
+      "phrase": "construction site",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "location",
+      "pos": "n.",
+      "meaning": "地點；位置",
+      "phrase": "convenient location",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "space",
+      "pos": "n.",
+      "meaning": "空間",
+      "phrase": "office space",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "floor",
+      "pos": "n.",
+      "meaning": "樓層；地板",
+      "phrase": "second floor",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "lobby",
+      "pos": "n.",
+      "meaning": "大廳",
+      "phrase": "main lobby",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "entrance",
+      "pos": "n.",
+      "meaning": "入口",
+      "phrase": "main entrance",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "exit",
+      "pos": "n.",
+      "meaning": "出口",
+      "phrase": "emergency exit",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "elevator",
+      "pos": "n.",
+      "meaning": "電梯",
+      "phrase": "take the elevator",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "escalator",
+      "pos": "n.",
+      "meaning": "手扶梯",
+      "phrase": "use the escalator",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "staircase",
+      "pos": "n.",
+      "meaning": "樓梯",
+      "phrase": "main staircase",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "parking",
+      "pos": "n.",
+      "meaning": "停車；停車位",
+      "phrase": "parking space",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "garage",
+      "pos": "n.",
+      "meaning": "車庫；停車場",
+      "phrase": "parking garage",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "tenant",
+      "pos": "n.",
+      "meaning": "房客；承租人",
+      "phrase": "commercial tenant",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "landlord",
+      "pos": "n.",
+      "meaning": "房東；出租人",
+      "phrase": "contact the landlord",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "owner",
+      "pos": "n.",
+      "meaning": "所有人；業主",
+      "phrase": "property owner",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "lease",
+      "pos": "n./v.",
+      "meaning": "租約；租用",
+      "phrase": "sign a lease",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "rental",
+      "pos": "n./adj.",
+      "meaning": "租金；出租的",
+      "phrase": "rental property",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "occupancy",
+      "pos": "n.",
+      "meaning": "入住；使用率",
+      "phrase": "occupancy rate",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "occupy",
+      "pos": "v.",
+      "meaning": "占用；使用",
+      "phrase": "occupy office space",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "vacant",
+      "pos": "adj.",
+      "meaning": "空置的；未使用的",
+      "phrase": "vacant office",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "construction",
+      "pos": "n.",
+      "meaning": "建造；施工",
+      "phrase": "under construction",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "construct",
+      "pos": "v.",
+      "meaning": "建造；興建",
+      "phrase": "construct a building",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "renovate",
+      "pos": "v.",
+      "meaning": "翻修；整修",
+      "phrase": "renovate an office",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "renovation",
+      "pos": "n.",
+      "meaning": "翻修；整修工程",
+      "phrase": "office renovation",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "remodel",
+      "pos": "v.",
+      "meaning": "改建；重新裝修",
+      "phrase": "remodel a building",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "broker",
+      "pos": "n.",
+      "meaning": "仲介；經紀人",
+      "phrase": "real estate broker",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "leaseholder",
+      "pos": "n.",
+      "meaning": "租賃權人；承租人",
+      "phrase": "commercial leaseholder",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "blueprint",
+      "pos": "n.",
+      "meaning": "藍圖；設計圖",
+      "phrase": "building blueprint",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "permit",
+      "pos": "n./v.",
+      "meaning": "許可證；允許",
+      "phrase": "building permit",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "utility",
+      "pos": "n.",
+      "meaning": "公用事業；水電等費用",
+      "phrase": "utility costs",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "electricity",
+      "pos": "n.",
+      "meaning": "電力；電",
+      "phrase": "electricity bill",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "heating",
+      "pos": "n.",
+      "meaning": "暖氣；供暖",
+      "phrase": "heating system",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "ventilation",
+      "pos": "n.",
+      "meaning": "通風；通風設備",
+      "phrase": "ventilation system",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "plumbing",
+      "pos": "n.",
+      "meaning": "水管系統；管線工程",
+      "phrase": "plumbing repairs",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "lighting",
+      "pos": "n.",
+      "meaning": "照明；照明設備",
+      "phrase": "office lighting",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "security",
+      "pos": "n.",
+      "meaning": "安全；保全",
+      "phrase": "security system",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "access",
+      "pos": "n./v.",
+      "meaning": "進入權；使用權",
+      "phrase": "building access",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "key",
+      "pos": "n.",
+      "meaning": "鑰匙",
+      "phrase": "office key",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "lock",
+      "pos": "n./v.",
+      "meaning": "鎖；上鎖",
+      "phrase": "lock the door",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "assess",
+      "pos": "v.",
+      "meaning": "評估",
+      "phrase": "assess the property",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "assessment",
+      "pos": "n.",
+      "meaning": "評估；估價",
+      "phrase": "property assessment",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "restore",
+      "pos": "v.",
+      "meaning": "修復；恢復",
+      "phrase": "restore a building",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "relocate",
+      "pos": "v.",
+      "meaning": "搬遷；遷移",
+      "phrase": "relocate an office",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "relocation",
+      "pos": "n.",
+      "meaning": "搬遷；遷址",
+      "phrase": "office relocation",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "accessible",
+      "pos": "adj.",
+      "meaning": "容易到達的；可使用的",
+      "phrase": "easily accessible",
+      "category": "房地產與設施"
+    },
+    {
+      "word": "technology",
+      "pos": "n.",
+      "meaning": "科技；技術",
+      "phrase": "new technology",
+      "category": "科技與設備"
+    },
+    {
+      "word": "computer",
+      "pos": "n.",
+      "meaning": "電腦",
+      "phrase": "computer system",
+      "category": "科技與設備"
+    },
+    {
+      "word": "software",
+      "pos": "n.",
+      "meaning": "軟體",
+      "phrase": "install software",
+      "category": "科技與設備"
+    },
+    {
+      "word": "hardware",
+      "pos": "n.",
+      "meaning": "硬體",
+      "phrase": "computer hardware",
+      "category": "科技與設備"
+    },
+    {
+      "word": "system",
+      "pos": "n.",
+      "meaning": "系統",
+      "phrase": "operating system",
+      "category": "科技與設備"
+    },
+    {
+      "word": "network",
+      "pos": "n.",
+      "meaning": "網路",
+      "phrase": "computer network",
+      "category": "科技與設備"
+    },
+    {
+      "word": "server",
+      "pos": "n.",
+      "meaning": "伺服器",
+      "phrase": "server maintenance",
+      "category": "科技與設備"
+    },
+    {
+      "word": "database",
+      "pos": "n.",
+      "meaning": "資料庫",
+      "phrase": "customer database",
+      "category": "科技與設備"
+    },
+    {
+      "word": "website",
+      "pos": "n.",
+      "meaning": "網站",
+      "phrase": "company website",
+      "category": "科技與設備"
+    },
+    {
+      "word": "webpage",
+      "pos": "n.",
+      "meaning": "網頁",
+      "phrase": "visit a webpage",
+      "category": "科技與設備"
+    },
+    {
+      "word": "internet",
+      "pos": "n.",
+      "meaning": "網際網路",
+      "phrase": "internet access",
+      "category": "科技與設備"
+    },
+    {
+      "word": "online",
+      "pos": "adj./adv.",
+      "meaning": "線上的；在線上",
+      "phrase": "online service",
+      "category": "科技與設備"
+    },
+    {
+      "word": "digital",
+      "pos": "adj.",
+      "meaning": "數位的",
+      "phrase": "digital technology",
+      "category": "科技與設備"
+    },
+    {
+      "word": "electronic",
+      "pos": "adj.",
+      "meaning": "電子的",
+      "phrase": "electronic device",
+      "category": "科技與設備"
+    },
+    {
+      "word": "program",
+      "pos": "n.",
+      "meaning": "程式；軟體",
+      "phrase": "computer program",
+      "category": "科技與設備"
+    },
+    {
+      "word": "platform",
+      "pos": "n.",
+      "meaning": "平台",
+      "phrase": "online platform",
+      "category": "科技與設備"
+    },
+    {
+      "word": "browser",
+      "pos": "n.",
+      "meaning": "瀏覽器",
+      "phrase": "web browser",
+      "category": "科技與設備"
+    },
+    {
+      "word": "password",
+      "pos": "n.",
+      "meaning": "密碼",
+      "phrase": "reset a password",
+      "category": "科技與設備"
+    },
+    {
+      "word": "username",
+      "pos": "n.",
+      "meaning": "使用者名稱",
+      "phrase": "enter a username",
+      "category": "科技與設備"
+    },
+    {
+      "word": "login",
+      "pos": "n./adj.",
+      "meaning": "登入；登入用的",
+      "phrase": "login information",
+      "category": "科技與設備"
+    },
+    {
+      "word": "user",
+      "pos": "n.",
+      "meaning": "使用者",
+      "phrase": "registered user",
+      "category": "科技與設備"
+    },
+    {
+      "word": "data",
+      "pos": "n.",
+      "meaning": "資料；數據",
+      "phrase": "store data",
+      "category": "科技與設備"
+    },
+    {
+      "word": "information",
+      "pos": "n.",
+      "meaning": "資訊；資料",
+      "phrase": "contact information",
+      "category": "科技與設備"
+    },
+    {
+      "word": "update",
+      "pos": "n./v.",
+      "meaning": "更新；更新資訊",
+      "phrase": "software update",
+      "category": "科技與設備"
+    },
+    {
+      "word": "download",
+      "pos": "n./v.",
+      "meaning": "下載",
+      "phrase": "download a file",
+      "category": "科技與設備"
+    },
+    {
+      "word": "upload",
+      "pos": "n./v.",
+      "meaning": "上傳",
+      "phrase": "upload a document",
+      "category": "科技與設備"
+    },
+    {
+      "word": "backup",
+      "pos": "n./v.",
+      "meaning": "備份",
+      "phrase": "back up data",
+      "category": "科技與設備"
+    },
+    {
+      "word": "connect",
+      "pos": "v.",
+      "meaning": "連接；連線",
+      "phrase": "connect to a network",
+      "category": "科技與設備"
+    },
+    {
+      "word": "connection",
+      "pos": "n.",
+      "meaning": "連線；連接",
+      "phrase": "internet connection",
+      "category": "科技與設備"
+    },
+    {
+      "word": "wireless",
+      "pos": "adj.",
+      "meaning": "無線的",
+      "phrase": "wireless network",
+      "category": "科技與設備"
+    },
+    {
+      "word": "screen",
+      "pos": "n.",
+      "meaning": "螢幕",
+      "phrase": "computer screen",
+      "category": "科技與設備"
+    },
+    {
+      "word": "monitor",
+      "pos": "n./v.",
+      "meaning": "顯示器；監控",
+      "phrase": "computer monitor",
+      "category": "科技與設備"
+    },
+    {
+      "word": "keyboard",
+      "pos": "n.",
+      "meaning": "鍵盤",
+      "phrase": "wireless keyboard",
+      "category": "科技與設備"
+    },
+    {
+      "word": "battery",
+      "pos": "n.",
+      "meaning": "電池",
+      "phrase": "replace the battery",
+      "category": "科技與設備"
+    },
+    {
+      "word": "charger",
+      "pos": "n.",
+      "meaning": "充電器",
+      "phrase": "battery charger",
+      "category": "科技與設備"
+    },
+    {
+      "word": "cable",
+      "pos": "n.",
+      "meaning": "電纜；連接線",
+      "phrase": "power cable",
+      "category": "科技與設備"
+    },
+    {
+      "word": "plug",
+      "pos": "n./v.",
+      "meaning": "插頭；插入",
+      "phrase": "plug in the device",
+      "category": "科技與設備"
+    },
+    {
+      "word": "power",
+      "pos": "n.",
+      "meaning": "電力；電源",
+      "phrase": "power supply",
+      "category": "科技與設備"
+    },
+    {
+      "word": "troubleshoot",
+      "pos": "v.",
+      "meaning": "排除故障",
+      "phrase": "troubleshoot a problem",
+      "category": "科技與設備"
+    },
+    {
+      "word": "error",
+      "pos": "n.",
+      "meaning": "錯誤；故障",
+      "phrase": "error message",
+      "category": "科技與設備"
+    },
+    {
+      "word": "failure",
+      "pos": "n.",
+      "meaning": "故障；失效",
+      "phrase": "system failure",
+      "category": "科技與設備"
+    },
+    {
+      "word": "function",
+      "pos": "n./v.",
+      "meaning": "功能；運作",
+      "phrase": "function properly",
+      "category": "科技與設備"
+    },
+    {
+      "word": "compatible",
+      "pos": "adj.",
+      "meaning": "相容的",
+      "phrase": "compatible with software",
+      "category": "科技與設備"
+    },
+    {
+      "word": "version",
+      "pos": "n.",
+      "meaning": "版本",
+      "phrase": "latest version",
+      "category": "科技與設備"
+    },
+    {
+      "word": "configure",
+      "pos": "v.",
+      "meaning": "設定；配置",
+      "phrase": "configure a system",
+      "category": "科技與設備"
+    },
+    {
+      "word": "setting",
+      "pos": "n.",
+      "meaning": "設定；設定值",
+      "phrase": "change the settings",
+      "category": "科技與設備"
+    },
+    {
+      "word": "scan",
+      "pos": "v.",
+      "meaning": "掃描",
+      "phrase": "scan a document",
+      "category": "科技與設備"
+    },
+    {
+      "word": "portable",
+      "pos": "adj.",
+      "meaning": "可攜式的",
+      "phrase": "portable device",
+      "category": "科技與設備"
+    },
+    {
+      "word": "privacy",
+      "pos": "n.",
+      "meaning": "隱私；隱私權",
+      "phrase": "privacy policy",
+      "category": "科技與設備"
+    },
+    {
+      "word": "confidential",
+      "pos": "adj.",
+      "meaning": "機密的",
+      "phrase": "confidential information",
+      "category": "科技與設備"
+    },
+    {
+      "word": "travel",
+      "pos": "n./v.",
+      "meaning": "旅行；出差",
+      "phrase": "business travel",
+      "category": "商務旅行"
+    },
+    {
+      "word": "trip",
+      "pos": "n.",
+      "meaning": "旅行；出差",
+      "phrase": "business trip",
+      "category": "商務旅行"
+    },
+    {
+      "word": "journey",
+      "pos": "n.",
+      "meaning": "旅程",
+      "phrase": "long journey",
+      "category": "商務旅行"
+    },
+    {
+      "word": "traveler",
+      "pos": "n.",
+      "meaning": "旅客；旅行者",
+      "phrase": "business traveler",
+      "category": "商務旅行"
+    },
+    {
+      "word": "itinerary",
+      "pos": "n.",
+      "meaning": "行程；行程表",
+      "phrase": "travel itinerary",
+      "category": "商務旅行"
+    },
+    {
+      "word": "departure",
+      "pos": "n.",
+      "meaning": "出發；離境",
+      "phrase": "departure time",
+      "category": "商務旅行"
+    },
+    {
+      "word": "depart",
+      "pos": "v.",
+      "meaning": "出發；離開",
+      "phrase": "depart on time",
+      "category": "商務旅行"
+    },
+    {
+      "word": "booking",
+      "pos": "n.",
+      "meaning": "預訂",
+      "phrase": "confirm a booking",
+      "category": "商務旅行"
+    },
+    {
+      "word": "book",
+      "pos": "v.",
+      "meaning": "預訂",
+      "phrase": "book a room",
+      "category": "商務旅行"
+    },
+    {
+      "word": "airfare",
+      "pos": "n.",
+      "meaning": "機票費；航空票價",
+      "phrase": "discount airfare",
+      "category": "商務旅行"
+    },
+    {
+      "word": "passport",
+      "pos": "n.",
+      "meaning": "護照",
+      "phrase": "valid passport",
+      "category": "商務旅行"
+    },
+    {
+      "word": "visa",
+      "pos": "n.",
+      "meaning": "簽證",
+      "phrase": "apply for a visa",
+      "category": "商務旅行"
+    },
+    {
+      "word": "luggage",
+      "pos": "n.",
+      "meaning": "行李",
+      "phrase": "carry luggage",
+      "category": "商務旅行"
+    },
+    {
+      "word": "baggage",
+      "pos": "n.",
+      "meaning": "行李",
+      "phrase": "baggage allowance",
+      "category": "商務旅行"
+    },
+    {
+      "word": "suitcase",
+      "pos": "n.",
+      "meaning": "行李箱",
+      "phrase": "pack a suitcase",
+      "category": "商務旅行"
+    },
+    {
+      "word": "briefcase",
+      "pos": "n.",
+      "meaning": "公事包",
+      "phrase": "carry a briefcase",
+      "category": "商務旅行"
+    },
+    {
+      "word": "consulate",
+      "pos": "n.",
+      "meaning": "領事館",
+      "phrase": "contact the consulate",
+      "category": "商務旅行"
+    },
+    {
+      "word": "consular",
+      "pos": "adj.",
+      "meaning": "領事的",
+      "phrase": "consular services",
+      "category": "商務旅行"
+    },
+    {
+      "word": "agency",
+      "pos": "n.",
+      "meaning": "代理機構；旅行社",
+      "phrase": "travel agency",
+      "category": "商務旅行"
+    },
+    {
+      "word": "agent",
+      "pos": "n.",
+      "meaning": "代理人；旅行社人員",
+      "phrase": "travel agent",
+      "category": "商務旅行"
+    },
+    {
+      "word": "accommodation",
+      "pos": "n.",
+      "meaning": "住宿；住宿設施",
+      "phrase": "book accommodation",
+      "category": "商務旅行"
+    },
+    {
+      "word": "sightseeing",
+      "pos": "n.",
+      "meaning": "觀光；遊覽",
+      "phrase": "go sightseeing",
+      "category": "商務旅行"
+    },
+    {
+      "word": "embassy",
+      "pos": "n.",
+      "meaning": "大使館",
+      "phrase": "contact the embassy",
+      "category": "商務旅行"
+    },
+    {
+      "word": "immigration",
+      "pos": "n.",
+      "meaning": "入境管理；移民",
+      "phrase": "immigration procedures",
+      "category": "商務旅行"
+    },
+    {
+      "word": "international",
+      "pos": "adj.",
+      "meaning": "國際的",
+      "phrase": "international travel",
+      "category": "商務旅行"
+    },
+    {
+      "word": "abroad",
+      "pos": "adv.",
+      "meaning": "在國外；到國外",
+      "phrase": "travel abroad",
+      "category": "商務旅行"
+    },
+    {
+      "word": "appointment",
+      "pos": "n.",
+      "meaning": "約會；預約",
+      "phrase": "schedule an appointment",
+      "category": "商務旅行"
+    },
+    {
+      "word": "convention",
+      "pos": "n.",
+      "meaning": "大型會議；大會",
+      "phrase": "annual convention",
+      "category": "商務旅行"
+    },
+    {
+      "word": "seminar",
+      "pos": "n.",
+      "meaning": "研討會",
+      "phrase": "attend a seminar",
+      "category": "商務旅行"
+    },
+    {
+      "word": "workshop",
+      "pos": "n.",
+      "meaning": "工作坊；研習會",
+      "phrase": "training workshop",
+      "category": "商務旅行"
+    },
+    {
+      "word": "registration",
+      "pos": "n.",
+      "meaning": "登記；報名",
+      "phrase": "registration fee",
+      "category": "商務旅行"
+    },
+    {
+      "word": "register",
+      "pos": "v.",
+      "meaning": "登記；報名",
+      "phrase": "register for a conference",
+      "category": "商務旅行"
+    },
+    {
+      "word": "venue",
+      "pos": "n.",
+      "meaning": "活動場地",
+      "phrase": "conference venue",
+      "category": "商務旅行"
+    },
+    {
+      "word": "host",
+      "pos": "n./v.",
+      "meaning": "主辦者；主辦",
+      "phrase": "host a conference",
+      "category": "商務旅行"
+    },
+    {
+      "word": "delegate",
+      "pos": "n.",
+      "meaning": "代表；與會代表",
+      "phrase": "conference delegate",
+      "category": "商務旅行"
+    },
+    {
+      "word": "invitation",
+      "pos": "n.",
+      "meaning": "邀請；邀請函",
+      "phrase": "send an invitation",
+      "category": "商務旅行"
+    },
+    {
+      "word": "invite",
+      "pos": "v.",
+      "meaning": "邀請",
+      "phrase": "invite a client",
+      "category": "商務旅行"
+    },
+    {
+      "word": "reception",
+      "pos": "n.",
+      "meaning": "接待；招待會",
+      "phrase": "opening reception",
+      "category": "商務旅行"
+    },
+    {
+      "word": "hospitality",
+      "pos": "n.",
+      "meaning": "接待；款待",
+      "phrase": "corporate hospitality",
+      "category": "商務旅行"
+    },
+    {
+      "word": "accompany",
+      "pos": "v.",
+      "meaning": "陪同；陪伴",
+      "phrase": "accompany a client",
+      "category": "商務旅行"
+    },
+    {
+      "word": "guide",
+      "pos": "n./v.",
+      "meaning": "導遊；引導",
+      "phrase": "tour guide",
+      "category": "商務旅行"
+    },
+    {
+      "word": "tour",
+      "pos": "n./v.",
+      "meaning": "參觀；遊覽",
+      "phrase": "guided tour",
+      "category": "商務旅行"
+    },
+    {
+      "word": "extend",
+      "pos": "v.",
+      "meaning": "延長；延期",
+      "phrase": "extend a stay",
+      "category": "商務旅行"
+    },
+    {
+      "word": "extension",
+      "pos": "n.",
+      "meaning": "延長；延期",
+      "phrase": "request an extension",
+      "category": "商務旅行"
+    },
+    {
+      "word": "coordinate",
+      "pos": "v.",
+      "meaning": "協調；安排",
+      "phrase": "coordinate travel arrangements",
+      "category": "商務旅行"
+    },
+    {
+      "word": "prepare",
+      "pos": "v.",
+      "meaning": "準備",
+      "phrase": "prepare for a trip",
+      "category": "商務旅行"
+    },
+    {
+      "word": "unpack",
+      "pos": "v.",
+      "meaning": "打開行李；取出",
+      "phrase": "unpack luggage",
+      "category": "商務旅行"
+    },
+    {
+      "word": "valid",
+      "pos": "adj.",
+      "meaning": "有效的",
+      "phrase": "valid passport",
+      "category": "商務旅行"
+    },
+    {
+      "word": "expire",
+      "pos": "v.",
+      "meaning": "到期；失效",
+      "phrase": "passport expires",
+      "category": "商務旅行"
+    },
+    {
+      "word": "renewal",
+      "pos": "n.",
+      "meaning": "續期；更新",
+      "phrase": "passport renewal",
+      "category": "商務旅行"
+    },
+    {
+      "word": "airport",
+      "pos": "n.",
+      "meaning": "機場",
+      "phrase": "international airport",
+      "category": "交通"
+    },
+    {
+      "word": "airline",
+      "pos": "n.",
+      "meaning": "航空公司",
+      "phrase": "major airline",
+      "category": "交通"
+    },
+    {
+      "word": "aircraft",
+      "pos": "n.",
+      "meaning": "飛機；航空器",
+      "phrase": "board an aircraft",
+      "category": "交通"
+    },
+    {
+      "word": "flight",
+      "pos": "n.",
+      "meaning": "航班；飛行",
+      "phrase": "book a flight",
+      "category": "交通"
+    },
+    {
+      "word": "passenger",
+      "pos": "n.",
+      "meaning": "乘客；旅客",
+      "phrase": "airline passenger",
+      "category": "交通"
+    },
+    {
+      "word": "terminal",
+      "pos": "n.",
+      "meaning": "航廈；終點站",
+      "phrase": "airport terminal",
+      "category": "交通"
+    },
+    {
+      "word": "gate",
+      "pos": "n.",
+      "meaning": "登機門；入口",
+      "phrase": "departure gate",
+      "category": "交通"
+    },
+    {
+      "word": "boarding",
+      "pos": "n.",
+      "meaning": "登機；上車",
+      "phrase": "boarding time",
+      "category": "交通"
+    },
+    {
+      "word": "boarding pass",
+      "pos": "n.",
+      "meaning": "登機證",
+      "phrase": "show a boarding pass",
+      "category": "交通"
+    },
+    {
+      "word": "runway",
+      "pos": "n.",
+      "meaning": "跑道",
+      "phrase": "airport runway",
+      "category": "交通"
+    },
+    {
+      "word": "pilot",
+      "pos": "n.",
+      "meaning": "飛行員",
+      "phrase": "airline pilot",
+      "category": "交通"
+    },
+    {
+      "word": "crew",
+      "pos": "n.",
+      "meaning": "機組人員；工作人員",
+      "phrase": "flight crew",
+      "category": "交通"
+    },
+    {
+      "word": "aisle",
+      "pos": "n.",
+      "meaning": "走道",
+      "phrase": "aisle seat",
+      "category": "交通"
+    },
+    {
+      "word": "seat",
+      "pos": "n.",
+      "meaning": "座位",
+      "phrase": "reserve a seat",
+      "category": "交通"
+    },
+    {
+      "word": "transit",
+      "pos": "n.",
+      "meaning": "轉運；大眾運輸",
+      "phrase": "public transit",
+      "category": "交通"
+    },
+    {
+      "word": "layover",
+      "pos": "n.",
+      "meaning": "轉機停留",
+      "phrase": "two-hour layover",
+      "category": "交通"
+    },
+    {
+      "word": "railway",
+      "pos": "n.",
+      "meaning": "鐵路",
+      "phrase": "railway station",
+      "category": "交通"
+    },
+    {
+      "word": "train",
+      "pos": "n.",
+      "meaning": "火車",
+      "phrase": "catch a train",
+      "category": "交通"
+    },
+    {
+      "word": "station",
+      "pos": "n.",
+      "meaning": "車站",
+      "phrase": "train station",
+      "category": "交通"
+    },
+    {
+      "word": "track",
+      "pos": "n.",
+      "meaning": "鐵軌；月台軌道",
+      "phrase": "railway track",
+      "category": "交通"
+    },
+    {
+      "word": "subway",
+      "pos": "n.",
+      "meaning": "地鐵",
+      "phrase": "subway station",
+      "category": "交通"
+    },
+    {
+      "word": "bus",
+      "pos": "n.",
+      "meaning": "公車；巴士",
+      "phrase": "take a bus",
+      "category": "交通"
+    },
+    {
+      "word": "taxi",
+      "pos": "n.",
+      "meaning": "計程車",
+      "phrase": "take a taxi",
+      "category": "交通"
+    },
+    {
+      "word": "shuttle",
+      "pos": "n.",
+      "meaning": "接駁車",
+      "phrase": "airport shuttle",
+      "category": "交通"
+    },
+    {
+      "word": "vehicle",
+      "pos": "n.",
+      "meaning": "車輛",
+      "phrase": "company vehicle",
+      "category": "交通"
+    },
+    {
+      "word": "automobile",
+      "pos": "n.",
+      "meaning": "汽車",
+      "phrase": "automobile industry",
+      "category": "交通"
+    },
+    {
+      "word": "driver",
+      "pos": "n.",
+      "meaning": "駕駛；司機",
+      "phrase": "taxi driver",
+      "category": "交通"
+    },
+    {
+      "word": "traffic",
+      "pos": "n.",
+      "meaning": "交通；車流",
+      "phrase": "heavy traffic",
+      "category": "交通"
+    },
+    {
+      "word": "congestion",
+      "pos": "n.",
+      "meaning": "壅塞；擁堵",
+      "phrase": "traffic congestion",
+      "category": "交通"
+    },
+    {
+      "word": "commute",
+      "pos": "n./v.",
+      "meaning": "通勤；上下班往返",
+      "phrase": "commute to work",
+      "category": "交通"
+    },
+    {
+      "word": "commuter",
+      "pos": "n.",
+      "meaning": "通勤者",
+      "phrase": "daily commuter",
+      "category": "交通"
+    },
+    {
+      "word": "highway",
+      "pos": "n.",
+      "meaning": "公路；高速公路",
+      "phrase": "major highway",
+      "category": "交通"
+    },
+    {
+      "word": "intersection",
+      "pos": "n.",
+      "meaning": "十字路口；交叉路口",
+      "phrase": "busy intersection",
+      "category": "交通"
+    },
+    {
+      "word": "lane",
+      "pos": "n.",
+      "meaning": "車道",
+      "phrase": "traffic lane",
+      "category": "交通"
+    },
+    {
+      "word": "bridge",
+      "pos": "n.",
+      "meaning": "橋梁",
+      "phrase": "cross a bridge",
+      "category": "交通"
+    },
+    {
+      "word": "tunnel",
+      "pos": "n.",
+      "meaning": "隧道",
+      "phrase": "drive through a tunnel",
+      "category": "交通"
+    },
+    {
+      "word": "road",
+      "pos": "n.",
+      "meaning": "道路",
+      "phrase": "road construction",
+      "category": "交通"
+    },
+    {
+      "word": "detour",
+      "pos": "n.",
+      "meaning": "繞道；改道路線",
+      "phrase": "take a detour",
+      "category": "交通"
+    },
+    {
+      "word": "direction",
+      "pos": "n.",
+      "meaning": "方向；路線指示",
+      "phrase": "ask for directions",
+      "category": "交通"
+    },
+    {
+      "word": "map",
+      "pos": "n.",
+      "meaning": "地圖",
+      "phrase": "road map",
+      "category": "交通"
+    },
+    {
+      "word": "ticket",
+      "pos": "n.",
+      "meaning": "票；車票",
+      "phrase": "purchase a ticket",
+      "category": "交通"
+    },
+    {
+      "word": "one-way",
+      "pos": "adj.",
+      "meaning": "單程的",
+      "phrase": "one-way ticket",
+      "category": "交通"
+    },
+    {
+      "word": "round-trip",
+      "pos": "adj./n.",
+      "meaning": "來回的；來回行程",
+      "phrase": "round-trip ticket",
+      "category": "交通"
+    },
+    {
+      "word": "toll",
+      "pos": "n.",
+      "meaning": "通行費",
+      "phrase": "pay a toll",
+      "category": "交通"
+    },
+    {
+      "word": "fuel",
+      "pos": "n.",
+      "meaning": "燃料；汽油",
+      "phrase": "fuel costs",
+      "category": "交通"
+    },
+    {
+      "word": "gasoline",
+      "pos": "n.",
+      "meaning": "汽油",
+      "phrase": "gasoline prices",
+      "category": "交通"
+    },
+    {
+      "word": "mileage",
+      "pos": "n.",
+      "meaning": "里程；行駛里程",
+      "phrase": "vehicle mileage",
+      "category": "交通"
+    },
+    {
+      "word": "navigate",
+      "pos": "v.",
+      "meaning": "導航；找到路線",
+      "phrase": "navigate the route",
+      "category": "交通"
+    },
+    {
+      "word": "reroute",
+      "pos": "v.",
+      "meaning": "改道；重新安排路線",
+      "phrase": "reroute traffic",
+      "category": "交通"
+    },
+    {
+      "word": "pedestrian",
+      "pos": "n.",
+      "meaning": "行人",
+      "phrase": "pedestrian crossing",
+      "category": "交通"
+    },
+    {
+      "word": "hotel",
+      "pos": "n.",
+      "meaning": "飯店；旅館",
+      "phrase": "hotel reservation",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "motel",
+      "pos": "n.",
+      "meaning": "汽車旅館",
+      "phrase": "stay at a motel",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "resort",
+      "pos": "n.",
+      "meaning": "度假村",
+      "phrase": "beach resort",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "guest",
+      "pos": "n.",
+      "meaning": "房客；賓客",
+      "phrase": "hotel guest",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "room",
+      "pos": "n.",
+      "meaning": "房間；客房",
+      "phrase": "reserve a room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "suite",
+      "pos": "n.",
+      "meaning": "套房",
+      "phrase": "hotel suite",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "concierge",
+      "pos": "n.",
+      "meaning": "飯店禮賓人員",
+      "phrase": "ask the concierge",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "receptionist",
+      "pos": "n.",
+      "meaning": "櫃檯接待人員",
+      "phrase": "hotel receptionist",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "front desk",
+      "pos": "n.",
+      "meaning": "飯店櫃檯",
+      "phrase": "contact the front desk",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "lodging",
+      "pos": "n.",
+      "meaning": "住宿；住宿處",
+      "phrase": "lodging expenses",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "check-in",
+      "pos": "n.",
+      "meaning": "入住登記",
+      "phrase": "check-in time",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "check-out",
+      "pos": "n.",
+      "meaning": "退房",
+      "phrase": "check-out time",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "overnight",
+      "pos": "adj./adv.",
+      "meaning": "過夜的；整夜",
+      "phrase": "overnight stay",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "stay",
+      "pos": "n./v.",
+      "meaning": "住宿；停留",
+      "phrase": "extend a stay",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "nightly",
+      "pos": "adj./adv.",
+      "meaning": "每晚的；每晚",
+      "phrase": "nightly rate",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "single",
+      "pos": "adj.",
+      "meaning": "單人的",
+      "phrase": "single room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "double",
+      "pos": "adj.",
+      "meaning": "雙人的",
+      "phrase": "double room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "adjoining",
+      "pos": "adj.",
+      "meaning": "相鄰的；相連的",
+      "phrase": "adjoining rooms",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "complimentary",
+      "pos": "adj.",
+      "meaning": "免費提供的",
+      "phrase": "complimentary breakfast",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "amenity",
+      "pos": "n.",
+      "meaning": "便利設施；飯店設施",
+      "phrase": "hotel amenities",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "housekeeping",
+      "pos": "n.",
+      "meaning": "客房清潔服務",
+      "phrase": "housekeeping service",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "housekeeper",
+      "pos": "n.",
+      "meaning": "客房清潔人員",
+      "phrase": "hotel housekeeper",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "linen",
+      "pos": "n.",
+      "meaning": "床單；布巾",
+      "phrase": "clean linens",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "towel",
+      "pos": "n.",
+      "meaning": "毛巾",
+      "phrase": "fresh towels",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "laundry",
+      "pos": "n.",
+      "meaning": "洗衣；送洗服務",
+      "phrase": "laundry service",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "minibar",
+      "pos": "n.",
+      "meaning": "客房迷你吧",
+      "phrase": "minibar charges",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "balcony",
+      "pos": "n.",
+      "meaning": "陽台",
+      "phrase": "private balcony",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "view",
+      "pos": "n.",
+      "meaning": "景觀；視野",
+      "phrase": "ocean view",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "pool",
+      "pos": "n.",
+      "meaning": "游泳池",
+      "phrase": "swimming pool",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "fitness",
+      "pos": "n.",
+      "meaning": "健身；體能",
+      "phrase": "fitness center",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "gym",
+      "pos": "n.",
+      "meaning": "健身房",
+      "phrase": "hotel gym",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "spa",
+      "pos": "n.",
+      "meaning": "SPA；水療中心",
+      "phrase": "spa facilities",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "banquet",
+      "pos": "n.",
+      "meaning": "宴會",
+      "phrase": "banquet room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "ballroom",
+      "pos": "n.",
+      "meaning": "宴會廳；舞廳",
+      "phrase": "hotel ballroom",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "hall",
+      "pos": "n.",
+      "meaning": "大廳；會場",
+      "phrase": "conference hall",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "bellhop",
+      "pos": "n.",
+      "meaning": "飯店行李員",
+      "phrase": "ask a bellhop",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "keycard",
+      "pos": "n.",
+      "meaning": "房卡；感應卡",
+      "phrase": "room keycard",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "incidental",
+      "pos": "n./adj.",
+      "meaning": "雜費；附帶的",
+      "phrase": "incidental charges",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "no-show",
+      "pos": "n.",
+      "meaning": "未到場；未入住者",
+      "phrase": "no-show fee",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "preference",
+      "pos": "n.",
+      "meaning": "偏好",
+      "phrase": "room preference",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "smoking",
+      "pos": "adj./n.",
+      "meaning": "吸菸的；吸菸",
+      "phrase": "smoking room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "non-smoking",
+      "pos": "adj.",
+      "meaning": "禁菸的",
+      "phrase": "non-smoking room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "unavailable",
+      "pos": "adj.",
+      "meaning": "無法提供的；無空房的",
+      "phrase": "rooms are unavailable",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "occupant",
+      "pos": "n.",
+      "meaning": "住客；使用者",
+      "phrase": "room occupant",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "guestroom",
+      "pos": "n.",
+      "meaning": "客房",
+      "phrase": "hotel guestroom",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "vacate",
+      "pos": "v.",
+      "meaning": "騰出；退房離開",
+      "phrase": "vacate the room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "renew",
+      "pos": "v.",
+      "meaning": "續訂；更新",
+      "phrase": "renew a reservation",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "managerial",
+      "pos": "adj.",
+      "meaning": "管理的；經理職的",
+      "phrase": "managerial position",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "furnish",
+      "pos": "v.",
+      "meaning": "配置家具；提供設備",
+      "phrase": "furnish a room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "furnished",
+      "pos": "adj.",
+      "meaning": "附家具的",
+      "phrase": "fully furnished room",
+      "category": "飯店與住宿"
+    },
+    {
+      "word": "restaurant",
+      "pos": "n.",
+      "meaning": "餐廳",
+      "phrase": "restaurant reservation",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "café",
+      "pos": "n.",
+      "meaning": "咖啡館",
+      "phrase": "local café",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "cafeteria",
+      "pos": "n.",
+      "meaning": "自助餐廳；員工餐廳",
+      "phrase": "company cafeteria",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "patron",
+      "pos": "n.",
+      "meaning": "顧客；常客",
+      "phrase": "restaurant patrons",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "chef",
+      "pos": "n.",
+      "meaning": "主廚；廚師",
+      "phrase": "head chef",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "cook",
+      "pos": "n./v.",
+      "meaning": "廚師；烹調",
+      "phrase": "cook a meal",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "waiter",
+      "pos": "n.",
+      "meaning": "男服務生",
+      "phrase": "ask the waiter",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "reservationist",
+      "pos": "n.",
+      "meaning": "訂位人員",
+      "phrase": "contact a reservationist",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "takeout",
+      "pos": "n./adj.",
+      "meaning": "外帶；外帶的",
+      "phrase": "takeout order",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "menu",
+      "pos": "n.",
+      "meaning": "菜單",
+      "phrase": "view the menu",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "dish",
+      "pos": "n.",
+      "meaning": "菜餚；餐點",
+      "phrase": "popular dish",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "meal",
+      "pos": "n.",
+      "meaning": "一餐；餐點",
+      "phrase": "order a meal",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "breakfast",
+      "pos": "n.",
+      "meaning": "早餐",
+      "phrase": "serve breakfast",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "lunch",
+      "pos": "n.",
+      "meaning": "午餐",
+      "phrase": "business lunch",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "dinner",
+      "pos": "n.",
+      "meaning": "晚餐",
+      "phrase": "dinner reservation",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "beverage",
+      "pos": "n.",
+      "meaning": "飲料",
+      "phrase": "hot beverage",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "drink",
+      "pos": "n./v.",
+      "meaning": "飲料；飲用",
+      "phrase": "order a drink",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "ingredient",
+      "pos": "n.",
+      "meaning": "食材；原料",
+      "phrase": "fresh ingredients",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "cuisine",
+      "pos": "n.",
+      "meaning": "料理；菜系",
+      "phrase": "local cuisine",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "appetizer",
+      "pos": "n.",
+      "meaning": "開胃菜；前菜",
+      "phrase": "order an appetizer",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "entrée",
+      "pos": "n.",
+      "meaning": "主菜",
+      "phrase": "choose an entrée",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "dessert",
+      "pos": "n.",
+      "meaning": "甜點",
+      "phrase": "dessert menu",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "portion",
+      "pos": "n.",
+      "meaning": "份量；一份",
+      "phrase": "large portion",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "buffet",
+      "pos": "n.",
+      "meaning": "自助餐",
+      "phrase": "breakfast buffet",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "catering",
+      "pos": "n.",
+      "meaning": "外燴；餐飲服務",
+      "phrase": "catering service",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "cater",
+      "pos": "v.",
+      "meaning": "承辦餐飲；供應餐點",
+      "phrase": "cater an event",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "seating",
+      "pos": "n.",
+      "meaning": "座位；座位安排",
+      "phrase": "seating arrangement",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "table",
+      "pos": "n.",
+      "meaning": "餐桌；桌位",
+      "phrase": "reserve a table",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "counter",
+      "pos": "n.",
+      "meaning": "櫃檯；吧台",
+      "phrase": "service counter",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "dine",
+      "pos": "v.",
+      "meaning": "用餐",
+      "phrase": "dine at a restaurant",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "specialize",
+      "pos": "v.",
+      "meaning": "專門提供；專精於",
+      "phrase": "specialize in seafood",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "selection",
+      "pos": "n.",
+      "meaning": "選擇；精選品項",
+      "phrase": "wide selection",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "seasonal",
+      "pos": "adj.",
+      "meaning": "季節性的；當季的",
+      "phrase": "seasonal menu",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "fresh",
+      "pos": "adj.",
+      "meaning": "新鮮的",
+      "phrase": "fresh produce",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "delicious",
+      "pos": "adj.",
+      "meaning": "美味的",
+      "phrase": "delicious meal",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "specialty",
+      "pos": "n.",
+      "meaning": "特色菜；專長",
+      "phrase": "house specialty",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "tip",
+      "pos": "n./v.",
+      "meaning": "小費；給小費",
+      "phrase": "leave a tip",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "tab",
+      "pos": "n.",
+      "meaning": "帳單；未結帳款",
+      "phrase": "pay the tab",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "courtesy",
+      "pos": "n.",
+      "meaning": "禮貌；禮遇",
+      "phrase": "professional courtesy",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "courteous",
+      "pos": "adj.",
+      "meaning": "有禮貌的",
+      "phrase": "courteous service",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "prompt",
+      "pos": "adj.",
+      "meaning": "迅速的；即時的",
+      "phrase": "prompt service",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "solution",
+      "pos": "n.",
+      "meaning": "解決方案",
+      "phrase": "offer a solution",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "cleanliness",
+      "pos": "n.",
+      "meaning": "清潔；整潔",
+      "phrase": "maintain cleanliness",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "sanitary",
+      "pos": "adj.",
+      "meaning": "衛生的",
+      "phrase": "sanitary conditions",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "hygiene",
+      "pos": "n.",
+      "meaning": "衛生",
+      "phrase": "food hygiene",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "dietary",
+      "pos": "adj.",
+      "meaning": "飲食的",
+      "phrase": "dietary requirements",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "vegetarian",
+      "pos": "n./adj.",
+      "meaning": "素食者；素食的",
+      "phrase": "vegetarian option",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "allergy",
+      "pos": "n.",
+      "meaning": "過敏；過敏症",
+      "phrase": "food allergy",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "customize",
+      "pos": "v.",
+      "meaning": "客製化；依需求調整",
+      "phrase": "customize an order",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "consume",
+      "pos": "v.",
+      "meaning": "食用；消費",
+      "phrase": "consume food",
+      "category": "餐飲與服務"
+    },
+    {
+      "word": "event",
+      "pos": "n.",
+      "meaning": "活動；事件",
+      "phrase": "special event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "entertainment",
+      "pos": "n.",
+      "meaning": "娛樂；表演活動",
+      "phrase": "entertainment program",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "ceremony",
+      "pos": "n.",
+      "meaning": "典禮；儀式",
+      "phrase": "opening ceremony",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "celebration",
+      "pos": "n.",
+      "meaning": "慶祝活動",
+      "phrase": "anniversary celebration",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "festival",
+      "pos": "n.",
+      "meaning": "節慶；節日活動",
+      "phrase": "annual festival",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "exhibition",
+      "pos": "n.",
+      "meaning": "展覽；展覽會",
+      "phrase": "art exhibition",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "issue",
+      "pos": "n./v.",
+      "meaning": "問題；發布",
+      "phrase": "address an issue",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "fair",
+      "pos": "n.",
+      "meaning": "展覽會；博覽會",
+      "phrase": "trade fair",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "gathering",
+      "pos": "n.",
+      "meaning": "聚會；集會",
+      "phrase": "social gathering",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "lecture",
+      "pos": "n.",
+      "meaning": "講座；演講",
+      "phrase": "attend a lecture",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "session",
+      "pos": "n.",
+      "meaning": "場次；會議時段",
+      "phrase": "training session",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "concert",
+      "pos": "n.",
+      "meaning": "音樂會",
+      "phrase": "attend a concert",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "theater",
+      "pos": "n.",
+      "meaning": "劇院；電影院",
+      "phrase": "local theater",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "museum",
+      "pos": "n.",
+      "meaning": "博物館",
+      "phrase": "visit a museum",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "gallery",
+      "pos": "n.",
+      "meaning": "藝廊；畫廊",
+      "phrase": "art gallery",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "auditorium",
+      "pos": "n.",
+      "meaning": "禮堂；演講廳",
+      "phrase": "main auditorium",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "stadium",
+      "pos": "n.",
+      "meaning": "體育場",
+      "phrase": "sports stadium",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "admission",
+      "pos": "n.",
+      "meaning": "入場；入場費",
+      "phrase": "admission fee",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "pass",
+      "pos": "n.",
+      "meaning": "通行證；入場證",
+      "phrase": "visitor pass",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "enrollment",
+      "pos": "n.",
+      "meaning": "報名；註冊人數",
+      "phrase": "course enrollment",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "spectator",
+      "pos": "n.",
+      "meaning": "觀眾；旁觀者",
+      "phrase": "event spectators",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "visitor",
+      "pos": "n.",
+      "meaning": "訪客；參觀者",
+      "phrase": "museum visitor",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "crowd",
+      "pos": "n.",
+      "meaning": "人群；群眾",
+      "phrase": "large crowd",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "performer",
+      "pos": "n.",
+      "meaning": "表演者",
+      "phrase": "guest performer",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "problem",
+      "pos": "n.",
+      "meaning": "問題；困難",
+      "phrase": "solve a problem",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "sign",
+      "pos": "n./v.",
+      "meaning": "標誌；簽署",
+      "phrase": "sign up for an event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "artwork",
+      "pos": "n.",
+      "meaning": "藝術作品",
+      "phrase": "display artwork",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "collection",
+      "pos": "n.",
+      "meaning": "收藏；作品集",
+      "phrase": "art collection",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "lineup",
+      "pos": "n.",
+      "meaning": "活動陣容；節目安排",
+      "phrase": "event lineup",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "premiere",
+      "pos": "n./v.",
+      "meaning": "首映；首次演出",
+      "phrase": "film premiere",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "organizer",
+      "pos": "n.",
+      "meaning": "主辦人；活動籌辦者",
+      "phrase": "event organizer",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "planning",
+      "pos": "n.",
+      "meaning": "規劃；籌備",
+      "phrase": "event planning",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "promote",
+      "pos": "v.",
+      "meaning": "宣傳；推廣",
+      "phrase": "promote an event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "publicize",
+      "pos": "v.",
+      "meaning": "宣傳；公布",
+      "phrase": "publicize an event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "participation",
+      "pos": "n.",
+      "meaning": "參與；參加",
+      "phrase": "encourage participation",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "compete",
+      "pos": "v.",
+      "meaning": "競爭；參賽",
+      "phrase": "compete in a contest",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "contest",
+      "pos": "n.",
+      "meaning": "比賽；競賽",
+      "phrase": "enter a contest",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "prize",
+      "pos": "n.",
+      "meaning": "獎品；獎項",
+      "phrase": "win a prize",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "award",
+      "pos": "n./v.",
+      "meaning": "獎項；授予",
+      "phrase": "receive an award",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "decrease",
+      "pos": "n./v.",
+      "meaning": "減少；下降",
+      "phrase": "decrease in attendance",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "upcoming",
+      "pos": "adj.",
+      "meaning": "即將到來的",
+      "phrase": "upcoming event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "annual",
+      "pos": "adj.",
+      "meaning": "每年的；年度的",
+      "phrase": "annual event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "monthly",
+      "pos": "adj./adv.",
+      "meaning": "每月的；每月",
+      "phrase": "monthly meeting",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "local",
+      "pos": "adj.",
+      "meaning": "當地的",
+      "phrase": "local event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "public",
+      "pos": "adj./n.",
+      "meaning": "公開的；大眾",
+      "phrase": "open to the public",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "private",
+      "pos": "adj.",
+      "meaning": "私人舉辦的；非公開的",
+      "phrase": "private event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "cultural",
+      "pos": "adj.",
+      "meaning": "文化的",
+      "phrase": "cultural event",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "recreational",
+      "pos": "adj.",
+      "meaning": "休閒的；娛樂的",
+      "phrase": "recreational activities",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "activity",
+      "pos": "n.",
+      "meaning": "活動",
+      "phrase": "group activity",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "entertain",
+      "pos": "v.",
+      "meaning": "娛樂；招待",
+      "phrase": "entertain guests",
+      "category": "活動與娛樂"
+    },
+    {
+      "word": "health",
+      "pos": "n.",
+      "meaning": "健康",
+      "phrase": "health care",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "medical",
+      "pos": "adj.",
+      "meaning": "醫療的",
+      "phrase": "medical services",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "clinic",
+      "pos": "n.",
+      "meaning": "診所",
+      "phrase": "local clinic",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "hospital",
+      "pos": "n.",
+      "meaning": "醫院",
+      "phrase": "local hospital",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "doctor",
+      "pos": "n.",
+      "meaning": "醫師",
+      "phrase": "see a doctor",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "physician",
+      "pos": "n.",
+      "meaning": "醫師",
+      "phrase": "consult a physician",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "nurse",
+      "pos": "n.",
+      "meaning": "護理師",
+      "phrase": "registered nurse",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "patient",
+      "pos": "n.",
+      "meaning": "病患",
+      "phrase": "patient information",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "examination",
+      "pos": "n.",
+      "meaning": "檢查；檢驗",
+      "phrase": "medical examination",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "examine",
+      "pos": "v.",
+      "meaning": "檢查；診察",
+      "phrase": "examine a patient",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "treatment",
+      "pos": "n.",
+      "meaning": "治療；療程",
+      "phrase": "medical treatment",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "treat",
+      "pos": "v.",
+      "meaning": "治療；處理",
+      "phrase": "treat a patient",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "medicine",
+      "pos": "n.",
+      "meaning": "藥物；醫藥",
+      "phrase": "take medicine",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "medication",
+      "pos": "n.",
+      "meaning": "藥物",
+      "phrase": "take medication",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "prescription",
+      "pos": "n.",
+      "meaning": "處方；處方箋",
+      "phrase": "fill a prescription",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "pharmacy",
+      "pos": "n.",
+      "meaning": "藥局",
+      "phrase": "local pharmacy",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "pharmacist",
+      "pos": "n.",
+      "meaning": "藥師",
+      "phrase": "ask a pharmacist",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "symptom",
+      "pos": "n.",
+      "meaning": "症狀",
+      "phrase": "common symptoms",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "illness",
+      "pos": "n.",
+      "meaning": "疾病；生病",
+      "phrase": "recover from an illness",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "injury",
+      "pos": "n.",
+      "meaning": "受傷；傷勢",
+      "phrase": "workplace injury",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "emergency",
+      "pos": "n./adj.",
+      "meaning": "緊急狀況；緊急的",
+      "phrase": "emergency services",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "coverage",
+      "pos": "n.",
+      "meaning": "保障範圍；保險範圍",
+      "phrase": "insurance coverage",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "wellness",
+      "pos": "n.",
+      "meaning": "健康；身心保健",
+      "phrase": "wellness program",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "exercise",
+      "pos": "n./v.",
+      "meaning": "運動；鍛鍊",
+      "phrase": "regular exercise",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "membership",
+      "pos": "n.",
+      "meaning": "會員資格",
+      "phrase": "gym membership",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "member",
+      "pos": "n.",
+      "meaning": "會員；成員",
+      "phrase": "club member",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "salon",
+      "pos": "n.",
+      "meaning": "美容院；美髮店",
+      "phrase": "hair salon",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "haircut",
+      "pos": "n.",
+      "meaning": "理髮；髮型修剪",
+      "phrase": "get a haircut",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "cleaning",
+      "pos": "n.",
+      "meaning": "清潔；清洗服務",
+      "phrase": "cleaning service",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "cleaner",
+      "pos": "n.",
+      "meaning": "清潔人員；清潔用品",
+      "phrase": "professional cleaner",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "dry-cleaning",
+      "pos": "n.",
+      "meaning": "乾洗",
+      "phrase": "dry-cleaning service",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "mechanic",
+      "pos": "n.",
+      "meaning": "技師；汽車維修人員",
+      "phrase": "auto mechanic",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "service center",
+      "pos": "n.",
+      "meaning": "服務中心；維修中心",
+      "phrase": "authorized service center",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "servicing",
+      "pos": "n.",
+      "meaning": "保養；維修服務",
+      "phrase": "vehicle servicing",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "pickup",
+      "pos": "n.",
+      "meaning": "取件；接送",
+      "phrase": "pickup service",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "convenience",
+      "pos": "n.",
+      "meaning": "便利；方便",
+      "phrase": "for your convenience",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "convenient",
+      "pos": "adj.",
+      "meaning": "方便的；便利的",
+      "phrase": "convenient location",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "neighborhood",
+      "pos": "n.",
+      "meaning": "社區；鄰近地區",
+      "phrase": "local neighborhood",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "community",
+      "pos": "n.",
+      "meaning": "社區；地方居民",
+      "phrase": "community center",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "resident",
+      "pos": "n.",
+      "meaning": "居民；住戶",
+      "phrase": "local resident",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "household",
+      "pos": "n./adj.",
+      "meaning": "家庭；家用的",
+      "phrase": "household services",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "respond",
+      "pos": "v.",
+      "meaning": "回應；處理",
+      "phrase": "respond to a request",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "plumber",
+      "pos": "n.",
+      "meaning": "水管工",
+      "phrase": "call a plumber",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "electrician",
+      "pos": "n.",
+      "meaning": "電工",
+      "phrase": "hire an electrician",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "specialist",
+      "pos": "n.",
+      "meaning": "專業人員；專家",
+      "phrase": "service specialist",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "consultation",
+      "pos": "n.",
+      "meaning": "諮詢；會診",
+      "phrase": "schedule a consultation",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "consult",
+      "pos": "v.",
+      "meaning": "諮詢；請教",
+      "phrase": "consult a specialist",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "support",
+      "pos": "n./v.",
+      "meaning": "支援；協助",
+      "phrase": "customer support",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "provider",
+      "pos": "n.",
+      "meaning": "服務供應商",
+      "phrase": "service provider",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "routine",
+      "pos": "adj./n.",
+      "meaning": "例行的；例行程序",
+      "phrase": "routine checkup",
+      "category": "健康與日常服務"
+    },
+    {
+      "word": "require",
+      "pos": "v.",
+      "meaning": "需要；要求",
+      "phrase": "require approval",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "provide",
+      "pos": "v.",
+      "meaning": "提供",
+      "phrase": "provide information",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "remain",
+      "pos": "v.",
+      "meaning": "保持；仍然是",
+      "phrase": "remain available",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "expect",
+      "pos": "v.",
+      "meaning": "預期；期待",
+      "phrase": "expect an increase",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "allow",
+      "pos": "v.",
+      "meaning": "允許；讓",
+      "phrase": "allow access",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "enable",
+      "pos": "v.",
+      "meaning": "使能夠；讓…可以",
+      "phrase": "enable users to access",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "ensure",
+      "pos": "v.",
+      "meaning": "確保",
+      "phrase": "ensure quality",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "include",
+      "pos": "v.",
+      "meaning": "包括；包含",
+      "phrase": "include a fee",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "contain",
+      "pos": "v.",
+      "meaning": "包含；容納",
+      "phrase": "contain information",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "involve",
+      "pos": "v.",
+      "meaning": "涉及；包含",
+      "phrase": "involve several departments",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "occur",
+      "pos": "v.",
+      "meaning": "發生；出現",
+      "phrase": "occur frequently",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "indicate",
+      "pos": "v.",
+      "meaning": "指出；顯示",
+      "phrase": "indicate a preference",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "determine",
+      "pos": "v.",
+      "meaning": "決定；確定",
+      "phrase": "determine the cause",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "consider",
+      "pos": "v.",
+      "meaning": "考慮",
+      "phrase": "consider an option",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "prefer",
+      "pos": "v.",
+      "meaning": "較喜歡；偏好",
+      "phrase": "prefer an alternative",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "choose",
+      "pos": "v.",
+      "meaning": "選擇",
+      "phrase": "choose a suitable option",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "depend",
+      "pos": "v.",
+      "meaning": "取決於；依賴",
+      "phrase": "depend on availability",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "affect",
+      "pos": "v.",
+      "meaning": "影響",
+      "phrase": "affect performance",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "likely",
+      "pos": "adj./adv.",
+      "meaning": "可能的；很可能",
+      "phrase": "likely to increase",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "recent",
+      "pos": "adj.",
+      "meaning": "最近的",
+      "phrase": "recent changes",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "current",
+      "pos": "adj.",
+      "meaning": "目前的；現行的",
+      "phrase": "current price",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "previous",
+      "pos": "adj.",
+      "meaning": "先前的；前一個的",
+      "phrase": "previous experience",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "additional",
+      "pos": "adj.",
+      "meaning": "額外的；附加的",
+      "phrase": "additional information",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "necessary",
+      "pos": "adj.",
+      "meaning": "必要的",
+      "phrase": "necessary documents",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "required",
+      "pos": "adj.",
+      "meaning": "必須的；要求的",
+      "phrase": "required information",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "suitable",
+      "pos": "adj.",
+      "meaning": "適合的",
+      "phrase": "suitable candidate",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "appropriate",
+      "pos": "adj.",
+      "meaning": "適當的；合適的",
+      "phrase": "appropriate action",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "effective",
+      "pos": "adj.",
+      "meaning": "有效的",
+      "phrase": "effective method",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "successful",
+      "pos": "adj.",
+      "meaning": "成功的",
+      "phrase": "successful project",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "significant",
+      "pos": "adj.",
+      "meaning": "重大的；顯著的",
+      "phrase": "significant increase",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "approximately",
+      "pos": "adv.",
+      "meaning": "大約；約",
+      "phrase": "approximately 50 people",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "currently",
+      "pos": "adv.",
+      "meaning": "目前；現在",
+      "phrase": "currently available",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "recently",
+      "pos": "adv.",
+      "meaning": "最近",
+      "phrase": "recently announced",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "immediately",
+      "pos": "adv.",
+      "meaning": "立即；馬上",
+      "phrase": "respond immediately",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "eventually",
+      "pos": "adv.",
+      "meaning": "最後；最終",
+      "phrase": "eventually complete",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "temporarily",
+      "pos": "adv.",
+      "meaning": "暫時地",
+      "phrase": "temporarily unavailable",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "regularly",
+      "pos": "adv.",
+      "meaning": "定期地；經常地",
+      "phrase": "regularly inspect",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "frequently",
+      "pos": "adv.",
+      "meaning": "經常地；頻繁地",
+      "phrase": "frequently used",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "generally",
+      "pos": "adv.",
+      "meaning": "通常；一般而言",
+      "phrase": "generally available",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "particularly",
+      "pos": "adv.",
+      "meaning": "尤其；特別",
+      "phrase": "particularly useful",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "probably",
+      "pos": "adv.",
+      "meaning": "大概；很可能",
+      "phrase": "probably increase",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "already",
+      "pos": "adv.",
+      "meaning": "已經",
+      "phrase": "already completed",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "still",
+      "pos": "adv.",
+      "meaning": "仍然；還是",
+      "phrase": "still available",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "instead",
+      "pos": "adv.",
+      "meaning": "反而；改為",
+      "phrase": "choose this instead",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "otherwise",
+      "pos": "adv.",
+      "meaning": "否則；除此之外",
+      "phrase": "unless otherwise stated",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "therefore",
+      "pos": "adv.",
+      "meaning": "因此",
+      "phrase": "therefore necessary",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "however",
+      "pos": "adv.",
+      "meaning": "然而；不過",
+      "phrase": "however, the schedule changed",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "although",
+      "pos": "conj.",
+      "meaning": "雖然；儘管",
+      "phrase": "although prices increased",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "unless",
+      "pos": "conj.",
+      "meaning": "除非",
+      "phrase": "unless otherwise noted",
+      "category": "跨情境高頻字彙"
+    },
+    {
+      "word": "according to",
+      "pos": "prep.",
+      "meaning": "根據；依照",
+      "phrase": "according to the report",
+      "category": "跨情境高頻字彙"
+    }
+  ]
+}
