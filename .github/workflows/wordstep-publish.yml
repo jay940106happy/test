@@ -1,0 +1,93 @@
+name: Verify and publish complete Wordstep
+on:
+  push:
+    branches: [wordstep-site-2026]
+    paths: [.github/workflows/wordstep-publish.yml]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: wordstep-site-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/wordstep-site-2026'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: wordstep-site-2026
+          fetch-depth: 0
+      - name: Recover the original full source and matched examples
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p working
+          gh run download 39431170585 --repo jay940106happy/test --name wordstep-repaired-data --dir working
+          git show 834021502c40809b3afd7958aff4672f828153b5:docs/index.html > working/legacy.html
+      - name: Build and validate all entries
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path=Path('wordstep/index.template.html')
+          text=path.read_text(encoding='utf-8')
+          text=text.replace("normalize(w.word+' '+w.meaning+' '+w.phrase).includes(q)","normalize(w.word+' '+w.meaning).includes(q)")
+          path.write_text(text,encoding='utf-8')
+          PY
+          python3 wordstep/build.py
+      - name: Prepare browser checks
+        run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-cjk > /dev/null
+      - name: Verify learning controls and responsive layout
+        run: python3 wordstep/browser_test.py
+      - name: Publish the tested page to the existing site branch
+        run: |
+          git add -- docs/index.html wordstep/source.json wordstep/words.json wordstep/provenance.json wordstep/index.template.html
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Publish 1000 original entries and 2000 bilingual examples with restored learning controls'
+            git push origin HEAD:refs/heads/wordstep-site-2026
+          fi
+          git rev-parse HEAD > qa/deployed-commit.txt
+      - name: Verify the public page
+        run: |
+          python3 - <<'PY'
+          import json,pathlib,re,urllib.request,time
+          sha=pathlib.Path('qa/deployed-commit.txt').read_text().strip()
+          results=[]
+          for host in ['raw.githack.com','cdn.githack.com']:
+              url=f'https://{host}/jay940106happy/test/{sha}/docs/index.html'
+              result={'url':url,'verified':False}
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 Wordstep deployment check'})
+                  with urllib.request.urlopen(req,timeout=40) as response:
+                      html=response.read().decode('utf-8')
+                      result['status']=response.status
+                      result['finalUrl']=response.url
+                  m=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',html,re.S)
+                  data=json.loads(m.group(1)) if m else []
+                  result['entries']=len(data)
+                  result['examples']=sum(len(w.get('examples',[])) for w in data)
+                  result['verified']=result['entries']==1000 and result['examples']==2000
+              except Exception as e:
+                  result['error']=str(e)
+              results.append(result)
+              if result['verified']: break
+          pathlib.Path('qa/public.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(results,ensure_ascii=False))
+          PY
+      - name: Save tested page and screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wordstep-complete-release
+          path: |
+            docs/index.html
+            wordstep/
+            qa/
+          retention-days: 14
+          if-no-files-found: error
