@@ -2,7 +2,7 @@ name: Integrate and publish Wordstep TSL
 on:
   push:
     branches: [wordstep-site-2026]
-    paths: [.github/workflows/wordstep-integrate.yml]
+    paths: [.github/workflows/wordstep-integrate.yml, wordstep/integrate_tsl.py, wordstep/index.template.html, wordstep/browser_test_merged.py]
 permissions:
   contents: write
   actions: read
