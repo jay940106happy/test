@@ -1,0 +1,95 @@
+name: Prepare TSL 1.2 source for Wordstep
+on:
+  push:
+    branches: [wordstep-site-2026]
+    paths: [.github/workflows/wordstep-tsl-source.yml]
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - name: Retrieve official frequency-ranked TSL and licensed bilingual examples
+        run: |
+          python3 - <<'PY'
+          import csv, io, json, re, time, unicodedata, urllib.request
+          from pathlib import Path
+          from urllib.parse import quote
+          out = Path('tsl-import')
+          out.mkdir(exist_ok=True)
+          def get(url):
+              for attempt in range(3):
+                  try:
+                      req = urllib.request.Request(url, headers={'User-Agent':'Wordstep-study-site/2.0'})
+                      with urllib.request.urlopen(req, timeout=110) as r:
+                          return r.read()
+                  except Exception:
+                      if attempt == 2: raise
+                      time.sleep(3)
+          def norm(s):
+              return unicodedata.normalize('NFKC',str(s).strip()).lower()
+          official_url = 'https://www.newgeneralservicelist.com/s/TSL_12_stats.csv'
+          ranked = list(csv.DictReader(io.StringIO(get(official_url).decode('latin-1'))))
+          print('Official columns',list(ranked[0]))
+          assert len(ranked)==1250, ('official TSL rows',len(ranked))
+          ranked.sort(key=lambda r:int(r['TSL Rank']))
+          assert [int(x['TSL Rank']) for x in ranked]==list(range(1,1251))
+          chinese_url = 'https://raw.githubusercontent.com/hismall007818/vocab/main/'+quote('單字表_5669_中文_v7.txt')
+          translations = {}
+          for line in get(chinese_url).decode('utf-8-sig').splitlines():
+              cols=line.split('\t')
+              if len(cols)>=4 and cols[3]=='TSL':
+                  translations[norm(cols[0])]={'pos':cols[1],'meaning':cols[2]}
+          print('Chinese TSL terms',len(translations))
+          assert len(translations)==1250
+          keys=set(norm(row['Word']) for row in ranked)
+          assert keys==set(translations),(len(keys),len(keys-set(translations)),len(set(translations)-keys))
+          revision='7b1f881c2474bcb96fa8eacfbb8f63754c8cccef'
+          url=f'https://huggingface.co/datasets/kknono668/toeic-vocab-tw/resolve/{revision}/data/toeic_vocabulary.json'
+          corpus=json.loads(get(url))
+          print('Corpus entries',len(corpus))
+          lookup={}
+          for item in corpus:
+              lookup.setdefault(norm(item.get('english_word','')),[]).append(item)
+          output=[]
+          missing=[]
+          categories={}
+          for row in ranked:
+              spelling=row['Word'].strip()
+              term=norm(spelling)
+              choices=lookup.get(term,[])
+              zh=translations[term]
+              examples=[]
+              seen=set()
+              for entry in choices:
+                  cat=entry.get('category','')
+                  if cat: categories[cat]=categories.get(cat,0)+1
+                  forms=[term]
+                  for form in entry.get('word_forms') or []:
+                      if isinstance(form,dict): forms.extend(norm(f) for f in form.get('forms',[]) if isinstance(f,str))
+                  forms=set(forms)
+                  for sentence in entry.get('examples') or []:
+                      en=(sentence.get('english') or '').strip()
+                      cn=(sentence.get('chinese') or '').strip()
+                      k=norm(en)
+                      has_word=any(re.search(r'(?<!\w)'+re.escape(f)+r'(?!\w)',k) for f in forms if f)
+                      if has_word and en and cn and re.search(r'[\u3400-\u9fff]',cn) and k not in seen:
+                          seen.add(k)
+                          examples.append({'en':en,'zh':cn})
+              examples.sort(key=lambda e:(len(e['en'].split()),len(e['en'])))
+              entry=choices[0] if choices else {}
+              output.append({'word':spelling,'rank':int(row['TSL Rank']),'pos':zh['pos'],'meaning':zh['meaning'],'corpusCategory':entry.get('category') or '', 'examples':examples[:3], 'forms':[f for d in choices for v in (d.get('word_forms') or []) if isinstance(v,dict) for f in v.get('forms',[]) if isinstance(f,str)][:8], 'phrase': ''})
+              if len(examples)<2:missing.append({'word':spelling,'meaning':zh['meaning'],'pos':zh['pos'],'rank':int(row['TSL Rank']),'examples':examples})
+          (out/'tsl.json').write_text(json.dumps(output,ensure_ascii=False,indent=2),encoding='utf-8')
+          (out/'missing.json').write_text(json.dumps(missing,ensure_ascii=False,indent=2),encoding='utf-8')
+          (out/'metadata.json').write_text(json.dumps({'tslSource':official_url,'chineseSource':chinese_url,'corpusSource':url,'count':len(output),'withTwoExamples':1250-len(missing),'missingExamples':len(missing),'corpusCategories':categories},ensure_ascii=False,indent=2),encoding='utf-8')
+          print('Missing examples',len(missing), 'samples',','.join(x['word'] for x in missing[:80]))
+          PY
+      - name: Save verified source
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wordstep-tsl-import
+          path: tsl-import/
+          retention-days: 14
+          if-no-files-found: error
