@@ -76,6 +76,7 @@ with sync_playwright() as p:
     check('sentence 1 speech',page.evaluate('window.__spoken.at(-1).text')==page.locator('.example .en').nth(0).inner_text())
     page.locator('[data-play="example1"]').click()
     check('sentence 2 speech',page.evaluate('window.__spoken.at(-1).text')==page.locator('.example .en').nth(1).inner_text())
+    page.locator('[data-play="example1"]').click()  # Stop the active sentence first.
     page.evaluate('window.__spoken=[]')
     page.locator('#play-all').click()
     check('group spoken three times',len(page.evaluate('window.__spoken'))==3)
