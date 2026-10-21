@@ -1,0 +1,86 @@
+name: Integrate and publish Wordstep TSL
+on:
+  push:
+    branches: [wordstep-site-2026]
+    paths: [.github/workflows/wordstep-integrate.yml]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: wordstep-integration
+  cancel-in-progress: false
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: wordstep-site-2026
+          fetch-depth: 0
+      - name: Load verified TSL 1.2 source
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p working
+          gh run download 39564062698 --repo jay940106happy/test --name wordstep-tsl-import --dir working
+          test -s working/tsl.json
+      - name: Integrate, deduplicate, classify and validate
+        run: |
+          python3 wordstep/integrate_tsl.py
+          python3 - <<'PY'
+          import json,pathlib,re
+          html=pathlib.Path('docs/index.html').read_text(encoding='utf-8')
+          data=json.loads(re.search(r'<script id="word-data"[^>]*>(.*?)</script>',html,re.S).group(1))
+          assert len(data)==1969
+          assert len({w['word'].casefold() for w in data})==1969
+          assert all(len(w['examples'])==2 for w in data)
+          assert sum(w['base'] for w in data)==999
+          assert sum(w['tslRank'] is not None for w in data)==1250
+          assert sum(not w['base'] and w['tslRank']<=500 for w in data)==300
+          print('Dataset checks passed',len(data))
+          PY
+      - name: Install browser checks
+        run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Verify controls, study modes and responsive layout
+        run: python3 wordstep/browser_test_merged.py
+      - name: Publish to the existing independent branch
+        run: |
+          git add -- docs/index.html wordstep/tsl_1250.json wordstep/merged_1969.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Integrate TSL 1.2 into Wordstep: 1969 distinct cards and classified lessons'
+            git push origin HEAD:refs/heads/wordstep-site-2026
+          fi
+          git rev-parse HEAD > qa/integrated-commit.txt
+      - name: Verify published URL includes full dataset
+        run: |
+          python3 - <<'PY'
+          import json,pathlib,re,urllib.request
+          sha=pathlib.Path('qa/integrated-commit.txt').read_text().strip()
+          url=f'https://raw.githack.com/jay940106happy/test/{sha}/docs/index.html'
+          with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 Wordstep integration'}),timeout=50) as r:
+              html=r.read().decode('utf-8')
+              assert r.status==200
+          m=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',html,re.S)
+          data=json.loads(m.group(1)) if m else []
+          assert len(data)==1969 and 'id="scope"' in html
+          print('Verified live',url,'cards',len(data))
+          pathlib.Path('qa/public-integration.json').write_text(json.dumps({'url':url,'cards':len(data),'status':200}),encoding='utf-8')
+          PY
+      - name: Save release and screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wordstep-integrated-release
+          path: |
+            docs/index.html
+            wordstep/tsl_1250.json
+            wordstep/merged_1969.json
+            qa/integrated*
+            qa/public-integration.json
+          retention-days: 14
+          if-no-files-found: error
