@@ -115,7 +115,7 @@ def main():
         other.wait_for_function("() => document.querySelector('#known').getAttribute('aria-pressed')==='true'",timeout=25000)
         ok('same account downloads progress on second device',other.locator('#known').get_attribute('aria-pressed')=='true')
         # Simulate learning a TSL word on device 2 and remote retrieval on device 1.
-        other.locator('#cloud-close').click()
+        if other.locator('#cloud-dialog').is_visible(): other.locator('#cloud-close').click()
         other.select_option('#scope','tsl-new')
         other.locator('#known').click()
         other.wait_for_function("() => document.querySelector('#cloud-open').textContent.includes('雲端已登入')")
@@ -135,7 +135,7 @@ def main():
         page.wait_for_function("() => !JSON.parse(localStorage.getItem('wordstep.progress.v1')||'{}').w0001",timeout=25000)
         ok('different account isolated',not bool(page.evaluate("JSON.parse(localStorage.getItem('wordstep.progress.v1')||'{}').w0001")))
         # Original standalone learning functions are preserved.
-        page.locator('#cloud-close').click()
+        if page.locator('#cloud-dialog').is_visible(): page.locator('#cloud-close').click()
         page.select_option('#scope','all')
         page.locator('#search').fill('violin')
         ok('topic grouping still correct',page.locator('#category-label').inner_text().startswith('活動與娛樂'))
