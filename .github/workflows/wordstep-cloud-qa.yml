@@ -1,0 +1,103 @@
+name: Verify Wordstep backup and cloud-ready UI
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/wordstep-cloud-qa.yml]
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Prepare browser testing
+        run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Verify local Wordstep functionality
+        run: |
+          python3 - <<'PY'
+          import json,threading,re,functools
+          from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          root=Path('wordstep').resolve()
+          qa=Path('qa-wordstep')
+          qa.mkdir(exist_ok=True)
+          h=(root/'index.html').read_text()
+          m=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',h,re.S)
+          assert m and len(json.loads(m.group(1)))==1969
+          assert len((root/'cloud-sync.js').read_text())>5000
+          assert 'enable row level security' in (root/'schema.sql').read_text()
+          server=ThreadingHTTPServer(('127.0.0.1',0),functools.partial(SimpleHTTPRequestHandler,directory=str(root)))
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          with sync_playwright() as pw:
+              browser=pw.chromium.launch()
+              page=browser.new_page(viewport={'width':390,'height':844},accept_downloads=True)
+              errors=[]
+              page.on('pageerror',lambda err:errors.append(str(err)))
+              page.goto(f'http://127.0.0.1:{server.server_port}/index.html')
+              page.locator('#cloud-open').wait_for()
+              assert page.locator('#word').inner_text()=='office'
+              assert page.locator('#word-jump option').count()==1299
+              page.locator('#cloud-open').click()
+              page.wait_for_function("document.querySelector('#cloud-status').textContent.includes('尚未完成設定')")
+              assert not page.locator('#cloud-auth').is_visible()
+              page.locator('#cloud-close').click()
+              page.locator('#known').click()
+              assert page.locator('#known').get_attribute('aria-pressed')=='true'
+              page.locator('#cloud-open').click()
+              with page.expect_download() as download_event:
+                  page.locator('#cloud-export').click()
+              dl=download_event.value
+              dl.save_as(qa/'wordstep-backup-test.json')
+              saved=json.loads((qa/'wordstep-backup-test.json').read_text())
+              assert saved['app']=='Wordstep' and saved['known'].get('w0001') is True
+              page.locator('#cloud-close').click()
+              page.evaluate("window.confirm=()=>true")
+              page.locator('#tools').evaluate('(e)=>e.open=true')
+              page.locator('#reset-progress').click()
+              assert page.locator('#known').get_attribute('aria-pressed')=='false'
+              page.locator('#cloud-open').click()
+              page.locator('#cloud-import-file').set_input_files(str(qa/'wordstep-backup-test.json'))
+              page.wait_for_function("document.querySelector('#known').getAttribute('aria-pressed')==='true'")
+              page.locator('#cloud-close').click()
+              assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+              page.screenshot(path=str(qa/'mobile.png'),full_page=True)
+              page.set_viewport_size({'width':1280,'height':900})
+              page.screenshot(path=str(qa/'desktop.png'),full_page=True)
+              assert not errors,errors
+              browser.close()
+          server.shutdown()
+          print('PASS: 1969 cards, search, 1299 priority, known, export, reset, import, mobile/desktop UI')
+          PY
+      - name: Verify GitHub Pages public hosting
+        run: |
+          python3 - <<'PY'
+          import urllib.request,re,json
+          base='https://jay940106happy.github.io/test/wordstep/'
+          for p in ('index.html','cloud-sync.js','cloud-config.json'):
+              with urllib.request.urlopen(urllib.request.Request(base+p,headers={'User-Agent':'Mozilla/5.0 Wordstep QA'}),timeout=45) as f:
+                  body=f.read().decode()
+                  assert f.status==200, p
+              if p=='index.html':
+                  assert 'cloud-sync.js' in body
+                  data=json.loads(re.search(r'<script id="word-data"[^>]*>(.*?)</script>',body,re.S).group(1))
+                  assert len(data)==1969
+              if p=='cloud-config.json':
+                  cfg=json.loads(body)
+                  assert 'supabaseUrl' in cfg and 'supabaseAnonKey' in cfg
+              print('VERIFIED_PUBLIC',base+p)
+          PY
+      - name: Save QA screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wordstep-cloud-qa
+          path: qa-wordstep
+          retention-days: 10
+          if-no-files-found: warn
