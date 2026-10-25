@@ -2,7 +2,7 @@ name: Wordstep cloud staging quality checks
 on:
   push:
     branches: [wordstep-cloud-staging]
-    paths: [.github/workflows/wordstep-cloud-staging-qa.yml]
+    paths: [.github/workflows/wordstep-cloud-staging-qa.yml, wordstep/cloud_browser_test.py, wordstep/cloud-sync.js, wordstep/cloud-config.json]
 permissions:
   contents: read
 jobs:
