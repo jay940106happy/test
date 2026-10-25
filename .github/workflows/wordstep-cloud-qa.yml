@@ -65,7 +65,7 @@ jobs:
               page.locator('#cloud-open').click()
               page.locator('#cloud-import-file').set_input_files(str(qa/'wordstep-backup-test.json'))
               page.wait_for_function("document.querySelector('#known').getAttribute('aria-pressed')==='true'")
-              page.locator('#cloud-close').click()
+              if page.locator('#cloud-dialog').is_visible(): page.locator('#cloud-close').click()
               assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
               page.screenshot(path=str(qa/'mobile.png'),full_page=True)
               page.set_viewport_size({'width':1280,'height':900})
