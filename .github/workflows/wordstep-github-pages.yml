@@ -1,0 +1,50 @@
+name: Publish Wordstep on GitHub Pages
+on:
+  push:
+    branches: [wordstep-site-2026]
+    paths:
+      - .github/workflows/wordstep-github-pages.yml
+      - docs/index.html
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: wordstep-github-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout Wordstep branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: wordstep-site-2026
+          persist-credentials: false
+      - name: Confirm complete learning content
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, json
+          html=Path('docs/index.html').read_text(encoding='utf-8')
+          m=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',html,re.S)
+          assert m, 'Missing vocabulary dataset'
+          data=json.loads(m.group(1))
+          assert len(data)==1969, f'Expected 1969 cards, got {len(data)}'
+          assert sum(len(w['examples']) for w in data)==3938, 'Missing examples'
+          assert 'id="scope"' in html and 'speechSynthesis' in html, 'Missing core learner controls'
+          print('Wordstep content ready:',len(data),'cards')
+          PY
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload published files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy on GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
