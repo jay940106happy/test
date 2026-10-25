@@ -1,0 +1,76 @@
+name: Wordstep cloud staging quality checks
+on:
+  push:
+    branches: [wordstep-cloud-staging]
+    paths: [.github/workflows/wordstep-cloud-staging-qa.yml]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: wordstep-cloud-staging
+          persist-credentials: false
+      - name: Test static data and secure config
+        run: |
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          root=Path('wordstep')
+          h=(root/'index.html').read_text(encoding='utf-8')
+          m=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',h,re.S)
+          assert m, 'Missing vocabulary payload'
+          words=json.loads(m.group(1))
+          assert len(words)==1969, len(words)
+          assert sum(len(w['examples']) for w in words)==3938
+          assert len(set(w['word'].lower() for w in words))==1969
+          assert 'wordstep:change' in h and 'cloud-sync.js' in h
+          config=json.loads((root/'cloud-config.json').read_text())
+          assert re.fullmatch(r'https://[a-z0-9-]+\.supabase\.co',config['supabaseUrl'])
+          assert config['supabaseAnonKey'].startswith('sb_publishable_')
+          js=(root/'cloud-sync.js').read_text()
+          assert 'signInWithPassword' in js and 'auth.signUp' in js
+          assert 'wordstep_progress' in js and 'wordstep_preferences' in js
+          assert 'service_role' not in config['supabaseAnonKey']
+          print('PASS static: 1969 cards, 3938 bilingual sentences and configured auth')
+          PY
+      - name: Verify Supabase public API and anon isolation
+        run: |
+          python3 - <<'PY'
+          import json,urllib.request,urllib.error
+          from pathlib import Path
+          cfg=json.loads(Path('wordstep/cloud-config.json').read_text())
+          base=cfg['supabaseUrl']
+          key=cfg['supabaseAnonKey']
+          for route in ['/auth/v1/health','/rest/v1/wordstep_progress?select=word_id&limit=1']:
+              try:
+                  req=urllib.request.Request(base+route,headers={'apikey':key,'Accept':'application/json'})
+                  with urllib.request.urlopen(req,timeout=25) as resp:
+                      body=resp.read().decode('utf-8')
+                      code=resp.status
+              except urllib.error.HTTPError as e:
+                  code=e.code
+                  body=e.read().decode('utf-8')
+              print('ANON API',route,'status',code,'body-prefix',body[:120])
+              assert code not in (404,500,502,503,504),'Supabase service or Data API not working'
+              if route.startswith('/rest/'):
+                  assert code in (200,401,403)
+                  if code==200:assert json.loads(body)==[], 'Anon may not retrieve private progress'
+          PY
+      - name: Install browser
+        run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Test Wordstep login and cross-browser progress sync
+        run: python3 wordstep/cloud_browser_test.py
+      - name: Save QA results
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wordstep-cloud-staging-qa
+          path: wordstep/browser-test-results.json
+          retention-days: 7
+          if-no-files-found: warn
