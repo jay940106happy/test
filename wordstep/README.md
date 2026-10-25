@@ -1,21 +1,23 @@
-# Wordstep: cloud data setup
+# Wordstep — personal TOEIC learning with cloud sync
 
-This upgrade preserves the current 1,969 word cards and the existing UI. Learning progress still saves to localStorage immediately, and syncs to Supabase after email sign-in. Manual JSON export/import remains available even when offline.
+Public site: https://jay940106happy.github.io/test/wordstep/
 
-## One-time Supabase setup
+- 1,969 distinct vocabulary cards, 3,938 bilingual example sentences and categorized learning modes.
+- Wordstep preserves the existing localStorage keys `wordstep.progress.v1` and `wordstep.preferences.v1`.
+- Authentication: Supabase Auth email/password. Click **學習紀錄 / 登入** and create an account or log in.
+- Sync: read/merge cloud state on sign-in and when the site regains focus; local edits save immediately and sync after sign-in.
+- Backup/restore JSON works offline, and imported progress is uploaded after sign-in.
+- Supabase project: `wordstep-study` (Tokyo). Database tables `public.wordstep_progress`, `public.wordstep_preferences`; RLS owner-only policies are enabled. The public publishable key is intentionally readable in `cloud-config.json`. Never use a service-role/secret key in this site.
+- The email/password signup flow may require email confirmation. A Supabase dashboard owner should set **Authentication → URL Configuration**: Site URL and Redirect URLs to `https://jay940106happy.github.io/test/wordstep/`. This administrative setting is not accessible through the currently connected automation API. Confirmation can still verify an account even if the default redirect is not set; return to the Wordstep URL and log in after clicking the confirmation link.
+- Supabase's default SMTP can deliver only to pre-authorized project-team addresses. To open signups to other people, configure a custom SMTP provider in the dashboard.
+- No user's progress was uploaded from their old GitHack browser; browser storage is origin-isolated. Use the JSON backup import if the old device is available.
 
-1. Create/select a Supabase project and execute `schema.sql` in its SQL editor.
-2. In **Authentication > URL Configuration**, set Site URL to `https://jay940106happy.github.io/test/wordstep/` and add the same URL to **Redirect URLs**.
-3. Enable **Email** sign-in (OTP magic links) and confirm the project's mail sender/rate limits.
-4. Add your project's URL and **publishable/anon** key to `wordstep/cloud-config.json`, then commit. **Never use the service-role key.** The key is exposed by design; RLS policies restrict private rows.
-5. Check sign-in and learning state from two browsers/devices. The logged-in user should see the same progress.
+Content attribution: Original David TOEIC list and TSL 1.2 (Browne & Culligan); bilingual examples partly from kknono668/toeic-vocab-tw (CC BY-SA 4.0), with independently authored additions.
 
-The Supabase DB is provisioned only when these steps are actually executed against your project; publishing this source alone does not create it.
+## Smoke checks
 
-## Previously learned words
-
-The original Wordstep used browser-local storage, so progress cannot automatically cross `raw.githack.com` to `github.io`. Export a backup in the old browser when available, then import in the new site and sign in to upload it. `Wordstep` backups contain `known` word IDs and basic learning preferences.
-
-## Deployment
-
-The current site is served from `test/wordstep/` on GitHub Pages. Cloud configuration is public and non-secret; the database schema and auth settings are the security boundary.
+1. Confirm the public HTML contains exactly 1,969 cards and 3,938 examples.
+2. Visit **學習紀錄 / 登入**, register and verify email, then log in.
+3. Mark a word and observe **雲端同步成功** or **已同步到雲端**.
+4. Sign in on another device and compare word status. Use **立即同步** to refresh.
+5. Export/import JSON backup. Signing out keeps remote records; logged-in records are partitioned by Supabase user ID.
