@@ -1,0 +1,76 @@
+name: Verify live Wordstep cloud sign-in
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/wordstep-cloud-live-verify.yml]
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Verify live HTML, cloud config, Auth API and RLS-denied anonymous read
+        run: |
+          python3 - <<'PY'
+          import urllib.request,urllib.error,json,re,time
+          root='https://jay940106happy.github.io/test/wordstep/'
+          for attempt in range(10):
+              try:
+                  def get(name):
+                      req=urllib.request.Request(root+name,headers={'User-Agent':'Mozilla/5.0 Wordstep QA'})
+                      with urllib.request.urlopen(req,timeout=25) as r:
+                          return r.status,r.read().decode('utf-8')
+                  status,html=get('index.html')
+                  _,js=get('cloud-sync.js')
+                  _,raw=get('cloud-config.json')
+                  cfg=json.loads(raw)
+                  word=json.loads(re.search(r'<script id="word-data"[^>]*>(.*?)</script>',html,re.S).group(1))
+                  assert status==200 and len(word)==1969
+                  assert sum(len(w['examples']) for w in word)==3938
+                  assert 'signInWithPassword' in js and 'auth.signUp' in js
+                  assert cfg['supabaseUrl'].startswith('https://') and cfg['supabaseAnonKey'].startswith('sb_publishable_')
+                  print('PUBLIC_WORDSTEP_OK',root,'cards',len(word),'example sentences',3938)
+                  break
+              except Exception as e:
+                  if attempt==9: raise
+                  print('Retry site deployment',str(e)[:120]);time.sleep(7)
+          for route in ['/auth/v1/health','/rest/v1/wordstep_progress?select=word_id&limit=1']:
+              req=urllib.request.Request(cfg['supabaseUrl']+route,headers={'apikey':cfg['supabaseAnonKey'],'Accept':'application/json'})
+              try:
+                  with urllib.request.urlopen(req,timeout=30) as r:
+                      code=r.status;response=r.read().decode()
+              except urllib.error.HTTPError as e:
+                  code=e.code;response=e.read().decode()
+              if route.startswith('/auth'):assert code==200,('Auth health',code,response[:150])
+              else:assert code in (401,403) or (code==200 and json.loads(response)==[]),(code,response[:150])
+              print('BACKEND_OK',route,code)
+          PY
+      - name: Install Playwright
+        run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Verify live login controls and browser console
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          url='https://jay940106happy.github.io/test/wordstep/'
+          with sync_playwright() as p:
+              browser=p.chromium.launch()
+              page=browser.new_page(viewport={'width':390,'height':844})
+              errors=[]
+              page.on('pageerror',lambda e:errors.append(str(e)))
+              page.goto(url,wait_until='domcontentloaded',timeout=50000)
+              page.locator('#cloud-open').wait_for(timeout=20000)
+              page.locator('#cloud-open').click()
+              page.locator('#cloud-login').wait_for(state='visible',timeout=20000)
+              page.locator('#cloud-signup').wait_for(state='visible',timeout=20000)
+              page.locator('#cloud-email').wait_for(state='visible')
+              page.locator('#cloud-password').wait_for(state='visible')
+              page.wait_for_function("() => document.querySelector('#cloud-auth')?.hidden===false",timeout=20000)
+              assert not errors,errors
+              assert page.locator('#word').inner_text()=='office'
+              assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+              print('LIVE_BROWSER_AUTH_UI_OK',url)
+              browser.close()
+          PY
