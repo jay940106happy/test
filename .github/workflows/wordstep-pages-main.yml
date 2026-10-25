@@ -1,0 +1,74 @@
+name: Publish Wordstep website
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/wordstep-pages-main.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: wordstep-pages-main
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Read isolated Wordstep branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: wordstep-site-2026
+          persist-credentials: false
+      - name: Check study content before publishing
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re,json
+          text=Path('docs/index.html').read_text(encoding='utf-8')
+          match=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',text,re.S)
+          assert match, 'Wordstep missing data'
+          data=json.loads(match.group(1))
+          assert len(data)==1969 and sum(len(w['examples']) for w in data)==3938
+          assert 'id="scope"' in text and 'speechSynthesis' in text
+          print('Verified', len(data),'cards and',sum(len(w['examples']) for w in data),'examples')
+          PY
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
+        with:
+          path: docs
+      - name: Publish site on GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+      - name: Verify the public site
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python3 - <<'PY'
+          import os,time,urllib.request,json,re
+          url=os.environ['PAGE_URL'].rstrip('/')+'/'
+          print('Site:',url)
+          last=None
+          for n in range(8):
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 Wordstep release verify'})
+                  with urllib.request.urlopen(req,timeout=18) as response:
+                      body=response.read().decode('utf-8')
+                      assert response.status==200
+                  match=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',body,re.S)
+                  assert match, 'No Wordstep vocabulary data'
+                  data=json.loads(match.group(1))
+                  assert len(data)==1969, f'Unexpected count {len(data)}'
+                  print('VERIFIED LIVE URL:',url,'CARDS',len(data))
+                  break
+              except Exception as error:
+                  last=error
+                  print('Public URL not ready yet:',type(error).__name__,str(error)[:160])
+                  time.sleep(5)
+          else:
+              raise RuntimeError('Public URL could not be verified: '+str(last))
+          PY
