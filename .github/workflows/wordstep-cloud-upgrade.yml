@@ -1,0 +1,75 @@
+name: Add account-ready Wordstep cloud learning
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/wordstep-cloud-upgrade.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Restore reviewed site extension
+        run: |
+          python3 - <<'PY'
+          import base64,io,zipfile
+          from pathlib import Path
+          payload=Path('.github/wordstep-cloud-package.b64.txt').read_text().strip()
+          data=base64.b64decode(payload,validate=True)
+          allowed={'cloud-sync.js','cloud-config.json','schema.sql','README.md','patch_site.py'}
+          with zipfile.ZipFile(io.BytesIO(data)) as archive:
+              names=set(archive.namelist())
+              assert names==allowed, 'Unexpected deploy archive members'
+              root=Path('wordstep')
+              root.mkdir(exist_ok=True)
+              for name in sorted(allowed):
+                  (root/name).write_bytes(archive.read(name))
+          PY
+      - name: Verify learning content, JavaScript and database schema
+        run: |
+          python3 wordstep/patch_site.py
+          node --check wordstep/cloud-sync.js
+          python3 - <<'PY'
+          from pathlib import Path
+          import re,json
+          root=Path('wordstep')
+          html=(root/'index.html').read_text()
+          match=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',html,re.S)
+          cards=json.loads(match.group(1))
+          assert len(cards)==1969
+          assert sum(len(w['examples']) for w in cards)==3938
+          assert 'wordstep:change' in html
+          assert 'cloud-sync.js' in html
+          for phrase in ['enable row level security','auth.uid()','wordstep_progress','wordstep_preferences']:
+              assert phrase in (root/'schema.sql').read_text().lower()
+          print('WORDSTEP_CLOUD_STATIC_OK',len(cards),3938)
+          PY
+      - name: Publish only the Wordstep directory
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add wordstep/index.html wordstep/cloud-sync.js wordstep/cloud-config.json wordstep/schema.sql wordstep/README.md wordstep/patch_site.py
+          git rm -- .github/wordstep-cloud-package.b64.txt
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add Wordstep account UI, backup, and Supabase cloud sync integration'
+            git push origin HEAD:main
+          fi
+      - name: Save site revision and cloud schema
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wordstep-cloud-build
+          path: |
+            wordstep/index.html
+            wordstep/cloud-sync.js
+            wordstep/cloud-config.json
+            wordstep/schema.sql
+            wordstep/README.md
+          retention-days: 14
+          if-no-files-found: error
