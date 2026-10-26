@@ -9,7 +9,7 @@ def check(condition,desc):
     assert condition,desc
     checks.append(desc)
 with sync_playwright() as p:
-  b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
+  b=p.chromium.launch(executable_path=('/usr/bin/chromium' if pathlib.Path('/usr/bin/chromium').exists() else None),headless=True,args=['--no-sandbox'])
   context=b.new_context(viewport={'width':390,'height':844})
   seed={'wordstep.progress.v1':json.dumps({'w0002':True,'w0004':True,'tsl0001':True}),
         'wordstep.preferences.v1':json.dumps({'selected':'w0001','scope':'priority','rate':0.9})}
