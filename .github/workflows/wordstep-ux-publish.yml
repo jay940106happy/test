@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: wordstep-safe-ux-upgrade
+  group: wordstep-safe-ux-release-v2
   cancel-in-progress: false
 jobs:
   release:
@@ -47,7 +47,7 @@ jobs:
       - name: Install browser test tooling
         run: |
           python3 -m pip install --quiet playwright==1.55.0
-          python3 -m playwright install --with-deps chromium
+          python3 -m playwright install chromium
       - name: Test studying UX and preservation
         run: python3 wordstep/ux_browser_test.py
       - name: Test cloud synchronization and account switching
