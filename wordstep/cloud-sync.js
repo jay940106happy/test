@@ -8,6 +8,7 @@
   const PENDING = 'wordstep.cloud.pending.v1';
   const PREF_DIRTY = 'wordstep.cloud.prefs-dirty.v1';
   const SYNC_OWNER = 'wordstep.cloud.user.v1';
+  const ARCHIVE_PREFIX = 'wordstep.cloud.account-archive.v1.';
   const $ = sel => document.querySelector(sel);
   const read = (key, fallback = {}) => {
     try { const value = JSON.parse(localStorage.getItem(key) || 'null');
@@ -26,6 +27,7 @@
     if (validScopes.has(prefs.scope)) result.scope = prefs.scope;
     if ([0.7,0.9,1,1.15].includes(Number(prefs.rate))) result.rate = Number(prefs.rate);
     if (typeof prefs.hidden === 'boolean') result.hidden = prefs.hidden;
+    if (typeof prefs.showKnown === 'boolean') result.showKnown = prefs.showKnown;
     if (typeof prefs.voice === 'string' && prefs.voice.length <= 200) result.voice = prefs.voice;
     return result;
   };
@@ -164,9 +166,19 @@
       const oldOwner=localStorage.getItem(SYNC_OWNER);
       if(oldOwner&&oldOwner!==user.id){
         ownerChanged=true;
-        // Never merge one signed-in account's local state into another's account.
-        write(PROGRESS,{});write(PREFS,{});write(PENDING,{});
-        localStorage.removeItem(PREF_DIRTY);dirty={};lastKnown={};
+        // Archive previous user's unsynced progress, then restore the other account.
+        // Never send the previous account's records to the new account.
+        const snapshot={progress:read(PROGRESS),preferences:read(PREFS),
+          pending:read(PENDING),prefsDirty:localStorage.getItem(PREF_DIRTY)==='1'};
+        write(ARCHIVE_PREFIX+oldOwner,snapshot); // Throws before changing data if storage is full.
+        const restored=read(ARCHIVE_PREFIX+user.id);
+        write(PROGRESS,sanitizeKnown(restored.progress||{}));
+        write(PREFS,cleanPrefs(restored.preferences||{}));
+        write(PENDING,restored.pending||{});
+        if(restored.prefsDirty)localStorage.setItem(PREF_DIRTY,'1');
+        else localStorage.removeItem(PREF_DIRTY);
+        localStorage.setItem(SYNC_OWNER,user.id);
+        dirty=read(PENDING);lastKnown=sanitizeKnown(read(PROGRESS));
       }
       const [rows,prefsReply]=await Promise.all([
         getRows(user.id),client.from('wordstep_preferences').select('payload').eq('user_id',user.id).maybeSingle()
@@ -195,7 +207,11 @@
       }
       let pref=cleanPrefs(read(PREFS));
       const dirtyPref=localStorage.getItem(PREF_DIRTY)==='1';
-      if(prefsReply.data&&!dirtyPref)pref=cleanPrefs(prefsReply.data.payload||{});
+      if(prefsReply.data&&!dirtyPref){
+        const remotePref=cleanPrefs(prefsReply.data.payload||{});
+        delete remotePref.selected; // Current card is local navigation, not global study state.
+        pref={...pref,...remotePref};
+      }
       else{
         const {error}=await client.from('wordstep_preferences').upsert({user_id:user.id,payload:pref,updated_at:new Date().toISOString()},{onConflict:'user_id'});
         if(error)throw error;
