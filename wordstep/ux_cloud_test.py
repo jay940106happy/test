@@ -137,6 +137,7 @@ def main():
         ok('different account isolated',True)
         page.wait_for_function("() => JSON.parse(localStorage.getItem('wordstep.cloud.account-archive.v1.test-student@example.com')||'{}').progress?.w0001===true",timeout=25000)
         ok('previous account local archive preserved',True)
+        page.wait_for_timeout(1400)  # Wait for the automatic account-switch reload.
         if not page.locator('#cloud-dialog').evaluate('(e)=>e.open'):
             page.locator('#cloud-open').click()
         page.locator('#cloud-logout').click()
@@ -147,6 +148,7 @@ def main():
         page.wait_for_function("() => JSON.parse(localStorage.getItem('wordstep.progress.v1')||'{}').w0001===true",timeout=25000)
         page.wait_for_function("() => localStorage.getItem('wordstep.cloud.user.v1')==='test-student@example.com'",timeout=25000)
         ok('first account progress restored after switching back',True)
+        page.wait_for_timeout(1400)  # Let the account-restoration reload finish.
         # Original standalone learning functions are preserved.
         if page.locator('#cloud-dialog').evaluate('(e)=>e.open'):
             page.locator('#cloud-close').click()
