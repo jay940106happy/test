@@ -78,11 +78,13 @@ cloud_change("    if (typeof prefs.hidden === 'boolean') result.hidden = prefs.h
  "    if (typeof prefs.hidden === 'boolean') result.hidden = prefs.hidden;\n    if (typeof prefs.showKnown === 'boolean') result.showKnown = prefs.showKnown;")
 cloud_change("""      const oldOwner=localStorage.getItem(SYNC_OWNER);
       if(oldOwner&&oldOwner!==user.id){
+        ownerChanged=true;
         // Never merge one signed-in account's local state into another's account.
         write(PROGRESS,{});write(PREFS,{});write(PENDING,{});
         localStorage.removeItem(PREF_DIRTY);dirty={};lastKnown={};
       }""", """      const oldOwner=localStorage.getItem(SYNC_OWNER);
       if(oldOwner&&oldOwner!==user.id){
+        ownerChanged=true;
         // Archive previous user's unsynced progress, then restore the other account.
         // Never send the previous account's records to the new account.
         const snapshot={progress:read(PROGRESS),preferences:read(PREFS),
