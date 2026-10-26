@@ -140,7 +140,8 @@ def main():
         ok('previous account local archive preserved',True)
         # The app reloads automatically when a different account is restored.
         # An explicit navigation settles auth callbacks before interacting with the dialog.
-        page.reload(wait_until='networkidle')
+        page.reload(wait_until='domcontentloaded',timeout=15000)
+        page.locator('#cloud-open').wait_for(state='visible',timeout=15000)
         page.locator('#cloud-open').click()
         page.locator('#cloud-logout').click()
         page.wait_for_function("() => document.querySelector('#cloud-login-form')?.offsetParent !== null",timeout=25000)
@@ -152,7 +153,8 @@ def main():
         page.wait_for_function("() => localStorage.getItem('wordstep.cloud.user.v1')==='test-student@example.com'",timeout=25000)
         ok('first account progress restored after switching back',True)
         # Original standalone learning functions are preserved.
-        page.reload(wait_until='networkidle')
+        page.reload(wait_until='domcontentloaded',timeout=15000)
+        page.locator('#cloud-open').wait_for(state='visible',timeout=15000)
         page.select_option('#scope','all')
         page.locator('#search').fill('violin')
         ok('topic grouping still correct',page.locator('#category-label').inner_text().startswith('活動與娛樂'))
