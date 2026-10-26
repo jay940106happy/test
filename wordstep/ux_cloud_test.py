@@ -115,7 +115,8 @@ def main():
         other.wait_for_function("() => JSON.parse(localStorage.getItem('wordstep.progress.v1')||'{}').w0001===true",timeout=25000)
         ok('same account downloads progress on second device',other.evaluate("JSON.parse(localStorage.getItem('wordstep.progress.v1')).w0001===true") and other.locator('#word').inner_text()=='workplace')
         # Simulate learning a TSL word on device 2 and remote retrieval on device 1.
-        other.locator('#cloud-close').click()
+        if other.locator('#cloud-dialog').evaluate('(e)=>e.open'):
+            other.locator('#cloud-close').click()
         other.select_option('#scope','tsl-new')
         other.locator('#known').click()
         other.wait_for_function("() => document.querySelector('#cloud-open').textContent.includes('雲端已登入')")
@@ -143,7 +144,8 @@ def main():
         page.wait_for_function("() => JSON.parse(localStorage.getItem('wordstep.progress.v1')||'{}').w0001===true",timeout=25000)
         ok('first account progress restored after switching back',page.evaluate("JSON.parse(localStorage.getItem('wordstep.progress.v1')).w0001===true"))
         # Original standalone learning functions are preserved.
-        page.locator('#cloud-close').click()
+        if page.locator('#cloud-dialog').evaluate('(e)=>e.open'):
+            page.locator('#cloud-close').click()
         page.select_option('#scope','all')
         page.locator('#search').fill('violin')
         ok('topic grouping still correct',page.locator('#category-label').inner_text().startswith('活動與娛樂'))
