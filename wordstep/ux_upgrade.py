@@ -76,6 +76,16 @@ cloud_change("  const SYNC_OWNER = 'wordstep.cloud.user.v1';",
  "  const SYNC_OWNER = 'wordstep.cloud.user.v1';\n  const ARCHIVE_PREFIX = 'wordstep.cloud.account-archive.v1.';")
 cloud_change("    if (typeof prefs.hidden === 'boolean') result.hidden = prefs.hidden;",
  "    if (typeof prefs.hidden === 'boolean') result.hidden = prefs.hidden;\n    if (typeof prefs.showKnown === 'boolean') result.showKnown = prefs.showKnown;")
+# Preferences from a different device may contain a stale selected card or no
+# selected card at all. Never replace the current device's selected position
+# with a stale remote value: the page auto-selects an available unseen word and
+# would otherwise continually reload itself.
+cloud_change("      if(prefsReply.data&&!dirtyPref)pref=cleanPrefs(prefsReply.data.payload||{});",
+ """      if(prefsReply.data&&!dirtyPref){
+        const remotePref=cleanPrefs(prefsReply.data.payload||{});
+        delete remotePref.selected; // Current card is local navigation, not global study state.
+        pref={...pref,...remotePref};
+      }""")
 cloud_change("""      const oldOwner=localStorage.getItem(SYNC_OWNER);
       if(oldOwner&&oldOwner!==user.id){
         ownerChanged=true;
