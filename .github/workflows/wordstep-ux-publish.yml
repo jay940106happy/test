@@ -1,0 +1,111 @@
+name: Wordstep safe learning-flow upgrade
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/wordstep-ux-publish.yml
+      - wordstep/ux_upgrade.py
+      - wordstep/ux_browser_test.py
+      - wordstep/ux_cloud_test.py
+permissions:
+  contents: write
+concurrency:
+  group: wordstep-safe-ux-upgrade
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - name: Checkout Wordstep and keep existing site intact
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Verify original and safely patch studying controls
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,re,subprocess
+          path=Path('wordstep/index.html')
+          before=path.read_text(encoding='utf-8')
+          match=re.search(r'<script id="word-data" type="application/json">(.*?)</script>',before,re.S)
+          assert match and len(json.loads(match[1]))==1969, 'Unexpected word data, refusing to alter the site'
+          print('Verified original: 1969 cards')
+          if 'id="show-known"' not in before:
+              result=subprocess.run(['python3','wordstep/ux_upgrade.py'],check=True)
+          else:
+              print('UX patch already applied; re-running regression tests')
+          after=path.read_text(encoding='utf-8')
+          updated=re.search(r'<script id="word-data" type="application/json">(.*?)</script>',after,re.S)
+          assert updated and updated[1]==match[1], 'Word data changed during UX patch'
+          assert 'wordstep.progress.v1' in after and 'wordstep.progress.before-ux.v1' in after
+          cloud=Path('wordstep/cloud-sync.js').read_text()
+          assert "prefs.showKnown" in cloud and "ARCHIVE_PREFIX" in cloud
+          print('Data untouched; prior progress snapshot guard and cloud compatibility verified')
+          PY
+      - name: Install browser test tooling
+        run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Test studying UX and preservation
+        run: python3 wordstep/ux_browser_test.py
+      - name: Test cloud synchronization and account switching
+        run: python3 wordstep/ux_cloud_test.py
+      - name: Publish only tested Wordstep files
+        run: |
+          git add -- wordstep/index.html wordstep/cloud-sync.js
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Wordstep: auto-next on learned, hide mastered by default, preserve history"
+            git push origin HEAD:refs/heads/main
+          fi
+          git rev-parse HEAD > wordstep/ux-deployed-commit.txt
+      - name: Verify the live site reflects the new study flow
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request
+          from pathlib import Path
+          url='https://jay940106happy.github.io/test/wordstep/'
+          jsurl=url+'cloud-sync.js'
+          failures=[]
+          for i in range(25):
+              try:
+                  def get(u):
+                      req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0 Wordstep functional QA'})
+                      with urllib.request.urlopen(req,timeout=20) as r:
+                          assert r.status==200
+                          return r.read().decode('utf-8')
+                  html=get(url)
+                  match=re.search(r'<script id="word-data" type="application/json">(.*?)</script>',html,re.S)
+                  assert match
+                  data=json.loads(match[1])
+                  assert len(data)==1969
+                  assert 'id="show-known"' in html and 'function markKnown()' in html
+                  assert 'wordstep.progress.before-ux.v1' in html
+                  cloud=get(jsurl)
+                  assert 'ARCHIVE_PREFIX' in cloud and 'prefs.showKnown' in cloud
+                  print('VERIFIED LIVE',url,'cards',len(data),'show mastered checkbox, mark-next, cloud backup')
+                  Path('wordstep/ux-public-verify.json').write_text(json.dumps({'url':url,'cards':len(data),'features':['mark-next','show-known','undo','cloud-prefs','archive']},ensure_ascii=False,indent=2))
+                  break
+              except Exception as e:
+                  failures.append(str(e))
+                  print('Pages deployment not yet refreshed',i+1,str(e)[:160])
+                  time.sleep(5)
+          else:
+              raise RuntimeError('Public verification failed: '+str(failures[-1] if failures else 'unknown'))
+          PY
+      - name: Save QA screenshots and release proof
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wordstep-ux-release
+          path: |
+            wordstep/ux-390.png
+            wordstep/ux-1280.png
+            wordstep/browser-test-results.json
+            wordstep/ux-deployed-commit.txt
+            wordstep/ux-public-verify.json
+          retention-days: 14
+          if-no-files-found: warn
