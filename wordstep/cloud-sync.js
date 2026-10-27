@@ -33,6 +33,7 @@
   };
   let lastKnown = sanitizeKnown(read(PROGRESS));
   let client = null, user = null, ready = false, working = false, prefsTimer = null, progressTimer = null;
+  let cloudConfig = null;
   let dirty = read(PENDING);
   let switching = false;
   const style = document.createElement('style');
@@ -47,7 +48,7 @@
     #cloud-dialog .cloud-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
     #cloud-dialog .cloud-close{background:transparent;border:0;min-height:40px;padding:4px 8px;font-size:23px;cursor:pointer}
     #cloud-dialog label{display:block;font-size:13px;color:#506056;margin:12px 0 5px}
-    #cloud-dialog input[type=email],#cloud-dialog input[type=password]{width:100%;min-height:42px;font-size:16px;border:1px solid #dce3de;border-radius:7px;padding:9px}
+    #cloud-dialog input[type=text],#cloud-dialog input[type=password]{width:100%;min-height:42px;font-size:16px;border:1px solid #dce3de;border-radius:7px;padding:9px}
     #cloud-dialog .cloud-primary{background:#235c48;border:1px solid #235c48;border-radius:7px;color:#fff;padding:9px 14px;min-height:43px;cursor:pointer}
     #cloud-dialog .cloud-light{border:1px solid #dce3de;border-radius:7px;background:#fff;color:#235c48;padding:9px 14px;min-height:43px;cursor:pointer}
     #cloud-dialog button:disabled{opacity:.45;cursor:default}
@@ -56,6 +57,8 @@
     #cloud-dialog hr{border:0;border-top:1px solid #e5ece6;margin:18px 0}
     #cloud-dialog .cloud-small{font-size:12px;color:#66756b}
     #cloud-dialog .cloud-danger{color:#a43e36}
+    #cloud-dialog .cloud-advanced{border-top:1px solid #e5ece6;padding-top:12px;margin-top:14px}
+    #cloud-dialog .cloud-advanced summary{font-size:13px;color:#68786e;cursor:pointer;padding:8px 0}
   `;
   document.head.append(style);
   const header = $('.top');
@@ -65,34 +68,33 @@
   count.replaceWith(right);
   right.append(count);
   const trigger = document.createElement('button');
-  trigger.id = 'cloud-open'; trigger.type = 'button'; trigger.textContent = '學習紀錄 / 登入';
+  trigger.id = 'cloud-open'; trigger.type = 'button'; trigger.textContent = '學習進度';
   right.append(trigger);
   const modal = document.createElement('dialog');
   modal.id = 'cloud-dialog';
   modal.setAttribute('aria-labelledby', 'cloud-title');
   modal.innerHTML = `<div class="cloud-head"><h2 id="cloud-title">學習紀錄</h2><button class="cloud-close" id="cloud-close" type="button" aria-label="關閉">×</button></div>
     <p id="cloud-status" role="status" aria-live="polite">檢查雲端同步設定中…</p>
-    <div id="cloud-auth" hidden><form id="cloud-login-form"><label for="cloud-email">電子郵件</label>
-      <input id="cloud-email" type="email" required autocomplete="email" placeholder="輸入你的電子郵件" maxlength="254">
+    <div id="cloud-auth" hidden><form id="cloud-login-form"><label for="cloud-account">帳號</label>
+      <input id="cloud-account" type="text" required autocomplete="username" placeholder="自訂帳號或之前使用的 Email" minlength="3" maxlength="80" autocapitalize="none" spellcheck="false">
       <label for="cloud-password">密碼</label>
       <input id="cloud-password" type="password" required autocomplete="current-password" placeholder="至少 8 個字元" minlength="8" maxlength="72">
-      <div class="cloud-row"><button class="cloud-primary" id="cloud-login" type="submit">登入</button>
-      <button class="cloud-light" id="cloud-signup" type="button">建立帳號</button></div>
-    </form><p class="cloud-small">第一次使用請建立帳號，依收到的電子郵件完成驗證後再登入。帳號與進度會在電腦、手機共用。</p></div>
+      <div class="cloud-row"><button class="cloud-primary" id="cloud-login" type="submit">開始學習</button></div>
+    </form><p class="cloud-small">有帳號直接登入；第一次會自動建立。<strong>不需驗證信。</strong>請記住帳密，以便換裝置繼續學習。</p></div>
     <div id="cloud-logged-in" hidden><p id="cloud-user"></p><div class="cloud-row">
     <button class="cloud-light" id="cloud-sync-now" type="button">立即同步</button>
     <button class="cloud-light" id="cloud-logout" type="button">登出</button></div></div>
-    <hr><p><strong>備份與還原</strong></p>
+    <details class="cloud-advanced"><summary>其他設定 · 備份與還原</summary>
     <p class="cloud-small">即使雲端暫時無法使用，也能下載備份。匯入時會保留目前已熟悉的單字，再加入備份中的紀錄。</p>
     <div class="cloud-row"><button class="cloud-light" id="cloud-export" type="button">下載備份 JSON</button>
     <button class="cloud-light" id="cloud-import" type="button">匯入備份</button></div>
     <input id="cloud-import-file" type="file" accept=".json,application/json" hidden>
-    <p class="cloud-small">雲端同步只會上傳學習狀態與偏好，不會上傳單字表或電子郵件內容。</p>`;
+    <p class="cloud-small">只同步學習紀錄與設定；本機備份不會被刪除。</p></details>`;
   document.body.append(modal);
   const status = (message, error=false) => {
     $('#cloud-status').textContent = message;
     $('#cloud-status').classList.toggle('cloud-danger', error);
-    trigger.textContent = user ? '雲端已登入' : ready ? '登入同步' : '學習紀錄 / 備份';
+    trigger.textContent = user ? '雲端已登入' : ready ? '儲存學習進度' : '學習紀錄 / 備份';
   };
   trigger.onclick = () => modal.showModal();
   $('#cloud-close').onclick = () => modal.close();
@@ -263,31 +265,58 @@
     const {error}=await client.auth.signOut();
     if(error)status('登出失敗：'+error.message,true);
   };
-  async function passwordAction(action){
-    if(!client)return;
-    const email=$('#cloud-email').value.trim();
+  async function loginOrCreate(){
+    if(!client||!cloudConfig)return;
+    const account=$('#cloud-account').value.trim();
     const password=$('#cloud-password').value;
-    if(!$('#cloud-login-form').reportValidity()||!email||!password)return;
-    const loginButton=$('#cloud-login'),signupButton=$('#cloud-signup');
-    loginButton.disabled=true;signupButton.disabled=true;
-    try {
-      if(action==='register'){
-        const {data,error}=await client.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname}});
-        if(error)throw error;
-        if(data.session)status('帳號建立成功，正在同步學習紀錄。');
-        else status('已提交註冊。請點電子郵件中的驗證連結，再回到此網站登入。如果沒有收到信件，請檢查垃圾郵件。');
-      }else{
-        const {error}=await client.auth.signInWithPassword({email,password});
-        if(error)throw error;
-        status('已登入，正在載入雲端進度…');
+    if(!$('#cloud-login-form').reportValidity()||!account||!password)return;
+    const loginButton=$('#cloud-login');
+    loginButton.disabled=true;
+    loginButton.textContent='登入中…';
+    status('正在登入，若是新帳號會自動建立…');
+    try{
+      // Keep verified legacy Email accounts working without changing their identity.
+      if(account.includes('@')){
+        const old=await client.auth.signInWithPassword({email:account,password});
+        if(!old.error){
+          status('已登入，正在同步舊帳號的學習紀錄…');
+          modal.close();
+          return;
+        }
       }
+      const response=await fetch(cloudConfig.supabaseUrl+'/functions/v1/wordstep-account',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','apikey':cloudConfig.supabaseAnonKey},
+        body:JSON.stringify({account,password}),
+        cache:'no-store',
+      });
+      const data=await response.json();
+      if(!response.ok || !data.access_token || !data.refresh_token){
+        const message={
+          wrong_password:'帳號已存在，但密碼不正確。',
+          invalid_account:'帳號至少 3 個字，可使用中文、英文、數字或符號。',
+          invalid_password:'密碼至少需要 8 個字。',
+          too_many_attempts:'嘗試次數過多，請稍後再試。',
+          invalid_origin:'請從 Wordstep 正式網站開啟。',
+        }[data.error]||'登入服務暫時無法使用，仍可繼續本機學習。';
+        throw new Error(message);
+      }
+      const {error}=await client.auth.setSession({
+        access_token:data.access_token,
+        refresh_token:data.refresh_token,
+      });
+      if(error)throw error;
+      status(data.created?'帳號已自動建立，學習進度正在同步…':'已登入，正在同步學習進度…');
+      modal.close();
     }catch(e){
-      const message=e.message||'請稍後再試';
-      status((action==='register'?'註冊':'登入')+'失敗：'+message,true);
-    }finally{loginButton.disabled=false;signupButton.disabled=false;$('#cloud-password').value='';}
+      status(e.message||'登入失敗，請稍後再試。',true);
+    }finally{
+      loginButton.disabled=false;
+      loginButton.textContent='開始學習';
+      $('#cloud-password').value='';
+    }
   }
-  $('#cloud-login-form').onsubmit=e=>{e.preventDefault();passwordAction('login');};
-  $('#cloud-signup').onclick=()=>passwordAction('register');
+  $('#cloud-login-form').onsubmit=e=>{e.preventDefault();loginOrCreate();};
   async function init(){
     try {
       const response=await fetch(new URL('./cloud-config.json',import.meta.url),{cache:'no-store'});
@@ -298,13 +327,14 @@
         return;
       }
       if(!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/.test(config.supabaseUrl))throw Error('資料庫網址無效');
+      cloudConfig=config;
       const {createClient}=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.10/+esm');
       client=createClient(config.supabaseUrl,config.supabaseAnonKey,{
         auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}
       });
       ready=true;
       $('#cloud-auth').hidden=false;
-      status('尚未登入。請使用電子郵件與密碼登入或建立帳號。');
+      status('不用驗證信；輸入帳號與密碼即可登入或自動建立。');
       client.auth.onAuthStateChange((_event,session)=>{
         // Do not await Supabase methods inside onAuthStateChange: schedule them outside.
         setTimeout(()=>handleSession(session),0);
@@ -321,7 +351,7 @@
       user=current;
       $('#cloud-auth').hidden=true;
       $('#cloud-logged-in').hidden=false;
-      $('#cloud-user').textContent='已登入：'+(user.email||'已驗證帳號');
+      $('#cloud-user').textContent='已登入：'+(user.user_metadata?.wordstep_name||user.email||'學習帳號');
       if(lastSessionId!==user.id){lastSessionId=user.id;await syncRemote();}
       else {if(!working)status('已登入。');await flushChanges();}
     }else{
