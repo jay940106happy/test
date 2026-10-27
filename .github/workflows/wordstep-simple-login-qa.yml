@@ -1,0 +1,24 @@
+name: Wordstep simple account UX browser tests
+on:
+  push:
+    branches: [wordstep-simple-account-login-2026]
+    paths:
+      - .github/workflows/wordstep-simple-login-qa.yml
+      - wordstep/simple_account_browser_test.py
+      - wordstep/cloud-sync.js
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: wordstep-simple-account-login-2026
+          persist-credentials: false
+      - run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - run: python3 wordstep/simple_account_browser_test.py
