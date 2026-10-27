@@ -1,0 +1,65 @@
+name: Test Wordstep password-only account login
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/wordstep-account-sanity.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  account-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Verify password login, automatic registration, and ownership isolation
+        run: |
+          python3 - <<'PY'
+          import json,urllib.request,urllib.error,os
+          base="https://lqxgewirzngartmdoril.supabase.co"
+          conf_url="https://jay940106happy.github.io/test/wordstep/cloud-config.json"
+          with urllib.request.urlopen(conf_url,timeout=20) as r: conf=json.load(r)
+          assert conf['supabaseUrl']==base
+          key=conf['supabaseAnonKey']
+          edge=base+"/functions/v1/wordstep-account"
+          def post(url,payload,origin="https://jay940106happy.github.io",extra={}):
+            h={'Content-Type':'application/json','apikey':key,'Origin':origin,**extra}
+            req=urllib.request.Request(url,data=json.dumps(payload).encode(),headers=h,method="POST")
+            try:
+              with urllib.request.urlopen(req,timeout=35) as r:
+                return r.status,json.load(r)
+            except urllib.error.HTTPError as e:
+              return e.code,json.load(e)
+          name="qa-wordstep-"+os.environ["GITHUB_RUN_ID"]
+          pwd="tested-example-Password-8"
+          status,data=post(edge,{"account":name,"password":pwd})
+          print("new user status:",status,"created:",data.get("created"),"error:",data.get("error"))
+          assert status==200 and data.get("created") is True and data.get("access_token") and data.get("refresh_token"),data
+          first=data["access_token"]
+          status,data=post(edge,{"account":name,"password":pwd})
+          print("returning user status:",status,"created:",data.get("created"))
+          assert status==200 and data.get("created") is False and data.get("access_token"),data
+          status,data=post(edge,{"account":name,"password":"wrong-pass-12345"})
+          assert status==401 and data.get("error")=="wrong_password",(status,data)
+          status,data=post(edge,{"account":"a","password":pwd})
+          assert status==400 and data.get("error")=="invalid_account",(status,data)
+          status,data=post(edge,{"account":"invalid-user","password":"short"})
+          assert status==400 and data.get("error")=="invalid_password",(status,data)
+          status,data=post(edge,{"account":name,"password":pwd},origin="https://untrusted.example.org")
+          assert status==403,(status,data)
+          path=base+"/rest/v1/wordstep_progress"
+          headers={'apikey':key,'Authorization':'Bearer '+first,'Content-Type':'application/json','Prefer':'return=representation'}
+          req=urllib.request.Request(path,data=json.dumps({'word_id':'w0001','known':True}).encode(),headers=headers,method='POST')
+          with urllib.request.urlopen(req,timeout=25) as r:
+            saved=json.load(r);assert r.status in (200,201) and saved[0]['word_id']=='w0001'
+          with urllib.request.urlopen(urllib.request.Request(path+"?select=word_id,known",headers=headers),timeout=25) as r:
+            owned=json.load(r)
+          assert any(x['word_id']=='w0001' and x['known'] for x in owned),owned
+          other=name+"-other"
+          status,b=post(edge,{'account':other,'password':pwd})
+          assert status==200 and b.get('created'),(status,b)
+          headers2={**headers,'Authorization':'Bearer '+b['access_token']}
+          with urllib.request.urlopen(urllib.request.Request(path+"?select=word_id,known",headers=headers2),timeout=25) as r:
+            otherRows=json.load(r)
+          assert not any(x['word_id']=='w0001' for x in otherRows),otherRows
+          print("PASS 9 checks: new/returning/wrong-password/format/CORS/persist/RLS")
+          PY
