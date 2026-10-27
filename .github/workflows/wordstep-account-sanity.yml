@@ -14,7 +14,7 @@ jobs:
       - name: Verify password login, automatic registration, and ownership isolation
         run: |
           python3 - <<'PY'
-          import json,urllib.request,urllib.error,os
+          import json,urllib.request,urllib.error,os,base64
           base="https://lqxgewirzngartmdoril.supabase.co"
           conf_url="https://jay940106happy.github.io/test/wordstep/cloud-config.json"
           with urllib.request.urlopen(conf_url,timeout=20) as r: conf=json.load(r)
@@ -46,9 +46,10 @@ jobs:
           assert status==400 and data.get("error")=="invalid_password",(status,data)
           status,data=post(edge,{"account":name,"password":pwd},origin="https://untrusted.example.org")
           assert status==403,(status,data)
+          user_id=json.loads(base64.urlsafe_b64decode(first.split('.')[1]+'===').decode())['sub']
           path=base+"/rest/v1/wordstep_progress"
           headers={'apikey':key,'Authorization':'Bearer '+first,'Content-Type':'application/json','Prefer':'return=representation'}
-          req=urllib.request.Request(path,data=json.dumps({'word_id':'w0001','known':True}).encode(),headers=headers,method='POST')
+          req=urllib.request.Request(path,data=json.dumps({'user_id':user_id,'word_id':'w0001','known':True}).encode(),headers=headers,method='POST')
           with urllib.request.urlopen(req,timeout=25) as r:
             saved=json.load(r);assert r.status in (200,201) and saved[0]['word_id']=='w0001'
           with urllib.request.urlopen(urllib.request.Request(path+"?select=word_id,known",headers=headers),timeout=25) as r:
