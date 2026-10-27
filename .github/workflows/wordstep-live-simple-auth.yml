@@ -1,0 +1,69 @@
+name: Verify Wordstep simple cloud login on public website
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/wordstep-live-simple-auth.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-public:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Verify static site, no confirmation flow, and safe progress keys
+        run: |
+          python3 - <<'PY'
+          import urllib.request,time,json,re
+          root='https://jay940106happy.github.io/test/wordstep/'
+          last=None
+          for trial in range(25):
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(root,headers={'User-Agent':'Mozilla/5.0 Wordstep simple auth test'}),timeout=20) as r:
+                      html=r.read().decode('utf8'); assert r.status==200
+                  with urllib.request.urlopen(urllib.request.Request(root+'cloud-sync.js',headers={'User-Agent':'Mozilla/5.0 Wordstep simple auth test'}),timeout=20) as r:
+                      js=r.read().decode('utf8'); assert r.status==200
+                  m=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',html,re.S)
+                  assert m and len(json.loads(m.group(1)))==1969
+                  assert 'id="cloud-account"' in js, 'new one-step account field not live'
+                  assert 'id="cloud-signup"' not in js, 'old registration button still live'
+                  assert 'async function loginOrCreate()' in js, 'no auto-login handler'
+                  assert "wordstep.progress.v1" in js and "ARCHIVE_PREFIX" in js, 'progress compatibility missing'
+                  assert '電子郵件中的驗證連結' not in js, 'old email confirmation copy still live'
+                  assert 'id="show-known"' in html, 'learning controls regressed'
+                  print('PUBLIC_VERIFIED',root,'1969 cards','simple credentials','original local keys preserved')
+                  break
+              except Exception as e:
+                  last=e
+                  print('Waiting for public Pages:',trial+1,str(e)[:130])
+                  time.sleep(5)
+          else: raise RuntimeError('Public auth UX did not update: '+str(last))
+          PY
+      - name: Prepare mobile browser
+        run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install chromium
+      - name: Verify simple mobile login and offline progress
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          with sync_playwright() as p:
+              browser=p.chromium.launch()
+              page=browser.new_page(viewport={'width':390,'height':844})
+              errors=[]
+              page.on('pageerror',lambda e:errors.append(str(e)))
+              page.goto('https://jay940106happy.github.io/test/wordstep/',timeout=50000,wait_until='domcontentloaded')
+              page.locator('#cloud-open').click()
+              page.locator('#cloud-account').wait_for(state='visible',timeout=25000)
+              assert page.locator('#cloud-account').get_attribute('type')=='text'
+              assert page.locator('#cloud-login').count()==1
+              assert page.locator('#cloud-signup').count()==0
+              assert '驗證信' in page.locator('#cloud-dialog').inner_text()
+              assert page.locator('#cloud-password').is_visible()
+              page.locator('#cloud-close').click()
+              assert page.locator('#word').inner_text()
+              assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+              assert not errors,errors
+              print('LIVE_MOBILE_SIMPLE_ACCOUNT_UI_OK')
+              browser.close()
+          PY
