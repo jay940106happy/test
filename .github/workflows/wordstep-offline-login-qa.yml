@@ -1,0 +1,25 @@
+name: Wordstep offline login UX regression
+on:
+  push:
+    branches: [wordstep-fix-offline-login-20261107]
+    paths:
+      - .github/workflows/wordstep-offline-login-qa.yml
+      - wordstep/offline_login_test.py
+      - wordstep/cloud-sync.js
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: wordstep-fix-offline-login-20261107
+          persist-credentials: false
+      - name: Setup Chromium
+        run: |
+          python3 -m pip install --quiet playwright==1.55.0
+          python3 -m playwright install chromium
+      - name: Verify offline login error and data persistence
+        run: python3 wordstep/offline_login_test.py
