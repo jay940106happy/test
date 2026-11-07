@@ -309,7 +309,11 @@
       status(data.created?'帳號已自動建立，學習進度正在同步…':'已登入，正在同步學習進度…');
       modal.close();
     }catch(e){
-      status(e.message||'登入失敗，請稍後再試。',true);
+      const raw=String(e?.message||'');
+      const offline=e instanceof TypeError||/failed to fetch|load failed|network error|network request failed/i.test(raw);
+      status(offline
+        ? '雲端暫時無法連線，可能正在恢復。學習紀錄仍保存在本機，可以先繼續背單字，稍後再登入。'
+        : (raw||'登入失敗，請稍後再試。'),true);
     }finally{
       loginButton.disabled=false;
       loginButton.textContent='開始學習';
