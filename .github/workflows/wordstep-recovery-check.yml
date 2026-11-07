@@ -1,0 +1,68 @@
+name: Verify live Wordstep connection after paused database recovery
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/wordstep-recovery-check.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Confirm public site, authentication API, CORS and local progress safety
+        run: |
+          python3 - <<'PY'
+          import json,time,re,urllib.request,urllib.error
+          site='https://jay940106happy.github.io/test/wordstep/'
+          origin='https://jay940106happy.github.io'
+          def fetch(url,method='GET',payload=None,headers=None):
+              head={'User-Agent':'Wordstep recovery smoke/1.0'}
+              if headers:head.update(headers)
+              req=urllib.request.Request(url,data=payload,headers=head,method=method)
+              try:
+                  with urllib.request.urlopen(req,timeout=25) as rsp:
+                      return rsp.status,dict(rsp.headers.items()),rsp.read()
+              except urllib.error.HTTPError as e:
+                  return e.code,dict(e.headers.items()),e.read()
+          last=None
+          for attempt in range(18):
+              try:
+                  code,_,html=fetch(site)
+                  assert code==200
+                  text=html.decode('utf-8')
+                  m=re.search(r'<script id="word-data"[^>]*>(.*?)</script>',text,re.S)
+                  assert m and len(json.loads(m.group(1)))==1969
+                  code,_,script=fetch(site+'cloud-sync.js')
+                  assert code==200
+                  js=script.decode('utf-8')
+                  assert '學習紀錄仍保存在本機' in js, 'Old version still cached'
+                  assert "wordstep.progress.v1" in js and "ARCHIVE_PREFIX" in js
+                  break
+              except Exception as e:
+                  last=e
+                  print('Pages cache not updated yet',attempt+1,type(e).__name__,str(e)[:100])
+                  time.sleep(4)
+          else:raise RuntimeError('Public Wordstep verification: '+str(last))
+          code,_,data=fetch(site+'cloud-config.json')
+          assert code==200
+          cfg=json.loads(data)
+          backend=cfg['supabaseUrl']
+          api_key=cfg['supabaseAnonKey']
+          last=None
+          for attempt in range(18):
+              code,_,data=fetch(backend+'/auth/v1/health',headers={'apikey':api_key})
+              if code==200:break
+              print('Supabase wake-up status',attempt+1,code)
+              time.sleep(5)
+          else:raise RuntimeError('Supabase auth health: '+str(code)+' '+data[:200].decode('utf8','replace'))
+          edge=backend+'/functions/v1/wordstep-account'
+          status,heads,_=fetch(edge,'OPTIONS',headers={'Origin':origin,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type,apikey'})
+          assert status==204,('CORS preflight status',status)
+          allow={k.lower():v for k,v in heads.items()}.get('access-control-allow-origin')
+          assert allow==origin,('CORS origin',allow)
+          status,_,raw=fetch(edge,'POST',json.dumps({'account':'ab','password':'long-enough-password'}).encode(),{'Content-Type':'application/json','apikey':api_key,'Origin':origin})
+          assert status==400,(status,raw[:250])
+          assert json.loads(raw).get('error')=='invalid_account',raw[:250]
+          print('PASS: public Wordstep 1969 words, friendly offline message, Supabase Auth 200, Edge CORS 204, Edge request 400, legacy progress keys unchanged')
+          PY
