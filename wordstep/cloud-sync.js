@@ -312,7 +312,7 @@
       const raw=String(e?.message||'');
       const offline=e instanceof TypeError||/failed to fetch|load failed|network error|network request failed/i.test(raw);
       status(offline
-        ? '雲端暫時無法連線，可能正在恢復。進度仍保存在這台裝置，請先繼續背單字，稍後再登入。'
+        ? '雲端暫時無法連線，可能正在恢復。學習紀錄仍保存在本機，可以先繼續背單字，稍後再登入。'
         : (raw||'登入失敗，請稍後再試。'),true);
     }finally{
       loginButton.disabled=false;
